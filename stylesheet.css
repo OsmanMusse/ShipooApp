@@ -1,4 +1,4 @@
-#navigation-bar{
+#main-content{
   border: 2px solid red;
   height: 500px;
   background: #22b6c5;
@@ -8,48 +8,53 @@
 
 
 nav{
-  border: 2px solid blue;
 }
 
 nav .container{
-  max-width: 1400px;
-  border: 2px solid orange;
+  max-width: 100%;
+  padding: 25px 0;
 }
 
 .nav-1{
-  border: 2px solid black;
   display: flex;
   justify-content: space-between;
+  padding-left: 0;
+  padding-right: 30px;
 }
 
 
 .img-logo{
+  align-self: center;
 }
 
 .nav-2{
   display: flex;
-  border: 2px solid red;
   flex: 0 0 85%;
   max-width: 85%;
-  justify-content: space-evenly;
+  margin-left: 0;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .nav-2 a {
   color: white;
   text-decoration: none;
   font-weight: 100;
+  margin-right: 45px;
 }
 
 .nav-2 .btn-light{
-  border-radius: 1.05rem;
+  border-radius: 2.35rem;
+  border-color: white;
+  background-color: white;
+  padding: .665rem .95rem;
   color: #23ab85;
 }
 
 
 
 img{
-width: 120px;
+width: 110px;
 }
 
 
@@ -57,4 +62,37 @@ width: 120px;
   display: flex;
   justify-content: space-between;
   padding-left: 0;
+}
+
+
+.jumbo h1{
+  color: white;
+  font-weight: 200;
+}
+
+.jumbo p {
+  color: white;
+  font-weight: 100;
+}
+
+.jumbo a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 100;
+}
+
+.jumbo .btn-light{
+  border-radius: 2.35rem;
+  border-color: white;
+  background-color: white;
+  color: #23b6c5;
+  padding: .665rem .95rem;
+  margin-right: 25px;
+}
+
+
+@media(max-width:767px){
+  .nav-2{
+    display: none;
+  }
 }
