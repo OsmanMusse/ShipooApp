@@ -31,7 +31,10 @@
     margin-left: 0;
     align-items: center;
     justify-content: flex-end; }
-  #main-content .nav-2 a {
+    @media (max-width: 767px) {
+      #main-content .nav-2 {
+        display: none; } }
+  #main-content a {
     color: white;
     text-decoration: none;
     font-weight: 100;
@@ -68,8 +71,30 @@
   #main-content .jumbo ul {
     padding-left: 0; }
 
-@media (max-width: 767px) {
-  .nav-2 {
-    display: none; } }
+/**********************
+    Sponsor Section
+***********************/
+#sponsorship {
+  padding-top: 185px;
+  text-align: center;
+  color: #acb8bf; }
+  #sponsorship h4 {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 25px; }
+  #sponsorship .wrapper {
+    max-width: 1440px;
+    margin: 0 auto; }
+  #sponsorship .brands-feature {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 60px;
+    align-items: center;
+    padding: 0; }
+    #sponsorship .brands-feature li {
+      list-style: none; }
+    #sponsorship .brands-feature img {
+      width: 170px; }
 
 /*# sourceMappingURL=stylesheet.css.map */
