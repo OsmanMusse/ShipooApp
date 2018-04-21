@@ -1,7 +1,6 @@
 #main-content{
-  border: 2px solid red;
-  height: 500px;
-  background: #22b6c5;
+  background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
+  font-family: 'Tajawal', sans-serif;
 }
 
 
@@ -24,7 +23,9 @@ nav .container{
 
 
 .img-logo{
+  width: 110px;
   align-self: center;
+  margin-left: 25px;
 }
 
 .nav-2{
@@ -47,15 +48,12 @@ nav .container{
   border-radius: 2.35rem;
   border-color: white;
   background-color: white;
-  padding: .665rem .95rem;
+  padding: .665rem 1.05rem;
   color: #23ab85;
 }
 
 
 
-img{
-width: 110px;
-}
 
 
 .nav-contain{
@@ -63,6 +61,8 @@ width: 110px;
   justify-content: space-between;
   padding-left: 0;
 }
+
+.container
 
 
 .jumbo h1{
@@ -73,6 +73,7 @@ width: 110px;
 .jumbo p {
   color: white;
   font-weight: 100;
+  margin-bottom: 35px;
 }
 
 .jumbo a {
@@ -86,8 +87,12 @@ width: 110px;
   border-color: white;
   background-color: white;
   color: #23b6c5;
-  padding: .665rem .95rem;
+  padding: .665rem 1.05rem;
   margin-right: 25px;
+}
+
+.jumbo ul {
+  padding-left: 0;
 }
 
 
@@ -95,4 +100,6 @@ width: 110px;
   .nav-2{
     display: none;
   }
+
+
 }
