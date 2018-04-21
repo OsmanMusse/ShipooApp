@@ -1,0 +1,13 @@
+
+
+@mixin skewedEffect {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 415px;
+  width: 100%;
+  transform: skewy(-4deg);
+  background-image: linear-gradient(to bottom right, #14b1c1, #00b1b3, #00b0a0, #00AE8C, #10ab70);
+  height: 146px;
+  @content;
+}
