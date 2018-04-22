@@ -218,19 +218,38 @@ nav .container{
   padding: 20px 77px 70px 60px;
   text-align: center;
 
-  h1{
-    font-weight: 200;
-    width: 39%;
-    margin: 0 auto;
+  @media(max-width: $breakpoint-phone){
+    padding: 50px 0;
   }
 
-  .shipping-feature{
+  .wrapper{
+
+  }
+
+  h1{
+    font-weight: 200;
+    width: 65%;
+    margin: 0 auto;
+
+    @media(max-width: $breakpoint-phone){
+      max-width: 1440px;
+      width: 91%;
+      margin: 0 auto;
+      font-size: 1.8rem;
+    }
+  }
+
+  .shipping-features{
     padding: 0;
     margin-top: 75px;
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(235px, 1fr) );
     grid-template-rows: 300px;
     align-content: center;
+
+    @media(max-width: $breakpoint-phone){
+      margin-top: 50px;
+    }
 
     h5{
       color: $jungle-green;
@@ -243,5 +262,44 @@ nav .container{
     }
 
   }
+
+  .label-feature{
+    display: flex;
+    flex-direction: column;
+
+    img{
+      max-width: 220px;
+      margin: 0 auto;
+    }
+
+  }
+
+    .tracking-feature{
+      display: flex;
+      flex-direction: column;
+
+      img{
+        max-width: 220px;
+        margin: 20px auto;
+      }
+
+      h5{
+        margin-top: auto;
+      }
+    }
+
+    .agreement-feature{
+      display: flex;
+      flex-direction: column;
+
+      img{
+        max-width: 220px;
+        margin: 27px auto;
+      }
+      h5{
+        margin-top: auto;
+      }
+    }
+
 
 } // Closing Shipping Products
