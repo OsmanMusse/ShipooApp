@@ -267,6 +267,7 @@ nav .container{
     display: flex;
     flex-direction: column;
 
+
     img{
       max-width: 220px;
       margin: 0 auto;
@@ -285,6 +286,10 @@ nav .container{
 
       h5{
         margin-top: auto;
+      }
+
+      @media(max-width: $breakpoint-phone){
+        margin-top: 17px;
       }
     }
 

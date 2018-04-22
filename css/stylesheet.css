@@ -175,6 +175,9 @@
       margin: 20px auto; }
     #shipping-products .tracking-feature h5 {
       margin-top: auto; }
+    @media (max-width: 576px) {
+      #shipping-products .tracking-feature {
+        margin-top: 17px; } }
   #shipping-products .agreement-feature {
     display: flex;
     flex-direction: column; }
