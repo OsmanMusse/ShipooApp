@@ -24,6 +24,14 @@
     width: 110px;
     align-self: center;
     margin-left: 25px; }
+  #main-content .nav-menu {
+    display: none; }
+    @media (max-width: 768px) {
+      #main-content .nav-menu {
+        display: block; } }
+    #main-content .nav-menu .fa-bars {
+      font-size: 23px;
+      color: white; }
   #main-content .nav-2 {
     display: flex;
     flex: 0 0 85%;
@@ -49,8 +57,12 @@
     display: flex;
     justify-content: space-between;
     padding-left: 0; }
+  @media (max-width: 768px) {
+    #main-content .jumbo .laptop-col {
+      display: none; } }
   #main-content .jumbo h1 {
     color: white;
+    font-size: 2.4rem;
     font-weight: 200; }
   #main-content .jumbo p {
     color: white;
@@ -59,7 +71,8 @@
   #main-content .jumbo a {
     color: white;
     text-decoration: underline;
-    font-weight: 100; }
+    font-weight: 100;
+    margin: 0; }
   #main-content .jumbo .btn-light {
     border-radius: 2.35rem;
     border-color: white;
@@ -68,6 +81,9 @@
     padding: .665rem 1.05rem;
     padding-top: 14px;
     margin-right: 25px; }
+    @media (max-width: 992px) {
+      #main-content .jumbo .btn-light {
+        margin-right: 23px; } }
   #main-content .jumbo ul {
     padding-left: 0; }
 
@@ -75,9 +91,12 @@
     Sponsor Section
 ***********************/
 #sponsorship {
-  padding-top: 185px;
+  margin-top: 185px;
   text-align: center;
   color: #acb8bf; }
+  @media (max-width: 576px) {
+    #sponsorship {
+      margin-top: 220px; } }
   #sponsorship h4 {
     text-transform: uppercase;
     font-size: 19px;
@@ -88,10 +107,15 @@
     margin: 0 auto; }
   #sponsorship .brands-feature {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-column-gap: 60px;
     align-items: center;
     padding: 0; }
+    @media (max-width: 576px) {
+      #sponsorship .brands-feature {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 100px);
+        grid-row-gap: 45px; } }
     #sponsorship .brands-feature li {
       list-style: none; }
     #sponsorship .brands-feature img {
