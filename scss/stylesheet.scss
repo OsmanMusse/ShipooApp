@@ -38,10 +38,24 @@ nav .container{
 }
 
 
+
 .img-logo{
   width: 110px;
   align-self: center;
   margin-left: 25px;
+}
+
+.nav-menu{
+  display: none;
+
+  @media(max-width: $breakpoint-tablet){
+    display: block;
+  }
+
+  .fa-bars{
+    font-size: 23px;
+    color: white;
+  }
 }
 
 .nav-2{
@@ -86,10 +100,16 @@ nav .container{
 
 .jumbo {
 
+.laptop-col{
+  @media(max-width: $breakpoint-tablet){
+    display: none;
+  }
+}
 
 
  h1{
   color: white;
+  font-size: 2.4rem;
   font-weight: 200;
 }
 
@@ -103,6 +123,7 @@ nav .container{
   color: white;
   text-decoration: underline;
   font-weight: 100;
+  margin: 0;
 }
 
  .btn-light{
@@ -113,6 +134,11 @@ nav .container{
   padding: .665rem 1.05rem;
   padding-top: 14px;
   margin-right: 25px;
+
+  @media(max-width: $breakpoint-lg){
+    margin-right:  23px;
+
+  }
 }
 
   ul {
@@ -132,9 +158,14 @@ nav .container{
 
 
 #sponsorship{
-  padding-top: 185px;
+  margin-top: 185px;
   text-align: center;
   color: $greyish;
+
+  @media(max-width: $breakpoint-phone){
+     margin-top: 220px;
+  }
+
 
   h4{
     text-transform: uppercase;
@@ -150,11 +181,19 @@ nav .container{
 
 
   .brands-feature{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 60px;
-    align-items: center;
-    padding: 0;
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(160px, 1fr) );
+      grid-column-gap: 60px;
+      align-items: center;
+      padding: 0;
+
+
+    @media(max-width: $breakpoint-phone){
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 100px);
+      grid-row-gap: 45px;
+    }
+
 
     li{
        list-style: none;
