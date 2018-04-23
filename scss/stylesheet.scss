@@ -1,0 +1,434 @@
+
+
+// 2 - Helpers
+@import "2-helpers/mixins";
+@import "2-helpers/variables";
+@import "2-helpers/base";
+
+
+
+
+
+#main-content{
+  background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
+  font-family: 'Tajawal', sans-serif;
+  height: 490px;
+  position: relative;
+
+
+
+&::before{
+  @include skewedEffect;
+}
+
+
+
+
+
+
+nav .container{
+  max-width: 100%;
+  padding: 25px 0;
+}
+
+.nav-1{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+
+
+.img-logo{
+  width: 110px;
+  align-self: center;
+  margin-left: 25px;
+}
+
+.nav-menu{
+  display: none;
+
+  @media(max-width: $breakpoint-tablet){
+    display: block;
+  }
+
+  .fa-bars{
+    font-size: 23px;
+    color: white;
+  }
+}
+
+.nav-2{
+  display: flex;
+  flex: 0 0 85%;
+  max-width: 85%;
+  margin-left: 0;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media(max-width:767px){
+     display: none;
+  }
+}
+
+ a {
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  margin-right: 45px;
+}
+
+.nav-2 .btn-light{
+  border-radius: 2.35rem;
+  border-color: white;
+  background-color: white;
+  padding: .665rem 1.05rem;
+  color: #23ab85;
+}
+
+
+
+
+
+.nav-contain{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+
+
+.jumbo {
+
+.laptop-col{
+  @media(max-width: $breakpoint-tablet){
+    display: none;
+  }
+}
+
+
+ h1{
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+
+  p {
+  color: white;
+  font-weight: 100;
+  margin-bottom: 35px;
+}
+
+  a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 100;
+  margin: 0;
+}
+
+ .btn-light{
+  border-radius: 2.35rem;
+  border-color: white;
+  background-color: white;
+  color: #23b6c5;
+  padding: .665rem 1.05rem;
+  padding-top: 14px;
+  margin-right: 25px;
+
+  @media(max-width: $breakpoint-lg){
+    margin-right:  23px;
+
+  }
+}
+
+  ul {
+  padding-left: 0;
+}
+
+}
+
+
+} // Closing Main content
+
+
+
+/**********************
+    Sponsor Section
+***********************/
+
+
+#sponsorship{
+  margin-top: 185px;
+  text-align: center;
+  color: $greyish;
+
+  @media(max-width: $breakpoint-phone){
+     margin-top: 220px;
+  }
+
+
+  h4{
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  .wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+
+  .brands-feature{
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(160px, 1fr) );
+      grid-column-gap: 60px;
+      align-items: center;
+      padding: 0;
+
+
+    @media(max-width: $breakpoint-phone){
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 100px);
+      grid-row-gap: 45px;
+    }
+
+
+    li{
+       list-style: none;
+    }
+
+    img{
+      width: 170px;
+
+      @media(max-width: $breakpoint-phone){
+      width: 210px;
+      }
+    }
+  }
+
+} // Closing Sponsorship
+
+
+
+/**********************
+    Shipping Products
+***********************/
+
+
+#shipping-products{
+  padding: 20px 77px 70px 60px;
+  text-align: center;
+
+  @media(max-width: $breakpoint-phone){
+    padding: 50px 0;
+  }
+
+  .wrapper{
+
+  }
+
+  h1{
+    font-weight: 200;
+    width: 65%;
+    margin: 0 auto;
+
+    @media(max-width: $breakpoint-phone){
+      max-width: 1440px;
+      width: 91%;
+      margin: 0 auto;
+      font-size: 1.8rem;
+    }
+  }
+
+  .shipping-features{
+    padding: 0;
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(235px, 1fr) );
+    grid-template-rows: 300px;
+    align-content: center;
+
+    @media(max-width: $breakpoint-phone){
+      margin-top: 50px;
+    }
+
+    h5{
+      color: $jungle-green;
+      font-weight: 300;
+    }
+
+    p{
+      color: $dove-grey;
+      font-weight: 100;
+    }
+
+  }
+
+  .label-feature{
+    display: flex;
+    flex-direction: column;
+
+
+    img{
+      max-width: 220px;
+      margin: 0 auto;
+    }
+
+  }
+
+    .tracking-feature{
+      display: flex;
+      flex-direction: column;
+
+      img{
+        max-width: 220px;
+        margin: 20px auto;
+      }
+
+      h5{
+        margin-top: auto;
+      }
+
+      @media(max-width: $breakpoint-phone){
+        margin-top: 17px;
+      }
+    }
+
+    .agreement-feature{
+      display: flex;
+      flex-direction: column;
+
+      img{
+        max-width: 220px;
+        margin: 27px auto;
+      }
+      h5{
+        margin-top: auto;
+      }
+    }
+
+
+} // Closing Shipping Products
+
+
+
+/**********************
+    API Feature
+***********************/
+
+#api-feature{
+  height: 600px;
+  padding: 30px;
+
+  @media(max-width: $breakpoint-phone){
+    padding: 20px;
+  }
+
+  .wrapper{
+    max-width: 1650px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media(max-width: $breakpoint-phone){
+      padding: 0;
+    }
+  }
+  .shipping-msg{
+    @media(max-width: $breakpoint-tablet){
+      margin-bottom: 20px;
+    }
+    @media(max-width: $breakpoint-phone){
+      padding-left: 40px;
+    }
+
+  }
+
+  h4{
+    font-weight: 300;
+    font-size: 29px;
+    width: 68%;
+    max-width: 100%;
+    margin-bottom: 30px
+  }
+
+  p{
+    color: #6b6767;
+    font-weight: 100;
+    font-size: 17px;
+    margin-bottom: 50px;
+  }
+
+  ul{
+    padding: 0;
+  }
+
+  .btn-green{
+    border-color: #44bb8c;
+    border-bottom-color: #25a0a5;
+    border-radius: 1.9rem;
+    border-width: 2px;
+    border-style: solid;
+    color:  #50ab97;
+    padding: .755rem 1.4rem;
+    margin-right: 20px;
+  }
+  a{
+    text-decoration: underline;
+    color: rgba(98, 188, 191, 1.000);
+    font-size: 17px;
+  }
+
+  .shippo-large{
+    z-index: 10000;
+    @media(max-width: 1000px){
+      display: none;
+    }
+  }
+
+  .shippo-hide{
+    display: none;
+    @media(max-width: 1000px){
+      display:flex;
+    }
+    @media(max-width: $breakpoint-phone){
+      display: none;
+    }
+  }
+
+  .iphone-x{
+    display: none;
+    padding: 0;
+    @media(max-width: $breakpoint-phone){
+      display: flex;
+    }
+  }
+
+
+
+} // Closing API Feature
+
+
+
+/**********************
+    Global Feature
+***********************/
+
+
+#global-feature{
+  height: 600px;
+  background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
+  position: relative;
+
+  &::before{
+     @include skewedEffect{
+       top: -118px;
+       transform: skewy(-7deg);
+       height: 236px;
+     }
+  }
+
+} // Closing Global Feature
