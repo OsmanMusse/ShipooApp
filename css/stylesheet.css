@@ -194,14 +194,25 @@
     API Feature
 ***********************/
 #api-feature {
-  border: 2px solid red;
   height: 600px;
   padding: 30px; }
+  @media (max-width: 576px) {
+    #api-feature {
+      padding: 20px; } }
   #api-feature .wrapper {
-    max-width: 1250px;
+    max-width: 1650px;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px; }
+    @media (max-width: 576px) {
+      #api-feature .wrapper {
+        padding: 0; } }
+  @media (max-width: 768px) {
+    #api-feature .shipping-msg {
+      margin-bottom: 20px; } }
+  @media (max-width: 576px) {
+    #api-feature .shipping-msg {
+      padding-left: 40px; } }
   #api-feature h4 {
     font-weight: 300;
     font-size: 29px;
@@ -228,5 +239,44 @@
     text-decoration: underline;
     color: #62bcbf;
     font-size: 17px; }
+  #api-feature .shippo-large {
+    z-index: 10000; }
+    @media (max-width: 1000px) {
+      #api-feature .shippo-large {
+        display: none; } }
+  #api-feature .shippo-hide {
+    display: none; }
+    @media (max-width: 1000px) {
+      #api-feature .shippo-hide {
+        display: flex; } }
+    @media (max-width: 576px) {
+      #api-feature .shippo-hide {
+        display: none; } }
+  #api-feature .iphone-x {
+    display: none;
+    padding: 0; }
+    @media (max-width: 576px) {
+      #api-feature .iphone-x {
+        display: flex; } }
+
+/**********************
+    Global Feature
+***********************/
+#global-feature {
+  height: 600px;
+  background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
+  position: relative; }
+  #global-feature::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 415px;
+    width: 100%;
+    transform: skewy(-4deg);
+    background-image: linear-gradient(to bottom right, #14b1c1, #00b1b3, #00b0a0, #00AE8C, #10ab70);
+    height: 146px;
+    top: -118px;
+    transform: skewy(-7deg);
+    height: 236px; }
 
 /*# sourceMappingURL=stylesheet.css.map */
