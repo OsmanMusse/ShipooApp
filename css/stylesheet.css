@@ -125,6 +125,9 @@
       list-style: none; }
     #sponsorship .brands-feature img {
       width: 170px; }
+      @media (max-width: 576px) {
+        #sponsorship .brands-feature img {
+          width: 210px; } }
 
 /**********************
     Shipping Products
@@ -186,5 +189,44 @@
       margin: 27px auto; }
     #shipping-products .agreement-feature h5 {
       margin-top: auto; }
+
+/**********************
+    API Feature
+***********************/
+#api-feature {
+  border: 2px solid red;
+  height: 600px;
+  padding: 30px; }
+  #api-feature .wrapper {
+    max-width: 1250px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px; }
+  #api-feature h4 {
+    font-weight: 300;
+    font-size: 29px;
+    width: 68%;
+    max-width: 100%;
+    margin-bottom: 30px; }
+  #api-feature p {
+    color: #6b6767;
+    font-weight: 100;
+    font-size: 17px;
+    margin-bottom: 50px; }
+  #api-feature ul {
+    padding: 0; }
+  #api-feature .btn-green {
+    border-color: #44bb8c;
+    border-bottom-color: #25a0a5;
+    border-radius: 1.9rem;
+    border-width: 2px;
+    border-style: solid;
+    color: #50ab97;
+    padding: .755rem 1.4rem;
+    margin-right: 20px; }
+  #api-feature a {
+    text-decoration: underline;
+    color: #62bcbf;
+    font-size: 17px; }
 
 /*# sourceMappingURL=stylesheet.css.map */
