@@ -422,6 +422,7 @@ nav .container{
   height: 600px;
   background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
   position: relative;
+  padding: 200px 20px;
 
   &::before{
      @include skewedEffect{
@@ -429,6 +430,68 @@ nav .container{
        transform: skewy(-7deg);
        height: 236px;
      }
+  }
+
+  .row{
+     justify-content: center;
+  }
+
+  h1{
+    font-weight: 300;
+    font-size:27px;
+    color: $white;
+    margin-bottom: 30px;
+  }
+
+  p{
+    color: $weak-white;
+    font-weight: 100;
+  }
+
+  .global-sponsors{
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+    li{
+      border: 2px solid white;
+      width: 96px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    li:nth-of-type(1){
+      img{
+        max-width: 47px;
+        margin-left: 23px;
+        margin-top: 16px
+      }
+    }
+
+    li:nth-of-type(2){
+      img{
+        max-width: 72px;
+        margin-top: 29px;
+        margin-left: 11px;
+      }
+    }
+
+    li:nth-of-type(3){
+      img{
+        max-width: 81px;
+        height: 18px;
+        margin-top: 32px;
+        margin-left: 4px;
+      }
+    }
+
+    img{
+      max-width: 45px;
+      margin-left: 14px;
+      margin-top: 10px;
+
+    }
   }
 
 } // Closing Global Feature
