@@ -1,9 +1,10 @@
 
 
 // 2 - Helpers
+@import "2-helpers/base";
 @import "2-helpers/mixins";
 @import "2-helpers/variables";
-@import "2-helpers/base";
+@import "2-helpers/functions";
 
 
 
@@ -183,7 +184,7 @@ nav .container{
 
   .brands-feature{
       display: grid;
-      grid-template-columns: repeat( auto-fit, minmax(160px, 1fr) );
+      grid-template-columns: repeat( auto-fit, minmax(162px, 1fr) );
       grid-column-gap: 60px;
       align-items: center;
       padding: 0;
@@ -451,7 +452,9 @@ nav .container{
   .global-sponsors{
     list-style: none;
     padding: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(131px, 150px));
+    justify-content: center;
 
     li{
       border: 2px solid white;
@@ -459,6 +462,7 @@ nav .container{
       height: 90px;
       border-radius: 50%;
       background-color: white;
+      justify-self: center;
     }
 
     li:nth-of-type(1){
@@ -491,6 +495,14 @@ nav .container{
       margin-left: 14px;
       margin-top: 10px;
 
+    }
+
+    li:nth-of-type(4){
+      img{
+        max-width: 69px;
+        margin-left: 11px;
+        margin-top: 18px
+      }
     }
   }
 

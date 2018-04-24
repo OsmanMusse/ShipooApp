@@ -112,7 +112,7 @@
     margin: 0 auto; }
   #sponsorship .brands-feature {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
     grid-column-gap: 60px;
     align-items: center;
     padding: 0; }
@@ -292,13 +292,16 @@
   #global-feature .global-sponsors {
     list-style: none;
     padding: 0;
-    display: flex; }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(131px, 150px));
+    justify-content: center; }
     #global-feature .global-sponsors li {
       border: 2px solid white;
       width: 96px;
       height: 90px;
       border-radius: 50%;
-      background-color: white; }
+      background-color: white;
+      justify-self: center; }
     #global-feature .global-sponsors li:nth-of-type(1) img {
       max-width: 47px;
       margin-left: 23px;
@@ -316,5 +319,9 @@
       max-width: 45px;
       margin-left: 14px;
       margin-top: 10px; }
+    #global-feature .global-sponsors li:nth-of-type(4) img {
+      max-width: 69px;
+      margin-left: 11px;
+      margin-top: 18px; }
 
 /*# sourceMappingURL=stylesheet.css.map */
