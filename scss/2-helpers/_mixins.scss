@@ -42,3 +42,16 @@
   background-repeat: no-repeat;
   background-size: 71%;
 }
+
+@mixin two-line(){
+  content: '';
+  position: absolute;
+  width: 32px;
+  left: 173px;
+   top:144px;
+  height: 9%;
+  color: red;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/lines.png);
+}

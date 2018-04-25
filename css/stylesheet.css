@@ -386,19 +386,22 @@
 
 #customer-solutions {
   text-align: center;
-  height: 800px;
   background-color: #f3f6f8;
   padding: 80px 0; }
   #customer-solutions h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 300; }
   #customer-solutions .card-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 400px));
     grid-template-rows: 550px;
+    grid-column-gap: 50px;
     border: 2px solid blue;
-    margin-top: 110px; }
+    margin-top: 110px;
+    justify-content: center; }
     #customer-solutions .card-container .card-1 {
+      display: flex;
+      flex-direction: column;
       border: 2px solid red;
       height: 100%; }
       #customer-solutions .card-container .card-1 .card-head {
@@ -422,5 +425,28 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: 71%; }
+      #customer-solutions .card-container .card-1 .card-content {
+        position: relative;
+        padding: 44px 24px 0px 24px;
+        height: 100%;
+        background-color: #fff; }
+        #customer-solutions .card-container .card-1 .card-content::after {
+          content: '';
+          position: absolute;
+          width: 32px;
+          left: 173px;
+          top: 144px;
+          height: 9%;
+          color: red;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-image: url(../images/lines.png); }
+        #customer-solutions .card-container .card-1 .card-content p {
+          font-weight: 200; }
+        #customer-solutions .card-container .card-1 .card-content .card-list {
+          list-style: none;
+          text-align: left;
+          margin-top: 61px;
+          padding-left: 65px; }
 
 /*# sourceMappingURL=stylesheet.css.map */
