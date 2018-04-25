@@ -360,7 +360,14 @@ nav .container{
     font-size: 29px;
     width: 68%;
     max-width: 100%;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+
+    @media(max-width: $breakpoint-phone){
+      text-align: center;
+      width: 100%;
+      font-size: 28px;
+    }
+
   }
 
   p{
@@ -382,7 +389,7 @@ nav .container{
     border-style: solid;
     color:  #50ab97;
     padding: .755rem 1.4rem;
-    margin-right: 20px;
+    margin-right: 12px;
   }
   a{
     text-decoration: underline;
@@ -489,6 +496,9 @@ nav .container{
     grid-template-columns: repeat(auto-fit, minmax(131px, 150px));
     justify-content: center;
 
+    @media(max-width: $breakpoint-lg){
+      grid-row-gap: 30px;
+    }
 
     @media(max-width: $breakpoint-phone){
       grid-template-columns: repeat(2, 150px);

@@ -222,6 +222,11 @@
     width: 68%;
     max-width: 100%;
     margin-bottom: 30px; }
+    @media (max-width: 576px) {
+      #api-feature h4 {
+        text-align: center;
+        width: 100%;
+        font-size: 28px; } }
   #api-feature p {
     color: #6b6767;
     font-weight: 100;
@@ -237,7 +242,7 @@
     border-style: solid;
     color: #50ab97;
     padding: .755rem 1.4rem;
-    margin-right: 20px; }
+    margin-right: 12px; }
   #api-feature a {
     text-decoration: underline;
     color: #62bcbf;
@@ -323,6 +328,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(131px, 150px));
     justify-content: center; }
+    @media (max-width: 992px) {
+      #global-feature .global-sponsors {
+        grid-row-gap: 30px; } }
     @media (max-width: 576px) {
       #global-feature .global-sponsors {
         grid-template-columns: repeat(2, 150px);
