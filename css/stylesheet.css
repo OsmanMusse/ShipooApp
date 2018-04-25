@@ -385,7 +385,42 @@
     font-size: 17px; }
 
 #customer-solutions {
-  height: 500px;
-  background-color: #f3f6f8; }
+  text-align: center;
+  height: 800px;
+  background-color: #f3f6f8;
+  padding: 80px 0; }
+  #customer-solutions h1 {
+    font-size: 2.3rem;
+    font-weight: 300; }
+  #customer-solutions .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+    grid-template-rows: 550px;
+    border: 2px solid blue;
+    margin-top: 110px; }
+    #customer-solutions .card-container .card-1 {
+      border: 2px solid red;
+      height: 100%; }
+      #customer-solutions .card-container .card-1 .card-head {
+        position: relative;
+        height: 179px;
+        background-color: #a886ce;
+        background-image: url("../images/shipping-card-icon.png");
+        background-repeat: no-repeat;
+        background-size: 100%; }
+        #customer-solutions .card-container .card-1 .card-head:before {
+          content: '';
+          position: absolute;
+          left: 38%;
+          top: 22%;
+          border: 2px solid white;
+          width: 96px;
+          height: 90px;
+          border-radius: 50%;
+          background-image: url(../images/cart_icon.png);
+          background-color: white;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 71%; }
 
 /*# sourceMappingURL=stylesheet.css.map */
