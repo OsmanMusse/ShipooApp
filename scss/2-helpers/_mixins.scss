@@ -43,6 +43,22 @@
   background-size: 71%;
 }
 
+@mixin push_cart{
+  content: '';
+  position: absolute;
+  left: 38%;
+  top: 22%;
+  border: 2px solid white;
+  width: 96px;
+  height: 90px;
+  border-radius: 50%;
+  background-image: url(../images/push-cart.png);
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 57%;
+}
+
 @mixin two-line(){
   content: '';
   position: absolute;
@@ -54,4 +70,5 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../images/lines.png);
+  @content;
 }
