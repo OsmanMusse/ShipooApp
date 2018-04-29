@@ -597,8 +597,8 @@ nav .container{
 
   .card-container{
     display: grid;
-    grid-template-columns: repeat( 2, minmax(300px,400px));
-    grid-template-rows: 600px;
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+    grid-template-rows: 620px;
     grid-column-gap: 50px;
     margin-top: 110px;
     justify-content: center;
@@ -609,46 +609,53 @@ nav .container{
       height: 100%;
 
 
-      .card-head{
+    .card-head{
+      position: relative;
+      height: 220px;
+      background-color: #a886ce;
+      background-image: url("../images/shipping-card-icon.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      &:before{
+         @include cart_icon;
+      }
+    } // Card Header
+
+    .card-content{
+      position: relative;
+      padding:44px 24px 0px 24px;
+      height: 100%;
+      background-color: $white;
+      &:after{
+        @include two-line;
+      }
+
+      h4{
+        margin: 0;
+      }
+
+      p{
+        max-width: 263px;
+        width: 100%;
+        margin: 20px auto;
+        font-weight: 200;
+      }
+
+      .card-list{
+
+        list-style: none;
+        text-align: left;
+        margin-top: 72px;
+        margin-bottom: 75px;
+        padding-left: 35px;
+
+      li{
         position: relative;
-        height: 220px;
-        background-color: #a886ce;
-        background-image: url("../images/shipping-card-icon.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
+        margin-top: 25px;
 
-        &:before{
-           @include cart_icon;
-        }
-      } // Card Header
-
-      .card-content{
-        position: relative;
-        padding:44px 24px 0px 24px;
-        height: 100%;
-        background-color: $white;
-        &:after{
-          @include two-line;
-        }
-
-        p{
-          font-weight: 200;
-        }
-
-        .card-list{
-
-          list-style: none;
-          text-align: left;
-          margin-top: 61px;
-          margin-bottom: 75px;
-          padding-left: 35px;
-
-        li{
-          position: relative;
-          margin-top: 25px;
-
-          span{
-            margin-right: 10px;
+         span{
+        margin-right: 10px;
 
              .fa-check-circle{
                font-size: 22px;
@@ -657,21 +664,22 @@ nav .container{
               &:before {
                 bottom: -2px;
                 position: relative;
-               }
-             }
-          }
-      }
-
-      }
-      a{
-        color: $black;
-        text-decoration: underline;
-      }
-
+                }
+              }
+         }
     }
 
-
     }
+    a{
+      color: $black;
+      text-decoration: underline;
+      font-weight: 200;
+    }
+
+  }
+
+
+  }
 
 
     .card-2{
@@ -694,7 +702,7 @@ nav .container{
 
       .card-content{
         position: relative;
-        padding:44px 24px 0px 24px;
+        padding:45px 24px 0px 24px;
         height: 100%;
         background-color: $white;
         &:after{
@@ -702,8 +710,14 @@ nav .container{
             top: 158px;
           }
         }
+        h4{
+          margin: 0;
+        }
 
         p{
+          max-width: 280px;
+          width: 100%;
+          margin: 11px auto;
           font-weight: 200;
         }
 
@@ -711,8 +725,8 @@ nav .container{
 
           list-style: none;
           text-align: left;
-          margin-top: 44px;
-          margin-bottom: 70px;
+          margin-top: 77px;
+          margin-bottom: 81px;
           padding-left: 35px;
 
         li{
@@ -742,6 +756,7 @@ nav .container{
       a{
         color: $black;
         text-decoration: underline;
+        font-weight: 200;
       }
 
     }
@@ -753,3 +768,26 @@ nav .container{
   }
 
 } // Closing Customer Solutions
+
+
+  /**************************
+    Customer Satisfication
+  **************************/
+
+  #customer-satisfication{
+    border: 2px solid red;
+    height: 600px;
+    padding: 40px 30px;
+    text-align: center;
+
+    h1{
+      margin: 0;
+    }
+
+    p{
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+  } // Closing Customer Satisfication
