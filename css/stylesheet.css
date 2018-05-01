@@ -396,7 +396,7 @@
     grid-template-columns: repeat(2, minmax(300px, 400px));
     grid-template-rows: 620px;
     grid-column-gap: 50px;
-    margin-top: 110px;
+    margin-top: 70px;
     justify-content: center; }
     #customer-solutions .card-container .card-1 {
       display: flex;
@@ -404,7 +404,7 @@
       height: 100%; }
       #customer-solutions .card-container .card-1 .card-head {
         position: relative;
-        height: 220px;
+        min-height: 159px;
         background-color: #a886ce;
         background-image: url("../images/shipping-card-icon.png");
         background-repeat: no-repeat;
@@ -425,7 +425,7 @@
           background-size: 71%; }
       #customer-solutions .card-container .card-1 .card-content {
         position: relative;
-        padding: 44px 24px 0px 24px;
+        padding: 44px 24px 62px 24px;
         height: 100%;
         background-color: #fff; }
         #customer-solutions .card-container .card-1 .card-content:after {
@@ -473,7 +473,7 @@
       height: 100%; }
       #customer-solutions .card-container .card-2 .card-head {
         position: relative;
-        height: 220px;
+        min-height: 158px;
         background-image: url("../images/shipping-box.png");
         background-repeat: no-repeat;
         background-size: 100%; }
@@ -493,7 +493,7 @@
           background-size: 57%; }
       #customer-solutions .card-container .card-2 .card-content {
         position: relative;
-        padding: 45px 24px 0px 24px;
+        padding: 45px 24px 62px 24px;
         height: 100%;
         background-color: #fff; }
         #customer-solutions .card-container .card-2 .card-content:after {
@@ -507,7 +507,7 @@
           background-position: center;
           background-repeat: no-repeat;
           background-image: url(../images/lines.png);
-          top: 158px; }
+          top: 164px; }
         #customer-solutions .card-container .card-2 .card-content h4 {
           margin: 0; }
         #customer-solutions .card-container .card-2 .card-content p {

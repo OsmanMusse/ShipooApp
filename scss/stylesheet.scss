@@ -600,7 +600,7 @@ nav .container{
     grid-template-columns: repeat(2, minmax(300px, 400px));
     grid-template-rows: 620px;
     grid-column-gap: 50px;
-    margin-top: 110px;
+    margin-top: 70px;
     justify-content: center;
 
     .card-1{
@@ -611,7 +611,7 @@ nav .container{
 
     .card-head{
       position: relative;
-      height: 220px;
+      min-height: 159px;
       background-color: #a886ce;
       background-image: url("../images/shipping-card-icon.png");
       background-repeat: no-repeat;
@@ -624,7 +624,7 @@ nav .container{
 
     .card-content{
       position: relative;
-      padding:44px 24px 0px 24px;
+      padding:44px 24px 62px 24px;
       height: 100%;
       background-color: $white;
       &:after{
@@ -690,7 +690,7 @@ nav .container{
 
       .card-head{
         position: relative;
-        height: 220px;
+        min-height: 158px;
         background-image: url("../images/shipping-box.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -702,12 +702,12 @@ nav .container{
 
       .card-content{
         position: relative;
-        padding:45px 24px 0px 24px;
+        padding:45px 24px 62px 24px;
         height: 100%;
         background-color: $white;
         &:after{
           @include two-line{
-            top: 158px;
+            top: 164px;
           }
         }
         h4{
