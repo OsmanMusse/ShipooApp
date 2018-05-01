@@ -20,7 +20,11 @@
 
 
 &::before{
-  @include skewedEffect;
+  @include skewedEffect{
+    top: 415px;
+    transform: skewy(-4deg);
+    height: 146px;
+  }
 }
 
 
@@ -438,10 +442,13 @@ nav .container{
 
 #global-feature{
   max-height: 800px;
-  min-height: 750px;
+  // min-height: 10px;
   background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
   position: relative;
-  padding: 200px 20px;
+  padding: 200px 20px 100px 20px;
+
+
+
 
   @media(max-width: $breakpoint-phone){
     padding: 0px 20px;
@@ -454,22 +461,22 @@ nav .container{
        transform: skewy(-7deg);
        height: 236px;
      }
-
    }
 
      &::after{
        @include skewedEffect{
-         content: '';
-         position: absolute;
-         left: 0;
-         top: 89%;
-         width: 100%;
-         transform: skewy(-5deg);
-         background-image: linear-gradient(to bottom right, #0ab1bc, #00b1b3, #00b0a0, #00AE8C, #10ab70);
-         transform: skewy(-4deg);
-         height: auto;
+         bottom: -51px;
+         height: 104px;
+         transform:skewY(3deg);
        }
      }
+
+
+
+
+
+
+
 
 
   .row{
@@ -587,7 +594,7 @@ nav .container{
 #customer-solutions{
   text-align: center;
   background-color: $white-grey;
-  padding: 80px 0;
+  padding: 147px 0;
 
 
   h1{
