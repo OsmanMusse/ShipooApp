@@ -273,7 +273,7 @@
     Global Feature
 ***********************/
 #global-feature {
-  max-height: 800px;
+  min-height: 800px;
   background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
   position: relative;
   padding: 200px 20px 100px 20px; }
@@ -374,17 +374,23 @@
 #customer-solutions {
   text-align: center;
   background-color: #f3f6f8;
-  padding: 147px 0; }
+  padding: 147px 0 110px 0; }
   #customer-solutions h1 {
     font-size: 2.2rem;
     font-weight: 300; }
+    @media (max-width: 576px) {
+      #customer-solutions h1 {
+        font-size: 1.9rem; } }
   #customer-solutions .card-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
     grid-template-rows: 620px;
     grid-column-gap: 50px;
     margin-top: 70px;
     justify-content: center; }
+    @media (max-width: 963px) {
+      #customer-solutions .card-container {
+        grid-row-gap: 102px; } }
     #customer-solutions .card-container .card-1 {
       display: flex;
       flex-direction: column;
@@ -426,6 +432,9 @@
           background-position: center;
           background-repeat: no-repeat;
           background-image: url(../images/lines.png); }
+          @media (max-width: 450px) {
+            #customer-solutions .card-container .card-1 .card-content:after {
+              left: 150px; } }
         #customer-solutions .card-container .card-1 .card-content h4 {
           margin: 0; }
         #customer-solutions .card-container .card-1 .card-content p {
@@ -495,6 +504,9 @@
           background-repeat: no-repeat;
           background-image: url(../images/lines.png);
           top: 164px; }
+          @media (max-width: 450px) {
+            #customer-solutions .card-container .card-2 .card-content:after {
+              left: 150px; } }
         #customer-solutions .card-container .card-2 .card-content h4 {
           margin: 0; }
         #customer-solutions .card-container .card-2 .card-content p {
@@ -528,23 +540,36 @@
   Customer Satisfication
 **************************/
 #customer-satisfication {
-  border: 2px solid red;
-  height: 800px;
   padding: 40px 30px;
   text-align: center; }
   #customer-satisfication h1 {
     margin: 0;
     font-weight: 300; }
+    @media (max-width: 576px) {
+      #customer-satisfication h1 {
+        font-size: 1.9rem;
+        margin-bottom: 25px;
+        font-weight: 400; } }
   #customer-satisfication p {
     max-width: 480px;
     width: 100%;
     margin: 10px auto 60px auto; }
+  #customer-satisfication .container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto; }
   #customer-satisfication .box-container {
-    border: 2px solid blue;
     display: grid;
-    grid-template-columns: repeat(3, 392px);
+    grid-template-columns: repeat(auto-fill, minmax(322px, 392px));
     grid-template-rows: 482px;
     grid-column-gap: 30px;
     justify-content: center; }
+    @media (max-width: 1200px) {
+      #customer-satisfication .box-container {
+        grid-row-gap: 10px; } }
+    @media (max-width: 500px) {
+      #customer-satisfication .box-container {
+        grid-column-gap: 0;
+        grid-template-rows: 410px; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

@@ -441,7 +441,7 @@ nav .container{
 
 
 #global-feature{
-  max-height: 800px;
+  min-height: 800px;
   // min-height: 10px;
   background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
   position: relative;
@@ -594,21 +594,32 @@ nav .container{
 #customer-solutions{
   text-align: center;
   background-color: $white-grey;
-  padding: 147px 0;
+  padding: 147px 0 110px 0;
+
 
 
   h1{
     font-size: 2.2rem;
     font-weight: 300;
+    @media(max-width: $breakpoint-phone){
+      font-size: 1.9rem;
+    }
   }
 
   .card-container{
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
     grid-template-rows: 620px;
     grid-column-gap: 50px;
     margin-top: 70px;
     justify-content: center;
+
+    @media(max-width: 963px){
+      grid-row-gap: 102px;
+    }
+
+
+
 
     .card-1{
       display: flex;
@@ -636,6 +647,10 @@ nav .container{
       background-color: $white;
       &:after{
         @include two-line;
+
+        @media(max-width: 450px){
+          left: 150px;
+        }
       }
 
       h4{
@@ -716,6 +731,9 @@ nav .container{
           @include two-line{
             top: 164px;
           }
+          @media(max-width: 450px){
+            left: 150px;
+          }
         }
         h4{
           margin: 0;
@@ -782,15 +800,21 @@ nav .container{
   **************************/
 
   #customer-satisfication{
-    border: 2px solid red;
-    height: 800px;
     padding: 40px 30px;
     text-align: center;
+
 
     h1{
       margin: 0;
       font-weight: 300;
+
+      @media(max-width: $breakpoint-phone){
+        font-size: 1.9rem;
+        margin-bottom: 25px;
+        font-weight: 400;
     }
+      }
+
 
     p{
       max-width: 480px;
@@ -798,16 +822,28 @@ nav .container{
       margin: 10px auto 60px auto;
     }
 
+    .container{
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
     .box-container{
-      border: 2px solid blue;
       display: grid;
-      grid-template-columns: repeat(3, 392px);
+      grid-template-columns: repeat( auto-fill, minmax(322px, 392px));
       grid-template-rows: 482px;
       grid-column-gap: 30px;
       justify-content: center;
 
-      .box-1{
 
+          @media(max-width: $breakpoint-xl){
+            grid-row-gap: 10px;
+          }
+
+
+      @media(max-width: 500px ){
+        grid-column-gap: 0;
+        grid-template-rows: 410px;
       }
     }
 
