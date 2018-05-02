@@ -801,11 +801,13 @@ nav .container{
     .box-container{
       border: 2px solid blue;
       display: grid;
-      grid-template-columns: repeat(3, 335px);
-      grid-template-rows: 426px;
+      grid-template-columns: repeat(3, 392px);
+      grid-template-rows: 482px;
+      grid-column-gap: 30px;
+      justify-content: center;
 
       .box-1{
-  
+
       }
     }
 
