@@ -783,18 +783,32 @@ nav .container{
 
   #customer-satisfication{
     border: 2px solid red;
-    height: 600px;
+    height: 800px;
     padding: 40px 30px;
     text-align: center;
 
     h1{
       margin: 0;
+      font-weight: 300;
     }
 
     p{
       max-width: 480px;
       width: 100%;
-      margin: 0 auto;
+      margin: 10px auto 60px auto;
     }
+
+    .box-container{
+      border: 2px solid blue;
+      display: grid;
+      grid-template-columns: repeat(3, 335px);
+      grid-template-rows: 426px;
+
+      .box-1{
+  
+      }
+    }
+
+
 
   } // Closing Customer Satisfication

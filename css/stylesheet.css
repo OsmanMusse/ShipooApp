@@ -529,14 +529,20 @@
 **************************/
 #customer-satisfication {
   border: 2px solid red;
-  height: 600px;
+  height: 800px;
   padding: 40px 30px;
   text-align: center; }
   #customer-satisfication h1 {
-    margin: 0; }
+    margin: 0;
+    font-weight: 300; }
   #customer-satisfication p {
     max-width: 480px;
     width: 100%;
-    margin: 0 auto; }
+    margin: 10px auto 60px auto; }
+  #customer-satisfication .box-container {
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: repeat(3, 335px);
+    grid-template-rows: 426px; }
 
 /*# sourceMappingURL=stylesheet.css.map */
