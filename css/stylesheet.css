@@ -3,6 +3,10 @@
   width: 88%;
   margin: 0 auto; }
 
+#main-footer {
+  background-color: #262A31;
+  height: 800px; }
+
 #main-content {
   background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
   font-family: 'Tajawal', sans-serif;
