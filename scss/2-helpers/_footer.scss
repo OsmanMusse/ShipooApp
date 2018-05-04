@@ -1,0 +1,137 @@
+#main-footer{
+  background-color: #262A31;
+  padding:60px 0px 80px 0px;
+
+  .footer-column-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 45px;
+    padding-left: 148px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #3C3F46;
+    background-image: url(../images/shippo_logo.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 15% 140%;
+
+    @media(max-width: 850px){
+      padding-left: 15px;
+      background-image: none;
+    }
+
+    @media(max-width: 622px){
+      padding-right: 0;
+    }
+
+    @media(max-width: $breakpoint-phone){
+      justify-content: center;
+      padding: 0;
+    }
+
+    .column-contain-footer{
+      flex: 0 0 50%;
+      max-width: 50%;
+      @media(max-width: $breakpoint-phone){
+        flex: 0 0 60%;
+        max-width: 100%;
+      }
+    }
+
+  } // Closing Footer column 1
+
+  h1{
+    color: $Keppel;
+    font-weight: 200;
+    font-size: 2.0rem;
+  }
+
+  p{
+    color: $white-opacity;
+    font-weight: 200;
+    padding-bottom: 55px;
+  }
+
+  .button-1{
+    background-image: radial-gradient(83% 82%, #38ae90 32%, #31A998 32%, #28A2A2 32%, #34AC94 32%, #3FB589 65%);
+    border: 1px solid transparent;
+    border-radius: 100px;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 13px;
+    padding: 13px 26px;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+
+    @media(max-width: 622px){
+      margin-bottom: 20px;
+    }
+
+  }
+
+
+
+  .footer-column-2{
+    padding: 100px 30px;
+    @media(max-width: $breakpoint-tablet){
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media(max-width: $breakpoint-phone){
+      text-align: center;
+    }
+
+    .row{
+       justify-content: center;
+    }
+
+    .footer-item{
+      @media(max-width: $breakpoint-phone){
+        margin-bottom: 30px;
+      }
+
+    }
+
+    h4{
+      color: $white;
+      font-size: 1.1rem;
+      font-weight: 200;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+
+      @media(max-width: $breakpoint-phone){
+        margin-bottom: 20px;
+      }
+    }
+
+    ul{
+      list-style: none;
+      padding: 0;
+      li{
+          color: $grey-opacity;
+          a{
+            text-decoration: none;
+            color: inherit;
+          }
+      }
+    }
+  } // Closing Footer Column 2
+
+  .shippo-column{
+    display: flex;
+    justify-content: center;
+
+   img{
+     width: 76px;
+     height: 76px;
+   }
+} // Closing Shippo column
+
+.copyright-text{
+  text-align: center;
+  color: $grey-opacity;
+}
+
+
+} // Closing main footer
