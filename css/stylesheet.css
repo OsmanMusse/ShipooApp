@@ -466,6 +466,9 @@
     padding: 0.965rem 2rem;
     color: #23b6c5;
     font-size: 17px; }
+    @media (max-width: 576px) {
+      #global-feature .btn-whitish {
+        padding: .965rem 1rem; } }
 
 #customer-solutions {
   text-align: center;
@@ -530,7 +533,8 @@
           background-image: url(../images/lines.png); }
           @media (max-width: 450px) {
             #customer-solutions .card-container .card-1 .card-content:after {
-              left: 150px; } }
+              left: 150px;
+              top: 180px; } }
         #customer-solutions .card-container .card-1 .card-content h4 {
           margin: 0; }
         #customer-solutions .card-container .card-1 .card-content p {
