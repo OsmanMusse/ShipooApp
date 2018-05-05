@@ -587,6 +587,11 @@ nav .container{
     @include btn-whitish(60px auto 0, .965rem 2.0rem){
       font-size: 17px;
     }
+
+    @media(max-width: $breakpoint-phone){
+    padding: .965rem 1rem;
+    }
+
   }
 
 } // Closing Global Feature
@@ -649,8 +654,11 @@ nav .container{
       &:after{
         @include two-line;
 
+
+
         @media(max-width: 450px){
           left: 150px;
+          top: 180px;
         }
       }
 
