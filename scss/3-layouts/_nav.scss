@@ -18,6 +18,8 @@ input{
 
 
 
+
+
 } // Closing Nav Menu
 
 
@@ -29,12 +31,12 @@ input{
     width: 96%;
     right: -4px;
     margin-right: 17px;
-    height: 400px;
+    height: 480px;
     border: 2px solid white;
     border-radius: 2%;
     background-color: white;
     z-index: 10000;
-    padding: 30px;
+    padding:30px 30px 0 30px;
 
     .container{
       padding: 0 !important;
@@ -47,29 +49,124 @@ input{
 
   .pop-flex-container{
     display: flex;
-  }
+    flex-wrap: wrap;
+    border-bottom: 2px solid #f6f9fc;
+
 
   .pop-column-1{
     display: flex;
     flex-grow: 2;
-    border: 2px solid red;
 
     ul{
       list-style: none;
       padding: 0;
+
+      li{
+         font-size: 20px;
+         margin: 10px;
+
+        &:nth-of-type(1){
+          color: $cornflower-Blue;
+        }
+
+        &:nth-of-type(2){
+          color: $light-Jungle-Green;
+        }
+
+        &:nth-of-type(3){
+          color: $curious-Blue;
+        }
+
+        &:nth-of-type(4){
+          color: $true-V;
+        }
+
+        &:nth-of-type(5){
+          color: red;
+        }
+
+        &:nth-of-type(7){
+          color: $anzac;
+        }
+
+      }
+
     }
-  }
+
+  } // Closing Pop Column 1
 
   .pop-column-2{
     display: flex;
-    flex-grow: 1;
-    border: 2px solid blue;
+    flex-grow: 4;
 
     ul{
       list-style: none;
       padding: 0;
+
+      li{
+        font-size: 20px;
+        margin: 10px;
+
+        &:nth-of-type(1){
+          color: $anzac;
+        }
+
+        &:nth-of-type(2){
+          color: $amethysy;
+        }
+
+
+      }
+    }
+  } // Closing Pop Column 2
+
+}
+ .pop-flex-container2{
+  display: flex;
+  margin-bottom: 30px;
+
+  .pop-column-3{
+    display: flex;
+    flex-grow: 2;
+
+    ul{
+      list-style: none;
+      padding: 0;
+
+      li{
+        font-size: 19px;
+        font-weight: 300;
+        margin: 10px;
+        color: $jungle-green;
+
+      }
     }
   }
 
+  .pop-column-4{
+    display: flex;
+    flex-grow: 4;
+
+    ul{
+      list-style: none;
+      padding: 0;
+
+      li{
+        font-size: 19px;
+        font-weight: 300;
+        margin: 10px;
+        color: $jungle-green;
+
+      }
+    }
+  }
+
+} // Closing Pop Flex Container 2
+
+a{
+  color: $jungle-green !important;
+  font-size: 19px;
+  margin:10px;
+}
 
 }
