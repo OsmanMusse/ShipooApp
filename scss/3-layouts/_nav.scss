@@ -1,0 +1,75 @@
+/**********************
+    Navigation Section
+***********************/
+
+.nav-menu{
+
+label{
+  cursor: pointer;
+}
+
+input{
+  display: none;
+}
+
+#toggle:checked + .pop-up-navigation{
+  display: flex;
+}
+
+
+
+} // Closing Nav Menu
+
+
+
+.pop-up-navigation{
+  display: none;
+    position: absolute;
+    top: 17px;
+    width: 96%;
+    right: -4px;
+    margin-right: 17px;
+    height: 400px;
+    border: 2px solid white;
+    border-radius: 2%;
+    background-color: white;
+    z-index: 10000;
+    padding: 30px;
+
+    .container{
+      padding: 0 !important;
+    }
+
+  h4{
+    font-size: 18px;
+    color: $dove-grey;
+  }
+
+  .pop-flex-container{
+    display: flex;
+  }
+
+  .pop-column-1{
+    display: flex;
+    flex-grow: 2;
+    border: 2px solid red;
+
+    ul{
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  .pop-column-2{
+    display: flex;
+    flex-grow: 1;
+    border: 2px solid blue;
+
+    ul{
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+
+}
