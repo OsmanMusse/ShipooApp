@@ -74,17 +74,19 @@ nav .container{
   align-items: center;
   justify-content: flex-end;
 
+  a {
+   color: white;
+   text-decoration: none;
+   font-weight: 100;
+   margin-right: 45px;
+ }
+
   @media(max-width:830px){
      display: none;
   }
 }
 
- a {
-  color: white;
-  text-decoration: none;
-  font-weight: 100;
-  margin-right: 45px;
-}
+
 
 .nav-2 .btn-light{
   border-radius: 2.35rem;
