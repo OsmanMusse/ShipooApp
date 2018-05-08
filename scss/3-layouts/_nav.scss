@@ -120,8 +120,18 @@ input{
         font-size: 20px;
         margin: 10px;
 
+
         &:nth-of-type(1){
           color: $anzac;
+          .payments{
+            border: 2px solid $anzac;
+            border-radius: 25%;
+            background-color: $anzac;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 12.5px;
+            margin-left: 13px;
+          }
         }
 
         &:nth-of-type(2){
@@ -153,7 +163,12 @@ input{
         margin: 10px;
         color: $jungle-green;
 
+        &:hover{
+          color:#27717d;
+        }
+
       }
+
     }
   }
 
@@ -171,7 +186,12 @@ input{
         margin: 10px;
         color: $jungle-green;
 
+       &:hover{
+         color:#27717d;
+       }
+
       }
+
     }
   }
 
@@ -192,10 +212,19 @@ input{
     font-size: 18px;
     margin:10px;
 
+    &:hover{
+      color: #18595a !important;
+    }
+
      .fa-arrow-right{
        margin-left: 9px;
        font-size: 16px;
        color: $jungle-green;
+
+       &:hover{
+         color: #18595a !important;
+       }
+
      }
 
   }
