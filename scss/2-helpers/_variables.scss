@@ -1,53 +1,69 @@
+  //
+  // Some Useful Fonts for the text
+  //
 
-//
-// Some Useful color Arranged by color
-//
-
-
-$greyish: #acb8bf;
-$white: #fff;
-$white-opacity: #ffffffed;
-$grey-opacity: #ffffffb8;
-$black: #000;
-$white-grey: #f3f6f8; // White with some grey color
-
-// Border colors
-
-$border-bottom-grey: #3C3F46;
-
-// Content colors
-
-$dove-grey: #6b6767; // grey and black mixed
-$jungle-green: #28A1A3;
-
-$Keppel: #3CB28B;
-
-// Button colors
-
-$java-blue: #23b6c5;
-
-
-// List colors
-
-$cornflower-Blue: #6772e5;
-$light-Jungle-Green: #24b47e;
-$curious-Blue: #3297D3;
-$true-V: #8F6ED5;
-$anzac: #e39f48;
-$amethysy: #B76AC4;
+  $Lato-font: 'Lato', sans-serif;
 
 
 
+  //
+  // Some Useful color Arranged by color
+  //
 
-//
-// Breakpoints
-//
 
-$breakpoint-phone: 576px;
-$breakpoint-tablet: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+    $greyish: #acb8bf;
+    $white: #fff;
+    $white-opacity: #ffffffed;
+    $grey-opacity: #ffffffb8;
+    $black: #000;
+    $white-grey: #f3f6f8; // White with some grey color
 
-//
-// Looping
-//
+  // Border colors
+
+    $border-bottom-grey: #3C3F46;
+
+  // Content colors
+
+  // Gradient Color
+    $Mountain-meadow: linear-gradient(to right top, rgb(20, 177, 193), rgb(0, 177, 179), rgb(0, 176, 160), rgb(0, 174, 138), rgb(16, 171, 112));
+
+    $dove-grey: #6b6767; // grey and black mixed
+    $jungle-green: #28A1A3;
+
+    $Keppel: #3CB28B;
+
+
+    //
+    //  Buttons Colors
+    //
+
+    $java-blue: #23b6c5;
+
+    // Button Hovers
+    $Calypso: #27717D;
+
+
+    // List colors
+
+    $cornflower-Blue: #6772e5;
+    $light-Jungle-Green: #24b47e;
+    $curious-Blue: #3297D3;
+    $true-V: #8F6ED5;
+    $anzac: #e39f48;
+    $amethysy: #B76AC4;
+
+
+
+
+  //
+  // Breakpoints
+  //
+
+  $breakpoint-phone: 576px;
+  $breakpoint-tablet: 768px;
+  $breakpoint-lg: 992px;
+  $breakpoint-xl: 1200px;
+
+  //
+  // Looping
+  //
