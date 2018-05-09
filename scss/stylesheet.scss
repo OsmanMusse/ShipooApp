@@ -13,8 +13,8 @@
 
 
 #main-content{
-  background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
-  font-family: 'Lato', sans-serif;
+  background-image: $Mountain-meadow;
+  font-family: $Lato-font;
   height: 490px;
   position: relative;
 
@@ -94,6 +94,11 @@ nav .container{
   background-color: white;
   padding: .665rem 1.05rem;
   color: #23ab85;
+
+
+  &:hover{
+    transform: translateY(6px);
+  }
 }
 
 

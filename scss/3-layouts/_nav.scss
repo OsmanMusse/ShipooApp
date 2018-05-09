@@ -57,9 +57,13 @@ input{
       font-size: 25px;
       margin-top: -10px;
       color: $jungle-green;
-    }
-  }
 
+      &:hover{
+        color: $Calypso;
+    }
+
+  }
+}
   .pop-flex-container{
     @include flexy($wrap: wrap);
     padding-left: 25px;
@@ -213,7 +217,8 @@ input{
     margin:10px;
 
     &:hover{
-      color: #18595a !important;
+      color: $Calypso !important;
+      transform: translateY(3px);
     }
 
      .fa-arrow-right{
@@ -222,7 +227,7 @@ input{
        color: $jungle-green;
 
        &:hover{
-         color: #18595a !important;
+         color: $Calypso !important;
        }
 
      }
