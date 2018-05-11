@@ -6,6 +6,7 @@
 @import "2-helpers/functions";
 @import "2-helpers/buttons";
 @import "3-layouts/nav";
+@import "3-layouts/forms";
 @import "3-layouts/footer";
 
 
@@ -80,6 +81,13 @@ nav .container{
    font-weight: 100;
    margin-right: 45px;
  }
+
+.link-button{
+    margin-right: 0;
+}
+
+
+
 
   @media(max-width:830px){
      display: none;
