@@ -3,6 +3,19 @@
   width: 88%;
   margin: 0 auto; }
 
+.btn-cornflower {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 71px;
+  background: #88CAC9 !important;
+  border-radius: 44px;
+  color: #FFFFFF;
+  text-align: center;
+  background: #FFFFFF;
+  margin-top: 25px;
+  margin-bottom: 35px; }
+
 /**********************
     Navigation Section
 ***********************/
@@ -142,6 +155,75 @@
         color: #28A1A3; }
         .pop-up-navigation .register-nav-link a .fa-arrow-right:hover {
           color: #27717D !important; }
+
+#forms-body {
+  background-color: #71A7A7;
+  padding: 70px; }
+  #forms-body a {
+    text-decoration: none; }
+  #forms-body .container .form-container {
+    padding: 30px 30px 60px 30px;
+    border-radius: 2px;
+    border: 2px solid #fff;
+    background-color: #fff; }
+    #forms-body .container .form-container .row {
+      width: 100%;
+      margin: 0; }
+    #forms-body .container .form-container .col-sm-6 {
+      text-align: center; }
+      #forms-body .container .form-container .col-sm-6 h1 {
+        font-size: 25px; }
+      #forms-body .container .form-container .col-sm-6 p {
+        font-size: 15px;
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto; }
+    #forms-body .container .form-container form {
+      margin-top: 40px; }
+      #forms-body .container .form-container form input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        text-align: center;
+        width: 56%;
+        padding-bottom: 13px;
+        font-size: 15px;
+        margin-bottom: 20px; }
+        #forms-body .container .form-container form input::placeholder {
+          color: #B5BBB5; }
+        #forms-body .container .form-container form input[type="text"] {
+          background-image: url(../images/user.png);
+          background-repeat: no-repeat;
+          background-size: 14px;
+          background-position: left 5px; }
+        #forms-body .container .form-container form input[type="email"] {
+          background-image: url(../images/envelope.png);
+          background-repeat: no-repeat;
+          background-size: 14px;
+          background-position: left 7px; }
+        #forms-body .container .form-container form input[type="password"] {
+          background-image: url(../images/lock.png);
+          background-repeat: no-repeat;
+          background-size: 14px;
+          background-position: left 7px; }
+      #forms-body .container .form-container form .btn-cornflower::before {
+        content: '';
+        width: 100%;
+        height: 50px;
+        background-image: url(../images/arrow-right.png);
+        position: absolute;
+        left: 148px;
+        bottom: -4px;
+        background-size: 7px;
+        background-repeat: no-repeat;
+        background-position: left center; }
+    #forms-body .container .form-container .login-exist-link {
+      color: #000;
+      margin-right: 10px; }
+    #forms-body .container .form-container .login-span-link {
+      color: darkorange;
+      font-weight: 500;
+      font-size: 15px; }
 
 #main-footer {
   background-color: #262A31;
@@ -290,6 +372,8 @@
       text-decoration: none;
       font-weight: 100;
       margin-right: 45px; }
+    #main-content .nav-2 .link-button {
+      margin-right: 0; }
     @media (max-width: 830px) {
       #main-content .nav-2 {
         display: none; } }
