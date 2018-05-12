@@ -17,6 +17,10 @@
           max-width: 780px;
     }
 
+    @media(max-width: 400px){
+       padding: 5px;
+    }
+
     .form-container{
       padding: 49px 30px 60px 30px;
       border-radius: 2px;
