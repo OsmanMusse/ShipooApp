@@ -162,15 +162,45 @@
   #forms-body a {
     text-decoration: none; }
   #forms-body .container .form-container {
-    padding: 30px 30px 60px 30px;
+    padding: 49px 30px 60px 30px;
     border-radius: 2px;
     border: 2px solid #fff;
-    background-color: #fff; }
+    background-color: #fff;
+    position: relative; }
+    #forms-body .container .form-container::before {
+      content: '';
+      width: 62px;
+      height: 200px;
+      position: absolute;
+      top: -177px;
+      left: 5px;
+      background-image: url(../images/bubble-group.png);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 48px;
+      transform: rotate(180deg); }
+    #forms-body .container .form-container::after {
+      content: '';
+      width: 62px;
+      height: 200px;
+      position: absolute;
+      bottom: -177px;
+      right: 4px;
+      background-image: url(../images/bubble-group.png);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 48px; }
     #forms-body .container .form-container .row {
       width: 100%;
       margin: 0; }
     #forms-body .container .form-container .col-sm-6 {
       text-align: center; }
+      #forms-body .container .form-container .col-sm-6 .document-pray {
+        max-width: 38%;
+        margin-bottom: 50px; }
+      #forms-body .container .form-container .col-sm-6 .table {
+        max-width: 62%;
+        margin-top: -10px; }
       #forms-body .container .form-container .col-sm-6 h1 {
         font-size: 25px; }
       #forms-body .container .form-container .col-sm-6 p {
@@ -206,6 +236,8 @@
           background-repeat: no-repeat;
           background-size: 14px;
           background-position: left 7px; }
+      #forms-body .container .form-container form .btn-cornflower:hover {
+        transform: translatey(2px); }
       #forms-body .container .form-container form .btn-cornflower::before {
         content: '';
         width: 100%;

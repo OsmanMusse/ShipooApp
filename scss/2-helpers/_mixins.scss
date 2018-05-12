@@ -84,6 +84,22 @@
   @content;
 }
 
+@mixin bubble-group($top:null,$bottom:null,$right:null,$left:null){
+  content: '';
+  width: 62px;
+  height: 200px;
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  right: $right;
+  left: $left;
+  background-image: url(../images/bubble-group.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 48px;
+  @content;
+}
+
 
 // Flexbox Layout
 
