@@ -9,10 +9,21 @@
   .container{
 
     .form-container{
-      padding: 30px 30px 60px 30px;
+      padding: 49px 30px 60px 30px;
       border-radius: 2px;
       border: 2px solid $white;
       background-color: $white;
+      position: relative;
+
+      &::before{
+        @include bubble-group($top:-177px, $left: 5px){
+          transform: rotate(180deg);
+        }
+      }
+
+      &::after{
+          @include bubble-group($bottom:-177px, $right: 4px);
+      }
 
       .row{
         width: 100%;
@@ -20,6 +31,18 @@
       }
       .col-sm-6{
         text-align: center;
+
+        .document-pray{
+          max-width: 38%;
+          margin-bottom: 50px
+        }
+
+        .table{
+          max-width: 62%;
+          margin-top: -10px;
+        }
+
+
 
         h1{
           font-size: 25px;
@@ -73,6 +96,10 @@
 
         }
         .btn-cornflower{
+
+          &:hover{
+            transform: translatey(2px);
+          }
 
           &::before{
            @include arrow-right;
