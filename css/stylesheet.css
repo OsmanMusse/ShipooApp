@@ -218,6 +218,11 @@
         margin-top: -10px; }
       #forms-body .container .form-container .col-sm-6 h1 {
         font-size: 25px; }
+      #forms-body .container .form-container .col-sm-6 .hidden-header {
+        display: none; }
+        @media (max-width: 360px) {
+          #forms-body .container .form-container .col-sm-6 .hidden-header {
+            display: block; } }
       #forms-body .container .form-container .col-sm-6 p {
         font-size: 15px;
         width: 100%;

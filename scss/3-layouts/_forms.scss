@@ -54,7 +54,7 @@
           @media(max-width: 360px){
             display: none;
           }
-          
+
       }
 
       .col-sm-6{
@@ -77,6 +77,16 @@
         h1{
           font-size: 25px;
         }
+
+        .hidden-header{
+          display: none;
+
+          @media(max-width: 360px){
+            display: block;
+          }
+
+        }
+        
         p{
           font-size: 15px;
           width: 100%;
