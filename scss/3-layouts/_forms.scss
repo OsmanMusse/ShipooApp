@@ -87,6 +87,10 @@
           font-size: 15px;
           margin-bottom: 20px;
 
+          @media(max-width: 400px ){
+            width: 65%;
+          }
+
 
           &::placeholder{
             color: #B5BBB5;
