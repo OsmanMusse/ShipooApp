@@ -51,7 +51,7 @@
 
       .img-contain-2{
 
-          @media(max-width: 360px){
+          @media(max-width: 440px){
             display: none;
           }
 
@@ -80,7 +80,7 @@
 
         .hidden-xs-header{
 
-          @media(max-width: 390px){
+          @media(max-width: 440px){
             display: none;
           }
 
@@ -89,7 +89,7 @@
         .hidden-xl-header{
           display: none;
 
-          @media(max-width: 360px){
+          @media(max-width: 440px){
             display: block;
           }
 
