@@ -159,8 +159,14 @@
 #forms-body {
   background-color: #71A7A7;
   padding: 70px; }
+  @media (max-width: 576px) {
+    #forms-body {
+      padding: 40px; } }
   #forms-body a {
     text-decoration: none; }
+  @media (max-width: 992px) {
+    #forms-body .container {
+      max-width: 780px; } }
   #forms-body .container .form-container {
     padding: 49px 30px 60px 30px;
     border-radius: 2px;

@@ -1,12 +1,21 @@
+
+
 #forms-body{
   background-color: $Gumbo;
   padding: 70px;
 
+  @media(max-width: $breakpoint-phone){
+    padding: 40px;
+  }
 
  a{
    text-decoration: none;
  }
   .container{
+
+    @media(max-width: $breakpoint-lg ){
+          max-width: 780px;
+    }
 
     .form-container{
       padding: 49px 30px 60px 30px;
@@ -14,6 +23,8 @@
       border: 2px solid $white;
       background-color: $white;
       position: relative;
+
+
 
       &::before{
         @include bubble-group($top:-177px, $left: 5px){
