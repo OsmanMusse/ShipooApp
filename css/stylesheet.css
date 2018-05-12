@@ -161,7 +161,7 @@
   padding: 70px; }
   @media (max-width: 576px) {
     #forms-body {
-      padding: 40px; } }
+      padding: 40px 10px 40px 10px; } }
   #forms-body a {
     text-decoration: none; }
   @media (max-width: 992px) {
@@ -173,6 +173,9 @@
     border: 2px solid #fff;
     background-color: #fff;
     position: relative; }
+    @media (max-width: 400px) {
+      #forms-body .container .form-container {
+        padding: 49px 10px 60px 10px; } }
     #forms-body .container .form-container::before {
       content: '';
       width: 62px;
