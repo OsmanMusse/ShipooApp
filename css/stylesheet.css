@@ -231,6 +231,9 @@
         padding-bottom: 13px;
         font-size: 15px;
         margin-bottom: 20px; }
+        @media (max-width: 400px) {
+          #forms-body .container .form-container form input {
+            width: 75%; } }
         #forms-body .container .form-container form input::placeholder {
           color: #B5BBB5; }
         #forms-body .container .form-container form input[type="text"] {
