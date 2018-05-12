@@ -205,6 +205,9 @@
     #forms-body .container .form-container .row {
       width: 100%;
       margin: 0; }
+    @media (max-width: 360px) {
+      #forms-body .container .form-container .img-contain-2 {
+        display: none; } }
     #forms-body .container .form-container .col-sm-6 {
       text-align: center; }
       #forms-body .container .form-container .col-sm-6 .document-pray {
