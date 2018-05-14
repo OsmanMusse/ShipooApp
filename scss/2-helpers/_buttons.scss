@@ -1,3 +1,4 @@
+
 .btn-cornflower{
 display: block;
 position: relative;
@@ -10,4 +11,27 @@ text-align: center;
 background: #FFFFFF;
 margin-top: 25px;
 margin-bottom: 35px;
+}
+
+
+.btn-white{
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 0.550rem 3.45rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: #7247BB;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.btn-transparent{
+  background: transparent;
+  border: 2px solid $white;
+  border-radius: 5px;
+  padding: 0.480rem 3.45rem;
+  font-weight: 300;
+  font-size: 18px;
+  color: $white;
+  text-align: center;
 }
