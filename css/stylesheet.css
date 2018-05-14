@@ -16,6 +16,26 @@
   margin-top: 25px;
   margin-bottom: 35px; }
 
+.btn-white {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 0.550rem 3.45rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: #7247BB;
+  text-align: center;
+  margin-right: 30px; }
+
+.btn-transparent {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 0.480rem 3.45rem;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  text-align: center; }
+
 /**********************
     Navigation Section
 ***********************/
@@ -164,22 +184,23 @@
       padding: 40px 10px 40px 10px; } }
   #forms-body a {
     text-decoration: none; }
-  @media (max-width: 992px) {
-    #forms-body .container {
-      max-width: 780px; } }
+  @media (max-width: 1200px) {
+    #forms-body .form-wrapper {
+      max-width: 1200px; } }
   @media (max-width: 440px) {
-    #forms-body .container {
+    #forms-body .form-wrapper {
       padding: 5px; } }
-  #forms-body .container .form-container {
-    padding: 49px 30px 60px 30px;
+  #forms-body .form-wrapper .form-container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
     border-radius: 2px;
-    border: 2px solid #fff;
     background-color: #fff;
     position: relative; }
     @media (max-width: 440px) {
-      #forms-body .container .form-container {
+      #forms-body .form-wrapper .form-container {
         padding: 49px 10px 60px 10px; } }
-    #forms-body .container .form-container::before {
+    #forms-body .form-wrapper .form-container::before {
       content: '';
       width: 62px;
       height: 200px;
@@ -191,7 +212,7 @@
       background-position: top;
       background-size: 48px;
       transform: rotate(180deg); }
-    #forms-body .container .form-container::after {
+    #forms-body .form-wrapper .form-container::after {
       content: '';
       width: 62px;
       height: 200px;
@@ -202,38 +223,54 @@
       background-repeat: no-repeat;
       background-position: top;
       background-size: 48px; }
-    #forms-body .container .form-container .row {
+    #forms-body .form-wrapper .form-container .row {
       width: 100%;
       margin: 0; }
-    @media (max-width: 360px) {
-      #forms-body .container .form-container .img-contain-2 {
-        display: none; } }
-    #forms-body .container .form-container .col-sm-12, #forms-body .container .form-container .col-md-6 {
-      text-align: center; }
-      #forms-body .container .form-container .col-sm-12 .document-pray, #forms-body .container .form-container .col-md-6 .document-pray {
-        max-width: 38%;
-        margin-bottom: 50px; }
-      #forms-body .container .form-container .col-sm-12 .table, #forms-body .container .form-container .col-md-6 .table {
-        max-width: 62%;
-        margin-top: -10px; }
-      #forms-body .container .form-container .col-sm-12 h1, #forms-body .container .form-container .col-md-6 h1 {
-        font-size: 25px; }
-      @media (max-width: 390px) {
-        #forms-body .container .form-container .col-sm-12 .hidden-xs-header, #forms-body .container .form-container .col-md-6 .hidden-xs-header {
-          display: none; } }
-      #forms-body .container .form-container .col-sm-12 .hidden-xl-header, #forms-body .container .form-container .col-md-6 .hidden-xl-header {
+    #forms-body .form-wrapper .form-container .purple-banner {
+      background-image: linear-gradient(-180deg, #7959CE 31%, #663BBD 69%, #442DA1 100%);
+      color: #fff;
+      font-family: sans-serif, "Lucida Grande";
+      padding: 100px 55px;
+      min-height: 470px; }
+      #forms-body .form-wrapper .form-container .purple-banner h1 {
+        max-width: 243px;
+        width: 100%;
+        text-align: left;
+        font-size: 33px;
+        font-weight: 100; }
+      #forms-body .form-wrapper .form-container .purple-banner p {
+        margin: 0;
+        max-width: 348px;
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 100;
+        text-align: left;
+        opacity: 0.8; }
+    #forms-body .form-wrapper .form-container .form-menu {
+      text-align: center;
+      padding: 60px 0; }
+      #forms-body .form-wrapper .form-container .form-menu .hidden-xs-header {
+        font-size: 2.0rem; }
+        @media (max-width: 1100px) {
+          #forms-body .form-wrapper .form-container .form-menu .hidden-xs-header {
+            font-size: 1.7rem; } }
+        @media (max-width: 440px) {
+          #forms-body .form-wrapper .form-container .form-menu .hidden-xs-header {
+            display: none; } }
+      #forms-body .form-wrapper .form-container .form-menu .hidden-xl-header {
         display: none; }
-        @media (max-width: 360px) {
-          #forms-body .container .form-container .col-sm-12 .hidden-xl-header, #forms-body .container .form-container .col-md-6 .hidden-xl-header {
+        @media (max-width: 440px) {
+          #forms-body .form-wrapper .form-container .form-menu .hidden-xl-header {
             display: block; } }
-      #forms-body .container .form-container .col-sm-12 p, #forms-body .container .form-container .col-md-6 p {
+      #forms-body .form-wrapper .form-container .form-menu p {
         font-size: 15px;
         width: 100%;
         max-width: 375px;
         margin: 0 auto; }
-    #forms-body .container .form-container form {
+    #forms-body .form-wrapper .form-container form {
       margin-top: 40px; }
-      #forms-body .container .form-container form input {
+      #forms-body .form-wrapper .form-container form input {
         border-top: none;
         border-left: none;
         border-right: none;
@@ -243,42 +280,44 @@
         font-size: 15px;
         margin-bottom: 20px; }
         @media (max-width: 440px) {
-          #forms-body .container .form-container form input {
+          #forms-body .form-wrapper .form-container form input {
             width: 75%; } }
-        #forms-body .container .form-container form input::placeholder {
+        #forms-body .form-wrapper .form-container form input::placeholder {
           color: #B5BBB5; }
-        #forms-body .container .form-container form input[type="text"] {
+        #forms-body .form-wrapper .form-container form input[type="text"] {
           background-image: url(../images/user.png);
           background-repeat: no-repeat;
           background-size: 14px;
           background-position: left 5px; }
-        #forms-body .container .form-container form input[type="email"] {
+        #forms-body .form-wrapper .form-container form input[type="email"] {
           background-image: url(../images/envelope.png);
           background-repeat: no-repeat;
           background-size: 14px;
           background-position: left 7px; }
-        #forms-body .container .form-container form input[type="password"] {
+        #forms-body .form-wrapper .form-container form input[type="password"] {
           background-image: url(../images/lock.png);
           background-repeat: no-repeat;
           background-size: 14px;
           background-position: left 7px; }
-      #forms-body .container .form-container form .btn-cornflower:hover {
-        transform: translatey(2px); }
-      #forms-body .container .form-container form .btn-cornflower::before {
-        content: '';
-        width: 50px;
-        height: 50px;
-        background-image: url(../images/arrow-right.png);
-        position: absolute;
-        left: 148px;
-        bottom: -4px;
-        background-size: 7px;
-        background-repeat: no-repeat;
-        background-position: left center; }
-    #forms-body .container .form-container .login-exist-link {
+      #forms-body .form-wrapper .form-container form .btn-cornflower {
+        margin-top: 39px; }
+        #forms-body .form-wrapper .form-container form .btn-cornflower:hover {
+          transform: translatey(2px); }
+        #forms-body .form-wrapper .form-container form .btn-cornflower::before {
+          content: '';
+          width: 50px;
+          height: 50px;
+          background-image: url(../images/arrow-right.png);
+          position: absolute;
+          left: 148px;
+          bottom: -4px;
+          background-size: 7px;
+          background-repeat: no-repeat;
+          background-position: left center; }
+    #forms-body .form-wrapper .form-container .login-exist-link {
       color: #000;
       margin-right: 10px; }
-    #forms-body .container .form-container .login-span-link {
+    #forms-body .form-wrapper .form-container .login-span-link {
       color: darkorange;
       font-weight: 500;
       font-size: 15px; }
