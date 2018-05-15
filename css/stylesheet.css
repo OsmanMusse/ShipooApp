@@ -7,7 +7,7 @@
   display: block;
   position: relative;
   margin: 0 auto;
-  padding: 10px 71px;
+  padding: 12px 70px;
   background: #88CAC9 !important;
   border-radius: 44px;
   color: #FFFFFF;
@@ -184,9 +184,6 @@
       padding: 40px 10px 40px 10px; } }
   #forms-body a {
     text-decoration: none; }
-  @media (max-width: 1200px) {
-    #forms-body .form-wrapper {
-      max-width: 1200px; } }
   @media (max-width: 440px) {
     #forms-body .form-wrapper {
       padding: 5px; } }
@@ -232,6 +229,16 @@
       font-family: sans-serif, "Lucida Grande";
       padding: 100px 55px;
       min-height: 470px; }
+      @media (max-width: 750px) {
+        #forms-body .form-wrapper .form-container .purple-banner {
+          padding: 100px 45px; } }
+      @media (max-width: 696px) {
+        #forms-body .form-wrapper .form-container .purple-banner {
+          display: none; } }
+      @media (max-width: 1200px) {
+        #forms-body .form-wrapper .form-container .purple-banner {
+          flex: 0 0 100%;
+          max-width: 100%; } }
       #forms-body .form-wrapper .form-container .purple-banner h1 {
         max-width: 243px;
         width: 100%;
@@ -247,9 +254,23 @@
         font-weight: 100;
         text-align: left;
         opacity: 0.8; }
+      @media (max-width: 720px) {
+        #forms-body .form-wrapper .form-container .purple-banner .btn-white {
+          padding: 0.550rem 2.75rem; } }
+      @media (max-width: 720px) {
+        #forms-body .form-wrapper .form-container .purple-banner .btn-transparent {
+          padding: 0.550rem 2.75rem; } }
     #forms-body .form-wrapper .form-container .form-menu {
       text-align: center;
       padding: 60px 0; }
+      @media (max-width: 1200px) {
+        #forms-body .form-wrapper .form-container .form-menu {
+          flex: 0 0 100%;
+          max-width: 100%; } }
+      @media (max-width: 576px) {
+        #forms-body .form-wrapper .form-container .form-menu {
+          flex: 0 0 90%;
+          max-width: 90%; } }
       #forms-body .form-wrapper .form-container .form-menu .hidden-xs-header {
         font-size: 2.0rem; }
         @media (max-width: 1100px) {
@@ -262,7 +283,8 @@
         display: none; }
         @media (max-width: 440px) {
           #forms-body .form-wrapper .form-container .form-menu .hidden-xl-header {
-            display: block; } }
+            display: block;
+            font-size: 27px; } }
       #forms-body .form-wrapper .form-container .form-menu p {
         font-size: 15px;
         width: 100%;
@@ -270,7 +292,17 @@
         margin: 0 auto; }
     #forms-body .form-wrapper .form-container form {
       margin-top: 40px; }
-      #forms-body .form-wrapper .form-container form input {
+      #forms-body .form-wrapper .form-container form .I-agree {
+        color: #B5BBB5;
+        font-weight: 500; }
+      #forms-body .form-wrapper .form-container form .terms-rule {
+        color: #86CACA; }
+      @media (max-width: 540px) {
+        #forms-body .form-wrapper .form-container form input {
+          max-width: 85%; } }
+      #forms-body .form-wrapper .form-container form input::placeholder {
+        color: #B5BBB5; }
+      #forms-body .form-wrapper .form-container form input[type="text"] {
         border-top: none;
         border-left: none;
         border-right: none;
@@ -278,49 +310,83 @@
         width: 56%;
         padding-bottom: 13px;
         font-size: 15px;
-        margin-bottom: 20px; }
-        @media (max-width: 440px) {
-          #forms-body .form-wrapper .form-container form input {
-            width: 75%; } }
-        #forms-body .form-wrapper .form-container form input::placeholder {
-          color: #B5BBB5; }
-        #forms-body .form-wrapper .form-container form input[type="text"] {
-          background-image: url(../images/user.png);
-          background-repeat: no-repeat;
-          background-size: 14px;
-          background-position: left 5px; }
-        #forms-body .form-wrapper .form-container form input[type="email"] {
-          background-image: url(../images/envelope.png);
-          background-repeat: no-repeat;
-          background-size: 14px;
-          background-position: left 7px; }
-        #forms-body .form-wrapper .form-container form input[type="password"] {
-          background-image: url(../images/lock.png);
-          background-repeat: no-repeat;
-          background-size: 14px;
-          background-position: left 7px; }
-      #forms-body .form-wrapper .form-container form .btn-cornflower {
-        margin-top: 39px; }
-        #forms-body .form-wrapper .form-container form .btn-cornflower:hover {
-          transform: translatey(2px); }
-        #forms-body .form-wrapper .form-container form .btn-cornflower::before {
-          content: '';
-          width: 50px;
-          height: 50px;
-          background-image: url(../images/arrow-right.png);
-          position: absolute;
-          left: 148px;
-          bottom: -4px;
-          background-size: 7px;
-          background-repeat: no-repeat;
-          background-position: left center; }
-    #forms-body .form-wrapper .form-container .login-exist-link {
-      color: #000;
-      margin-right: 10px; }
-    #forms-body .form-wrapper .form-container .login-span-link {
-      color: darkorange;
-      font-weight: 500;
-      font-size: 15px; }
+        margin-bottom: 20px;
+        background-image: url(../images/user.png);
+        background-repeat: no-repeat;
+        background-size: 14px;
+        background-position: left 5px; }
+      #forms-body .form-wrapper .form-container form input[type="email"] {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        text-align: center;
+        width: 56%;
+        padding-bottom: 13px;
+        font-size: 15px;
+        margin-bottom: 20px;
+        background-image: url(../images/envelope.png);
+        background-repeat: no-repeat;
+        background-size: 14px;
+        background-position: left 7px; }
+      #forms-body .form-wrapper .form-container form input[type="password"] {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        text-align: center;
+        width: 56%;
+        padding-bottom: 13px;
+        font-size: 15px;
+        margin-bottom: 20px;
+        background-image: url(../images/lock.png);
+        background-repeat: no-repeat;
+        background-size: 14px;
+        background-position: left 7px; }
+      #forms-body .form-wrapper .form-container form label {
+        display: table;
+        margin-left: 23%;
+        color: #B5BBB5;
+        font-weight: 500; }
+        @media (max-width: 430px) {
+          #forms-body .form-wrapper .form-container form label {
+            font-size: 15px;
+            margin-left: 15%; } }
+      #forms-body .form-wrapper .form-container form input[type="checkbox"] {
+        display: none; }
+        #forms-body .form-wrapper .form-container form input[type="checkbox"] + .agree-span::before {
+          content: "\f096";
+          font-family: "FontAwesome";
+          color: #979797;
+          padding-right: 20px; }
+        #forms-body .form-wrapper .form-container form input[type="checkbox"] + .agree-span:checked {
+          background-color: red; }
+      #forms-body .form-wrapper .form-container form .terms-span {
+        margin-left: 7px;
+        color: #86CACA; }
+        #forms-body .form-wrapper .form-container form .terms-span a {
+          text-decoration: none;
+          color: inherit; }
+    #forms-body .form-wrapper .form-container .btn-cornflower {
+      margin-top: 39px; }
+      #forms-body .form-wrapper .form-container .btn-cornflower:hover {
+        transform: translatey(2px); }
+      #forms-body .form-wrapper .form-container .btn-cornflower::before {
+        content: '';
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/arrow-right.png);
+        position: absolute;
+        left: 148px;
+        bottom: -2px;
+        background-size: 7px;
+        background-repeat: no-repeat;
+        background-position: left center; }
+  #forms-body .form-wrapper .login-exist-link {
+    color: #000;
+    margin-right: 10px; }
+  #forms-body .form-wrapper .login-span-link {
+    color: darkorange;
+    font-weight: 500;
+    font-size: 15px; }
 
 #main-footer {
   background-color: #262A31;
