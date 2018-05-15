@@ -7,8 +7,9 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
@@ -39,17 +40,23 @@
           Free Forever</p>
 
           <form>
-
             <input  type="text" placeholder="Name or nickname">
             <input  type="email" placeholder="Email">
             <input  type="password" placeholder="Password">
-            <input type="checkbox"></input>
+
+             <label>
+              <input type="checkbox" name="checkbox-1">
+              <span class="agree-span">I agree to</span>
+              <span class="terms-span"><a href= "#">Terms & Conditions</a></span>
+             </label>
+
 
 
             <a href="#">
             <button class="btn btn-cornflower">Sign Up</button>
           </a>
         </form>
+
 
             <a class="login-exist-link" >Already have an account?</a>
             <a class="login-span-link"  href="#"><span>Login</span></a>
