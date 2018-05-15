@@ -1,5 +1,8 @@
 
 
+
+
+
 #forms-body{
   background-color: $Gumbo;
   padding: 70px;
@@ -13,9 +16,9 @@
  }
    .form-wrapper{
 
-     @media(max-width: $breakpoint-xl){
-       max-width: $breakpoint-xl;
-     }
+
+
+
 
     @media(max-width: 440px){
        padding: 5px;
@@ -28,6 +31,7 @@
       border-radius: 2px;
       background-color: $white;
       position: relative;
+
 
        @media(max-width: 440px){
           padding: 49px 10px 60px 10px;
@@ -57,6 +61,20 @@
          padding: 100px 55px;
          min-height: 470px;
 
+         @media(max-width: 750px){
+           padding: 100px 45px;
+         }
+
+         @media(max-width: 696px){
+           display: none;
+         }
+
+
+         @media(max-width: $breakpoint-xl){
+           flex: 0 0 100%;
+          max-width: 100%;
+         }
+
 
 
          h1{
@@ -79,15 +97,37 @@
 
          }
 
-         .btn-light{
+         .btn-white{
+           @media(max-width: 720px){
+           padding: 0.550rem 2.75rem;
+         }
+
+       }
+         .btn-transparent{
+           @media(max-width: 720px){
+           padding: 0.550rem 2.75rem;
+         }
 
          }
+
 
       } // Closing Purple Banner
 
       .form-menu{
         text-align: center;
         padding: 60px 0;
+
+
+
+        @media(max-width: $breakpoint-xl){
+          flex: 0 0 100%;
+         max-width: 100%;
+       }
+
+       @media(max-width: $breakpoint-phone){
+         flex: 0 0 90%;
+         max-width: 90%;
+       }
 
 
         .hidden-xs-header{
@@ -113,6 +153,7 @@
 
           @media(max-width: 440px){
             display: block;
+            font-size: 27px;
           }
 
         }
@@ -128,18 +169,21 @@
       form{
         margin-top: 40px;
 
-        input{
-          border-top: none;
-          border-left: none;
-          border-right: none;
-          text-align: center;
-          width: 56%;
-          padding-bottom: 13px;
-          font-size: 15px;
-          margin-bottom: 20px;
+        .I-agree{
+          color: #B5BBB5;
+          font-weight: 500;
+        }
 
-          @media(max-width: 440px ){
-            width: 75%;
+        .terms-rule{
+          color: #86CACA;
+        }
+
+
+        input{
+
+
+          @media(max-width: 540px ){
+            max-width: 85%;
           }
 
 
@@ -150,6 +194,14 @@
           }
 
           &[type="text"]{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            text-align: center;
+            width: 56%;
+            padding-bottom: 13px;
+            font-size: 15px;
+            margin-bottom: 20px;
             background-image: url(../images/user.png);
             background-repeat: no-repeat;
             background-size: 14px;
@@ -157,6 +209,14 @@
           }
 
           &[type="email"]{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            text-align: center;
+            width: 56%;
+            padding-bottom: 13px;
+            font-size: 15px;
+            margin-bottom: 20px;
             background-image: url(../images/envelope.png);
             background-repeat: no-repeat;
             background-size: 14px;
@@ -164,6 +224,14 @@
           }
 
           &[type="password"]{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            text-align: center;
+            width: 56%;
+            padding-bottom: 13px;
+            font-size: 15px;
+            margin-bottom: 20px;
             background-image: url(../images/lock.png);
             background-repeat: no-repeat;
             background-size: 14px;
@@ -172,7 +240,58 @@
 
 
 
+
+
+
+
         } // Closing Form Input
+
+        label{
+
+          display: table;
+          margin-left: 23%;
+          color:#B5BBB5;
+          font-weight: 500;
+
+          @media(max-width: 430px){
+            font-size: 15px;
+            margin-left: 15%;
+          }
+        }
+
+        input[type="checkbox"]{
+
+        display: none;
+
+          + .agree-span::before{
+            content:"\f096";
+            font-family: "FontAwesome";
+            color:#979797;
+            padding-right: 20px
+
+          }
+
+          +.agree-span:checked{
+            background-color: red;
+          }
+
+          }
+
+          .terms-span{
+            margin-left: 7px;
+            color: #86CACA;
+
+            a{
+              text-decoration: none;
+              color: inherit;
+            }
+          }
+
+
+
+
+
+ } // Closing Input Checkbox
 
 
 
@@ -208,5 +327,3 @@
     } // Closing Form Container
 
   }
-
-}
