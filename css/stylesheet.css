@@ -227,8 +227,23 @@
       background-image: linear-gradient(-180deg, #7959CE 31%, #663BBD 69%, #442DA1 100%);
       color: #fff;
       font-family: sans-serif, "Lucida Grande";
-      padding: 100px 55px;
+      padding: 120px 55px;
       min-height: 470px; }
+      #forms-body .form-wrapper .form-container .purple-banner .arrow-left {
+        max-width: 40px;
+        position: relative;
+        top: -90px;
+        left: 11px;
+        cursor: pointer; }
+      #forms-body .form-wrapper .form-container .purple-banner:before {
+        content: '';
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 12px;
+        border: 2px solid white;
+        background-color: #fff;
+        border-radius: 100%; }
       @media (max-width: 750px) {
         #forms-body .form-wrapper .form-container .purple-banner {
           padding: 100px 45px; } }
