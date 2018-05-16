@@ -270,7 +270,8 @@
       @media (max-width: 576px) {
         #forms-body .form-wrapper .form-container .form-menu {
           flex: 0 0 90%;
-          max-width: 90%; } }
+          max-width: 90%;
+          margin: 0 auto; } }
       #forms-body .form-wrapper .form-container .form-menu .hidden-xs-header {
         font-size: 2.0rem; }
         @media (max-width: 1100px) {
@@ -297,9 +298,6 @@
         font-weight: 500; }
       #forms-body .form-wrapper .form-container form .terms-rule {
         color: #86CACA; }
-      @media (max-width: 540px) {
-        #forms-body .form-wrapper .form-container form input {
-          max-width: 85%; } }
       #forms-body .form-wrapper .form-container form input::placeholder {
         color: #B5BBB5; }
       #forms-body .form-wrapper .form-container form input[type="text"] {
@@ -315,6 +313,9 @@
         background-repeat: no-repeat;
         background-size: 14px;
         background-position: left 5px; }
+        @media (max-width: 430px) {
+          #forms-body .form-wrapper .form-container form input[type="text"] {
+            width: 75%; } }
       #forms-body .form-wrapper .form-container form input[type="email"] {
         border-top: none;
         border-left: none;
@@ -328,6 +329,9 @@
         background-repeat: no-repeat;
         background-size: 14px;
         background-position: left 7px; }
+        @media (max-width: 430px) {
+          #forms-body .form-wrapper .form-container form input[type="email"] {
+            width: 75%; } }
       #forms-body .form-wrapper .form-container form input[type="password"] {
         border-top: none;
         border-left: none;
@@ -341,6 +345,9 @@
         background-repeat: no-repeat;
         background-size: 14px;
         background-position: left 7px; }
+        @media (max-width: 430px) {
+          #forms-body .form-wrapper .form-container form input[type="password"] {
+            width: 75%; } }
       #forms-body .form-wrapper .form-container form label {
         display: table;
         margin-left: 23%;
