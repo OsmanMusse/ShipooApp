@@ -53,6 +53,7 @@
     $true-V: #8F6ED5;
     $anzac: #e39f48;
     $amethysy: #B76AC4;
+    $light-purple:#ab4040;
 
 
 
@@ -67,5 +68,18 @@
   $breakpoint-xl: 1200px;
 
   //
-  // Looping
+  // Theme Colors
   //
+
+
+  // The @each directive sets theme
+
+  $themes:(
+     'Products' : $cornflower-Blue,
+     'Cases': $light-Jungle-Green,
+     'Prices' : $curious-Blue,
+     'Developers' : $true-V,
+     'Company' : $light-purple,
+     'Payments' :$anzac,
+     'Industry' : $amethysy,
+  );

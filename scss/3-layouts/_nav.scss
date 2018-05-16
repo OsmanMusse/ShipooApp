@@ -78,34 +78,14 @@ input{
       list-style: none;
       padding: 0;
 
+      .theme{
+
+                @include loopThrough($themes);
+      }
+
       li{
          font-size: 20px;
          margin: 10px;
-
-        &:nth-of-type(1){
-          color: $cornflower-Blue;
-        }
-
-        &:nth-of-type(2){
-          color: $light-Jungle-Green;
-        }
-
-        &:nth-of-type(3){
-          color: $curious-Blue;
-        }
-
-        &:nth-of-type(4){
-          color: $true-V;
-        }
-
-        &:nth-of-type(5){
-          color: red;
-        }
-
-        &:nth-of-type(7){
-          color: $anzac;
-        }
-
       }
 
     }
@@ -119,6 +99,11 @@ input{
     ul{
       list-style: none;
       padding: 0;
+
+      .theme{
+        @include loopThrough($themes);
+      }
+      
 
       li{
         font-size: 20px;
@@ -138,9 +123,7 @@ input{
           }
         }
 
-        &:nth-of-type(2){
-          color: $amethysy;
-        }
+
 
 
       }
@@ -161,11 +144,18 @@ input{
       list-style: none;
       padding: 0;
 
+      // Loop through the links and give different colors
+
+
+
       li{
         font-size: 19px;
         font-weight: 300;
         margin: 10px;
         color: $jungle-green;
+
+
+
 
         &:hover{
           color:#27717d;
