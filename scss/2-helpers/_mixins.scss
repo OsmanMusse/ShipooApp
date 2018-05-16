@@ -84,6 +84,21 @@
   @content;
 }
 
+@mixin arrow-left($top:null,$bottom:null,$right:null,$left:null, $bg-size:null){
+  content: '';
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  right: $right;
+  left: $left;
+  border: 2px solid white;
+  background-color: $white;
+  border-radius: 100%;
+  @content;
+}
+
 @mixin bubble-group($top:null,$bottom:null,$right:null,$left:null){
   content: '';
   width: 62px;
@@ -99,6 +114,8 @@
   background-size: 48px;
   @content;
 }
+
+
 
 
 // Flexbox Layout

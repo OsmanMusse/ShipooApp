@@ -58,8 +58,20 @@
          background-image: linear-gradient(-180deg, #7959CE 31%, #663BBD 69%, #442DA1 100%);
          color: $white;
          font-family: sans-serif, "Lucida Grande";
-         padding: 100px 55px;
+         padding: 120px 55px;
          min-height: 470px;
+
+         .arrow-left{
+           max-width: 40px;
+           position: relative;
+           top: -90px;
+           left: 11px;
+           cursor: pointer;
+         }
+
+         &:before{
+             @include arrow-left($top: 12px, $bg-size: 40px);
+         }
 
          @media(max-width: 750px){
            padding: 100px 45px;
