@@ -615,7 +615,7 @@
     margin: 0 auto; }
   #sponsorship .brands-feature {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
     grid-column-gap: 60px;
     align-items: center;
     padding: 0; }
@@ -627,7 +627,7 @@
     #sponsorship .brands-feature li {
       list-style: none; }
     #sponsorship .brands-feature img {
-      width: 170px; }
+      width: 150px; }
       @media (max-width: 576px) {
         #sponsorship .brands-feature img {
           width: 210px; } }
@@ -770,7 +770,10 @@
       #api-feature .iphone-x {
         display: flex;
         flex: 0 0 25%;
-        padding: 0 20px; } }
+        padding: 0 20px;
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: 20px; } }
 
 /**********************
     Global Feature
