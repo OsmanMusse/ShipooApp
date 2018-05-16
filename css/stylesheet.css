@@ -362,7 +362,7 @@
         @media (max-width: 430px) {
           #forms-body .form-wrapper .form-container form label {
             font-size: 15px;
-            margin-left: 15%; } }
+            margin-left: 11%; } }
       #forms-body .form-wrapper .form-container form input[type="checkbox"] {
         display: none; }
         #forms-body .form-wrapper .form-container form input[type="checkbox"] + .agree-span::before {
