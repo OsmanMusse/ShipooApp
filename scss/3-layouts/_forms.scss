@@ -34,7 +34,7 @@
 
 
        @media(max-width: 440px){
-          padding: 49px 10px 60px 10px;
+          padding: 0px 10px 0px 10px;
        }
 
 
@@ -102,13 +102,26 @@
            padding: 0.550rem 2.75rem;
          }
 
+         &:hover{
+           border-color: #ffffffdb;
+           color: #7247bbb5;
+         }
+
+
        }
          .btn-transparent{
            @media(max-width: 720px){
            padding: 0.550rem 2.75rem;
+          }
+
+         &:hover{
+           border-color: #ffffff8c;
+           color: #ffffffcc;
          }
 
-         }
+       }
+
+
 
 
       } // Closing Purple Banner
