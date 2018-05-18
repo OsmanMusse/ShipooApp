@@ -1,118 +1,148 @@
 
 
-@mixin skewedEffect {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  background-image: linear-gradient(to bottom right, #14b1c1, #00b1b3, #00b0a0, #00AE8C, #10ab70);
-  @content;
-}
+  // Button Mixins
 
-@mixin btn-whitish($margin, $padding){
-    display: block;
-    margin: $margin;
-    border-radius: 2.35rem;
-    border-color: white;
-    background-color: white;
-    padding: $padding;
-    color: $java-blue;
+  @mixin btn-whitish($margin, $padding){
+      display: block;
+      margin: $margin;
+      border-radius: 2.35rem;
+      border-color: white;
+      background-color: white;
+      padding: $padding;
+      color: $java-blue;
+      @content;
+  }
+
+
+  //  Pseudo Icons
+
+  @mixin skewedEffect {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #14b1c1, #00b1b3, #00b0a0, #00AE8C, #10ab70);
     @content;
-}
+  }
+
+  @mixin cart_icon(){
+    content: '';
+    position: absolute;
+    left: 38%;
+    top: 22%;
+    border: 2px solid white;
+    width: 96px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: url(../images/cart_icon.png);
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 71%;
+  }
+
+  @mixin push_cart{
+    content: '';
+    position: absolute;
+    left: 38%;
+    top: 22%;
+    border: 2px solid white;
+    width: 96px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: url(../images/push-cart.png);
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 57%;
+  }
+
+  @mixin two-line(){
+    content: '';
+    position: absolute;
+    width: 32px;
+    left: 173px;
+     top:163px;
+    height: 9%;
+    color: red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/lines.png);
+    @content;
+  }
+
+  @mixin arrow-right{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/arrow-right.png);
+    position: absolute;
+    left: 148px;
+    bottom: -2px;
+    background-size: 7px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    @content;
+  }
+
+  @mixin arrow-left($top:null,$bottom:null,$right:null,$left:null, $bg-size:null){
+    content: '';
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: $top;
+    bottom: $bottom;
+    right: $right;
+    left: $left;
+    border: 2px solid white;
+    background-color: $white;
+    border-radius: 100%;
+    @content;
+  }
+
+  @mixin bubble-group($top:null,$bottom:null,$right:null,$left:null){
+    content: '';
+    width: 62px;
+    height: 200px;
+    position: absolute;
+    top: $top;
+    bottom: $bottom;
+    right: $right;
+    left: $left;
+    background-image: url(../images/bubble-group.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 48px;
+    @content;
+  }
 
 
-//  Pseudo Icons
-
-
-@mixin cart_icon(){
-  content: '';
-  position: absolute;
-  left: 38%;
-  top: 22%;
-  border: 2px solid white;
-  width: 96px;
-  height: 90px;
-  border-radius: 50%;
-  background-image: url(../images/cart_icon.png);
-  background-color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 71%;
-}
-
-@mixin push_cart{
-  content: '';
-  position: absolute;
-  left: 38%;
-  top: 22%;
-  border: 2px solid white;
-  width: 96px;
-  height: 90px;
-  border-radius: 50%;
-  background-image: url(../images/push-cart.png);
-  background-color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 57%;
-}
-
-@mixin two-line(){
-  content: '';
-  position: absolute;
-  width: 32px;
-  left: 173px;
-   top:163px;
-  height: 9%;
-  color: red;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../images/lines.png);
-  @content;
-}
-
-@mixin arrow-right{
-  content: '';
-  width: 50px;
-  height: 50px;
-  background-image: url(../images/arrow-right.png);
-  position: absolute;
-  left: 148px;
-  bottom: -2px;
-  background-size: 7px;
-  background-repeat: no-repeat;
-  background-position: left center;
-  @content;
-}
-
-@mixin bubble-group($top:null,$bottom:null,$right:null,$left:null){
-  content: '';
-  width: 62px;
-  height: 200px;
-  position: absolute;
-  top: $top;
-  bottom: $bottom;
-  right: $right;
-  left: $left;
-  background-image: url(../images/bubble-group.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 48px;
-  @content;
-}
 
 
 // Flexbox Layout
 
-@mixin flexy(
-$disp: flex,
-$wrap:null,
-$grow: null,
-$dir: null,
-$just: null) {
-  display: $disp;
-  flex-wrap: $wrap;
-  flex-grow: $grow;
-  flex-direction: $dir;
-  justify-content: $just;
+  @mixin flexy(
+  $disp: flex,
+  $wrap:null,
+  $grow: null,
+  $dir: null,
+  $just: null) {
+    display: $disp;
+    flex-wrap: $wrap;
+    flex-grow: $grow;
+    flex-direction: $dir;
+    justify-content: $just;
 
-}
+  }
+
+
+
+  // Colors Loop Mixin
+  @mixin loopThrough($map){
+
+      @each $link, $color in $map{
+        &-#{$link}{
+            color: $color;
+        }
+      }
+  } // Closing loopThrough Mixin
