@@ -11,7 +11,23 @@
       padding: $padding;
       color: $java-blue;
       @content;
+
+      @if $margin == null{
+        @warn "#{$margin} is not a valid margin value";
+      }
   }
+
+  @mixin btn-transparent($bor:null,$pad:null){
+      background: transparent;
+      border: 2px solid $white;
+      border-radius: $bor;
+      padding: $pad;
+      font-weight: 300;
+      font-size: 18px;
+      color: $white;
+      text-align: center;
+    }
+
 
 
   //  Pseudo Icons
