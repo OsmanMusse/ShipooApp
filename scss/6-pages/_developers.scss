@@ -112,6 +112,10 @@
       position: relative;
       top: 182px;
 
+      img{
+        margin-bottom: 5px;
+      }
+
 
 
       h2{
@@ -145,7 +149,7 @@
     padding-bottom: 260px;
 
     .box-wrapper{
-     padding-top: 150px;
+     padding-top: 160px;
      padding-bottom: 50px;
 
      .row{
@@ -334,7 +338,19 @@
     .row{
          margin-bottom: 130px;
 
+         @media(max-width: $breakpoint-phone){
+           margin-bottom: 80px;
+         }
+
     .col-sm-4{
+
+      @media(max-width: $breakpoint-phone){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+   }
+
        h2{
          font-size: 23px;
          font-weight: 400;
@@ -369,6 +385,10 @@
      display: inline-flex;
      justify-content: flex-end;
      align-items: center;
+
+     @media(max-width: $breakpoint-phone){
+       margin-top: -40px;
+     }
 
      img{
        position: relative;
