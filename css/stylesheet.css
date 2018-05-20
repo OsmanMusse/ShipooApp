@@ -314,14 +314,44 @@
     width: 100%;
     color: #787673; }
 #developer-body #four-section {
-  height: 600px;
-  padding: 100px 0; }
+  padding: 100px 0 270px 0; }
   #developer-body #four-section p {
     max-width: 450px;
     width: 100%; }
   #developer-body #four-section img {
     max-width: 330px;
     width: 100%; }
+#developer-body #five-section {
+  background-color: #F9E9E9;
+  position: relative; }
+  #developer-body #five-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -185px;
+    height: 369px;
+    width: 100%;
+    background-color: #F9E9E9;
+    transform: skewy(-11deg); }
+  #developer-body #five-section .col-sm-6 .text-editor {
+    max-width: 450px;
+    width: 100%; }
+#developer-body #subscription-section {
+  background-image: linear-gradient(-92deg, #FADF8A 0%, #ED6149 96%);
+  height: 500px; }
+  #developer-body #subscription-section h1 {
+    text-align: center;
+    color: #fff; }
+  #developer-body #subscription-section input {
+    border-color: white;
+    background-color: transparent;
+    border-width: 3px;
+    border-top-color: transparent;
+    border-left: transparent;
+    border-right: transparent; }
+    #developer-body #subscription-section input::placeholder {
+      color: #fff;
+      font-weight: 500; }
 
 .box-wrapper {
   padding-right: 15px;
