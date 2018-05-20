@@ -191,7 +191,8 @@
           color: #27717D !important; }
 
 #developer-body #main-content {
-  background-image: linear-gradient(60deg, #FADF8A 0%, #ED6149 96%); }
+  background-image: linear-gradient(60deg, #FADF8A 0%, #ED6149 96%);
+  height: 540px; }
   #developer-body #main-content::before {
     content: none; }
   #developer-body #main-content .main-wrapper {
