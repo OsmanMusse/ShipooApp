@@ -1,0 +1,13 @@
+.box-wrapper{
+
+  padding-right: 15px;
+  padding-left: 15px;
+margin: 0 auto;
+
+ // Media Queries for different Breakpoints
+  @media(min-width: 1200px){
+    max-width: 1210px
+  }
+
+
+}
