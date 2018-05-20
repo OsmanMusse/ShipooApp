@@ -338,10 +338,14 @@
     width: 100%; }
 #developer-body #subscription-section {
   background-image: linear-gradient(-92deg, #FADF8A 0%, #ED6149 96%);
-  height: 500px; }
+  height: 450px;
+  padding: 50px; }
   #developer-body #subscription-section h1 {
     text-align: center;
     color: #fff; }
+  #developer-body #subscription-section .row {
+    margin-top: 50px;
+    padding-left: 50px; }
   #developer-body #subscription-section input {
     border-color: white;
     background-color: transparent;
@@ -349,9 +353,33 @@
     border-top-color: transparent;
     border-left: transparent;
     border-right: transparent; }
+    #developer-body #subscription-section input.input-controller {
+      display: block;
+      width: 100%;
+      padding: 1.5rem .75rem; }
     #developer-body #subscription-section input::placeholder {
       color: #fff;
-      font-weight: 500; }
+      font-weight: 500;
+      font-size: 25px; }
+  #developer-body #subscription-section p {
+    margin-top: 30px;
+    color: #fff9;
+    font-weight: 300; }
+    #developer-body #subscription-section p a {
+      color: inherit; }
+    #developer-body #subscription-section p span {
+      text-decoration: underline;
+      font-size: 18px;
+      font-weight: 400; }
+  #developer-body #subscription-section .btn-column {
+    display: block;
+    align-self: center; }
+    #developer-body #subscription-section .btn-column .btn-white {
+      border-radius: 30px;
+      color: #E53030;
+      padding: 0.850rem 3.45rem;
+      font-size: 22px;
+      font-weight: 600; }
 
 .box-wrapper {
   padding-right: 15px;
