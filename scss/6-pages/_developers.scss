@@ -10,7 +10,7 @@ background-image: linear-gradient(60deg, #FADF8A 0%, #ED6149 96%);
 
 .main-wrapper{
   background: rgba(94,86,73,0.14);
-  max-height: 96px;
+  max-height: 88px;
 
   @media(max-width: 910px){
 
@@ -37,7 +37,7 @@ background-image: linear-gradient(60deg, #FADF8A 0%, #ED6149 96%);
      }
 
      .pop-up-navigation{
-       .container{
+       .box-wrapper{
          background: none;
        }
      }
@@ -88,7 +88,7 @@ background-image: linear-gradient(60deg, #FADF8A 0%, #ED6149 96%);
 
 #main-section{
   padding: 80px;
-  .container{
+  .box-wrapper{
 
   h1{
     text-align: center;
@@ -110,7 +110,7 @@ background-image: linear-gradient(60deg, #FADF8A 0%, #ED6149 96%);
     margin: 30px auto;
     background-color: white;
     position: relative;
-    top: 150px;
+    top: 182px;
 
 
 
@@ -139,6 +139,96 @@ background-image: linear-gradient(60deg, #FADF8A 0%, #ED6149 96%);
 
   }
 }  // Closing Main Section
+
+
+#second-section{
+  padding-bottom: 260px;
+
+  .box-wrapper{
+   padding-top: 150px;
+   padding-bottom: 50px;
+
+   .row{
+     margin-right: 0;
+     margin-left: 49px;
+   }
+
+   h1{
+     font-weight: 600;
+     margin-bottom: 50px;
+   }
+
+   p{
+     max-width: 550px;
+     width: 100%;
+     color: $p-grey;
+   }
+
+   img{
+     max-width: 380px;
+     width: 100%;
+   }
+  }
+
+} // Closing Second Section
+
+
+#third-section{
+  background-color: #FCF8EC;
+  position: relative;
+
+  .row{
+    margin-top: 60px;
+  }
+
+  &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -185px;
+      height: 369px;
+      width: 100%;
+      background-color: #fcf8ed;
+      transform: skewy(-11deg);
+  }
+
+
+
+  .col-sm-6{
+    &.document{
+      margin-bottom: -30px;
+    }
+
+    &.article{
+      margin-top: 20px;
+    }
+  }
+
+  p{
+        max-width: 500px;
+        width: 100%;
+        color: $p-grey;
+  }
+} // Closing Third Section
+
+
+#four-section{
+  height: 600px;
+  padding: 100px 0;
+
+  p{
+    max-width: 450px;
+    width: 100%;
+  }
+
+  img{
+    max-width: 330px;
+    width: 100%;
+  }
+}
+
+
+
 
 
 } // Closing Main Content Body
