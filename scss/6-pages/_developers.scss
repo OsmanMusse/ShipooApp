@@ -157,6 +157,10 @@
           margin-bottom: 12px;
         }
 
+        @media(max-width: $breakpoint-tablet){
+          width: 3px;
+        }
+
       }
 
 
