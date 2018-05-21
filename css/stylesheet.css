@@ -261,9 +261,13 @@
     margin: 30px auto;
     background-color: white;
     position: relative;
+<<<<<<< HEAD
+    top: 165px; }
+=======
     top: 182px; }
     #developer-body #main-section .mini-menu img {
       margin-bottom: 5px; }
+>>>>>>> 2c21ba425b53858692422bf22190609406f3bc47
     #developer-body #main-section .mini-menu h2:nth-of-type(1) {
       display: inline-block;
       margin: 32px;
