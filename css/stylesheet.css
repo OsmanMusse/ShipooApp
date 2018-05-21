@@ -243,6 +243,14 @@
       margin-left: 7px; }
 #developer-body #main-section {
   padding: 80px; }
+  @media (max-width: 700px) {
+    #developer-body #main-section {
+      padding-left: 70px;
+      padding-right: 70px; } }
+  @media (max-width: 665px) {
+    #developer-body #main-section {
+      padding-left: 25px;
+      padding-right: 25px; } }
   #developer-body #main-section .box-wrapper h1 {
     text-align: center;
     color: #fff;
@@ -262,20 +270,60 @@
     background-color: white;
     position: relative;
     top: 207px; }
+    @media (max-width: 768px) {
+      #developer-body #main-section .mini-menu {
+        height: 83px; } }
+    @media (max-width: 992px) {
+      #developer-body #main-section .mini-menu {
+        top: 185px; } }
+    @media (max-width: 745px) {
+      #developer-body #main-section .mini-menu {
+        margin: 20px auto;
+        height: 85px;
+        top: 160px; } }
+    @media (max-width: 700px) {
+      #developer-body #main-section .mini-menu {
+        height: 78px;
+        top: 160px; } }
+    @media (max-width: 576px) {
+      #developer-body #main-section .mini-menu {
+        display: none; } }
     #developer-body #main-section .mini-menu img {
       margin-bottom: 5px; }
+      @media (max-width: 745px) {
+        #developer-body #main-section .mini-menu img {
+          margin-bottom: 12px; } }
     #developer-body #main-section .mini-menu h2:nth-of-type(1) {
       display: inline-block;
       margin: 32px;
       font-size: 1.7rem;
       font-weight: 400;
       color: #BCBBBA; }
+      @media (max-width: 768px) {
+        #developer-body #main-section .mini-menu h2:nth-of-type(1) {
+          font-size: 1.5rem;
+          margin: 28px; } }
+      @media (max-width: 700px) {
+        #developer-body #main-section .mini-menu h2:nth-of-type(1) {
+          font-size: 1.4rem;
+          margin: 30px; } }
+      @media (max-width: 576px) {
+        #developer-body #main-section .mini-menu h2:nth-of-type(1) {
+          display: block; } }
     #developer-body #main-section .mini-menu h2:nth-of-type(2) {
       display: inline-block;
       margin: 32px;
       font-size: 1.7rem;
       font-weight: 400;
       color: red; }
+      @media (max-width: 768px) {
+        #developer-body #main-section .mini-menu h2:nth-of-type(2) {
+          font-size: 1.5rem;
+          margin: 28px; } }
+      @media (max-width: 700px) {
+        #developer-body #main-section .mini-menu h2:nth-of-type(2) {
+          font-size: 1.4rem;
+          margin: 30px; } }
 #developer-body #second-section {
   padding-bottom: 260px; }
   #developer-body #second-section .box-wrapper {
@@ -284,6 +332,9 @@
     #developer-body #second-section .box-wrapper .row {
       margin-right: 0;
       margin-left: 49px; }
+      @media (max-width: 576px) {
+        #developer-body #second-section .box-wrapper .row {
+          margin-left: 0; } }
     #developer-body #second-section .box-wrapper h1 {
       font-weight: 600;
       margin-bottom: 50px; }
@@ -344,6 +395,13 @@
   background-image: linear-gradient(-92deg, #FADF8A 0%, #ED6149 96%);
   height: 450px;
   padding: 50px; }
+  @media (max-width: 576px) {
+    #developer-body #subscription-section {
+      height: 480px; } }
+  @media (max-width: 768px) {
+    #developer-body #subscription-section {
+      padding-left: 10px;
+      padding-right: 10px; } }
   #developer-body #subscription-section h1 {
     text-align: center;
     color: #fff; }
@@ -369,6 +427,9 @@
     margin-top: 30px;
     color: #fff9;
     font-weight: 300; }
+    @media (max-width: 576px) {
+      #developer-body #subscription-section p {
+        margin-bottom: 20px; } }
     #developer-body #subscription-section p a {
       color: inherit; }
     #developer-body #subscription-section p span {
@@ -385,6 +446,9 @@
       font-size: 22px;
       font-weight: 600;
       margin-left: 30px; }
+      @media (max-width: 670px) {
+        #developer-body #subscription-section .btn-column .btn-white {
+          margin-right: 0; } }
 #developer-body #developer-footer {
   background-color: #3C3935;
   padding-top: 80px;
