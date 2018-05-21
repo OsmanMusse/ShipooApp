@@ -2,6 +2,7 @@
 
    #main-content{
   background-image: linear-gradient(60deg, #FADF8A 0%, #ED6149 96%);
+  height: 540px;
 
    &::before{
      content: none;
@@ -110,7 +111,11 @@
       margin: 30px auto;
       background-color: white;
       position: relative;
-      top: 165px;
+      top: 207px;
+
+      img{
+        margin-bottom: 5px;
+      }
 
 
 
@@ -145,7 +150,7 @@
     padding-bottom: 260px;
 
     .box-wrapper{
-     padding-top: 150px;
+     padding-top: 160px;
      padding-bottom: 50px;
 
      .row{
@@ -230,6 +235,7 @@
   #five-section{
     background-color: #F9E9E9;
     position: relative;
+    padding-bottom: 60px;
 
 
 
@@ -258,11 +264,18 @@
 
   #subscription-section{
   background-image: linear-gradient(-92deg, #FADF8A 0%, #ED6149 96%);
-  height: 500px;
+  height: 450px;
+  padding: 50px;
 
       h1{
         text-align: center;
         color: $white;
+      }
+
+
+      .row{
+        margin-top: 50px;
+        padding-left: 50px;
       }
 
       input{
@@ -273,11 +286,118 @@
         border-left: transparent;
         border-right: transparent;
 
+        &.input-controller{
+          display: block;
+          width: 100%;
+          padding: 1.5rem .75rem;
+        }
+
         &::placeholder{
           color: $white;
           font-weight: 500;
+          font-size: 25px;
         }
       }
+
+      p{
+        margin-top: 30px;
+        color: #fff9;
+        font-weight: 300;
+        a{
+          color: inherit;
+        }
+        span{
+          text-decoration: underline;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+
+      .btn-column{
+        display: block;
+        align-self: center;
+
+        .btn-white{
+            border-radius: 30px;
+            color: #E53030;
+            padding: 0.850rem 3.45rem;
+            font-size: 22px;
+            font-weight: 600;
+            margin-left: 30px;
+
+          }
+
+      }
+  } // Closing Subscription-Section
+
+
+  #developer-footer{
+    background-color: $merlin;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .row{
+         margin-bottom: 130px;
+
+         @media(max-width: $breakpoint-phone){
+           margin-bottom: 80px;
+         }
+
+    .col-sm-4{
+
+      @media(max-width: $breakpoint-phone){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+   }
+
+       h2{
+         font-size: 23px;
+         font-weight: 400;
+         color: $white;
+         text-transform: uppercase;
+       }
+
+       ul{
+         padding: 0;
+
+         li{
+           list-style: none;
+           color: $dust-grey;
+           font-size: 21px;
+           font-weight: 300;
+         }
+
+       }
+    }
+
+  } // Closing Footer Row
+
+   .footer-logo{
+     padding: 0;
+     img{
+       max-width: 140px;
+       width: 100%;
+     }
+   }
+
+   .translation-SO{
+     display: inline-flex;
+     justify-content: flex-end;
+     align-items: center;
+
+     @media(max-width: $breakpoint-phone){
+       margin-top: -40px;
+     }
+
+     img{
+       position: relative;
+       bottom: 2px;
+       margin-left: 10px;
+     }
+   }
+
   }
 
 
