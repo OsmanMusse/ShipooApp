@@ -17,7 +17,6 @@
     $grey-opacity: #ffffffb8;
     $black: #000;
     $white-grey: #f3f6f8; // White with some grey color
-    $p-grey: #787673;
     $merlin: #3C3935; // Developers Page Footer Color
 
     // Footer colors
@@ -59,6 +58,18 @@
     $anzac: #e39f48;
     $amethysy: #B76AC4;
     $light-purple:#ab4040;
+
+
+    // Color Pallets
+
+
+    $pallets: (
+     grey: (
+       base : $greyish,
+       dark : #787673,
+     )
+
+    );
 
 
 
