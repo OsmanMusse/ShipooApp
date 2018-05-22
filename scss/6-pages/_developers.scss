@@ -38,8 +38,14 @@
           top: 6px;
       }
 
+
+
        .shipoo-logo{
          min-width: 110px;
+       }
+
+       #toggle:checked + pop-up-navigation{
+         display: none;
        }
 
        .pop-up-navigation{
