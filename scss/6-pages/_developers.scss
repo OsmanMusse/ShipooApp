@@ -133,9 +133,12 @@
       @media(max-width: $breakpoint-tablet){
         height: 83px;
       }
+
       @media(max-width: $breakpoint-lg){
             top: 220px;
       }
+
+
 
       @media(max-width: 745px){
         margin: 20px auto;
@@ -147,6 +150,11 @@
         height: 78px;
         top: 200px;
       }
+
+
+            @media(max-width: 665px){
+              top: 220px;
+            }
 
       @media(max-width: $breakpoint-phone){
         display: none;

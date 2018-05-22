@@ -288,6 +288,9 @@
       #developer-body #main-section .mini-menu {
         height: 78px;
         top: 200px; } }
+    @media (max-width: 665px) {
+      #developer-body #main-section .mini-menu {
+        top: 220px; } }
     @media (max-width: 576px) {
       #developer-body #main-section .mini-menu {
         display: none; } }
