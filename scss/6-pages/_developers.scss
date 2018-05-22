@@ -245,7 +245,7 @@
      p{
        max-width: 550px;
        width: 100%;
-       color: $p-grey;
+       color: map-get(map-get($pallets, grey), dark ) ;
      }
 
      img{
@@ -291,7 +291,7 @@
     p{
           max-width: 500px;
           width: 100%;
-          color: $p-grey;
+          color: palette(grey, dark);
     }
   } // Closing Third Section
 
@@ -364,7 +364,7 @@
 
       .row{
         margin-top: 50px;
-        padding-left: 50px;
+        padding-left: 29px;
       }
 
       input{

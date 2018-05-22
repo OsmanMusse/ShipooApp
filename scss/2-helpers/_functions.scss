@@ -4,3 +4,10 @@
 @function px-to-pc($target, $context){
  @return null;
 }
+
+// Get the Color Pallets
+
+@function palette ($pallete, $shade: base){
+   @return map-get(map-get($pallets, $pallete), $shade);
+
+}
