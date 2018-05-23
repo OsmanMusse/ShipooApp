@@ -213,6 +213,8 @@
     top: 6px; }
   #developer-body #main-content .nav-1 .shipoo-logo {
     min-width: 110px; }
+  #developer-body #main-content .nav-1 #toggle:checked + pop-up-navigation {
+    display: none; }
   #developer-body #main-content .nav-1 .pop-up-navigation .box-wrapper {
     background: none; }
   #developer-body #main-content .nav-2 {
