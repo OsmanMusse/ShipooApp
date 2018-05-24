@@ -4,9 +4,11 @@
 @import "2-helpers/variables";
 @import "2-helpers/mixins";
 @import "2-helpers/functions";
+@import "4-basics/typography";
 @import "2-helpers/buttons";
 @import "3-layouts/nav";
 @import "6-pages/developers";
+@import "6-pages/prices";
 @import "4-basics/base";
 @import "3-layouts/forms";
 @import "3-layouts/footer";
@@ -779,7 +781,6 @@ nav .container{
         }
 
         .card-list{
-
           list-style: none;
           text-align: left;
           margin-top: 77px;

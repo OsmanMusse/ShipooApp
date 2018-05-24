@@ -1,0 +1,141 @@
+
+#prices-body{
+
+
+  #main-content{
+ background-image: url(../images/Background-Image.png),linear-gradient(90deg, #865CC3 13%, #845AC2 41%, #7447B6 82%);
+ background-repeat: no-repeat;
+ background-size: 100%;
+ background-position: center;
+ height: 580px;
+
+ @media(max-width: $breakpoint-phone){
+   height: 520px;
+ }
+
+
+  &::before{
+    content: none;
+  }
+
+
+ .main-wrapper{
+   background: transparent;
+   max-height: 88px;
+
+   @media(max-width: 910px){
+
+      max-height: 80px;
+   }
+
+ }
+
+   .nav-1{
+
+       text-transform: uppercase;
+     .nav-menu{
+       @media(max-width: 910px){
+         display: block;
+       }
+     }
+       label{
+         margin-bottom: auto;
+         position: relative;
+         top: 6px;
+     }
+
+
+
+      .shipoo-logo{
+        min-width: 110px;
+      }
+
+      #toggle:checked + pop-up-navigation{
+        display: none;
+      }
+
+      .pop-up-navigation{
+        .box-wrapper{
+          background: none;
+        }
+      }
+      .pop-flex-container{
+        text-transform: none;
+      }
+      .pop-flex-container2{
+        text-transform: none;
+      }
+
+ }
+
+
+   .nav-2{
+
+     flex: 0 0 87%;
+     max-width: 87%;
+
+
+     @media(max-width: 900px){
+       display: none;
+     }
+
+     button{
+       @include btn-transparent($bor: 40px, $pad: 0.480rem 1.45rem);
+     }
+
+     a{
+       font-size: 14px;
+       margin-right: 40px;
+     }
+
+   }
+
+
+   .translation-SO{
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+
+       @media(max-width: 910px){
+        display: none;
+       }
+
+     a{
+       font-size: 15px;
+       margin-left: 15px;
+       margin-right: 0;
+       text-decoration: none;
+       color: $white-opacity;
+     }
+
+     img{
+       margin-left: 7px;
+     }
+
+   }
+
+   .box-wrapper{
+     text-align: center;
+   }
+
+   h1{
+      color: $white;
+      text-align: center;
+      max-width: 650px;
+      margin: 110px  auto 30px auto;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+   }
+
+   .btn{
+     &-whitish{
+       @extend %btn-whitish;
+     }
+   }
+ }  // Closing Main Content
+
+
+
+
+
+} // Closing Prices Body
