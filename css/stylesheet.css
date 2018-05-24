@@ -36,6 +36,14 @@
   color: #fff;
   text-align: center; }
 
+#prices-body #main-content .btn-whitish {
+  border-radius: 2.35rem;
+  border-color: white;
+  background-color: white;
+  padding: .665rem 2.15rem;
+  color: #7E54BE;
+  font-weight: 400; }
+
 /**********************
     Navigation Section
 ***********************/
@@ -506,6 +514,85 @@
       position: relative;
       bottom: 2px;
       margin-left: 10px; }
+
+#prices-body #main-content {
+  background-image: url(../images/Background-Image.png), linear-gradient(90deg, #865CC3 13%, #845AC2 41%, #7447B6 82%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 580px; }
+  @media (max-width: 576px) {
+    #prices-body #main-content {
+      height: 520px; } }
+  #prices-body #main-content::before {
+    content: none; }
+  #prices-body #main-content .main-wrapper {
+    background: transparent;
+    max-height: 88px; }
+    @media (max-width: 910px) {
+      #prices-body #main-content .main-wrapper {
+        max-height: 80px; } }
+  #prices-body #main-content .nav-1 {
+    text-transform: uppercase; }
+    @media (max-width: 910px) {
+      #prices-body #main-content .nav-1 .nav-menu {
+        display: block; } }
+    #prices-body #main-content .nav-1 label {
+      margin-bottom: auto;
+      position: relative;
+      top: 6px; }
+    #prices-body #main-content .nav-1 .shipoo-logo {
+      min-width: 110px; }
+    #prices-body #main-content .nav-1 #toggle:checked + pop-up-navigation {
+      display: none; }
+    #prices-body #main-content .nav-1 .pop-up-navigation .box-wrapper {
+      background: none; }
+    #prices-body #main-content .nav-1 .pop-flex-container {
+      text-transform: none; }
+    #prices-body #main-content .nav-1 .pop-flex-container2 {
+      text-transform: none; }
+  #prices-body #main-content .nav-2 {
+    flex: 0 0 87%;
+    max-width: 87%; }
+    @media (max-width: 900px) {
+      #prices-body #main-content .nav-2 {
+        display: none; } }
+    #prices-body #main-content .nav-2 button {
+      background: transparent;
+      border: 2px solid #fff;
+      border-radius: 40px;
+      padding: 0.48rem 1.45rem;
+      font-weight: 300;
+      font-size: 18px;
+      color: #fff;
+      text-align: center; }
+    #prices-body #main-content .nav-2 a {
+      font-size: 14px;
+      margin-right: 40px; }
+  #prices-body #main-content .translation-SO {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 910px) {
+      #prices-body #main-content .translation-SO {
+        display: none; } }
+    #prices-body #main-content .translation-SO a {
+      font-size: 15px;
+      margin-left: 15px;
+      margin-right: 0;
+      text-decoration: none;
+      color: #ffffffed; }
+    #prices-body #main-content .translation-SO img {
+      margin-left: 7px; }
+  #prices-body #main-content .box-wrapper {
+    text-align: center; }
+  #prices-body #main-content h1 {
+    color: #fff;
+    text-align: center;
+    max-width: 650px;
+    margin: 110px  auto 30px auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; }
 
 .box-wrapper {
   padding-right: 15px;
