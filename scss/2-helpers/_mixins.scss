@@ -178,4 +178,12 @@
     font-size: em(33px);
     font-weight: 400;
     color: contextual($color,$type);
+
+    @media(max-width: $breakpoint-xl){
+      font-size: em(28px);
+    }
+
+    @media(max-width: $breakpoint-lg){
+      font-size: em(23px);
+    }
   }
