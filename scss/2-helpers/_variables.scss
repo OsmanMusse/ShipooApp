@@ -33,7 +33,10 @@
 
   // Content colors
 
-  $Gumbo: #71A7A7;
+  $Gumbo: #71A7A7;   // Light Purple
+  $Coral: #FE7A44;   // Dark Orange
+  $Salomie: #FFDE92; // Bright Yellow
+  $Seagull : #7FB9E3; // Bluish Color
 
   // Gradient Color
     $Mountain-meadow: linear-gradient(to right top, rgb(20, 177, 193), rgb(0, 177, 179), rgb(0, 176, 160), rgb(0, 174, 138), rgb(16, 171, 112));
@@ -121,5 +124,17 @@
     pink:(
     'base' : pink,
     'h2'   : $fuchisa-Pink,
+    ),
+    orange:(
+     'base' : orange,
+     'h2'   : $Coral,
+    ),
+    yellow:(
+     'base' : yellow,
+     'h2'   : $Salomie,
+    ),
+    blue:(
+     'base' : blue,
+     'h2'   : $Seagull,
     )
   );
