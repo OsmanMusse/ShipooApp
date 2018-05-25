@@ -51,6 +51,9 @@
     $java-blue: #23b6c5;
 
     $fuchsia-Blue : #7E54BE;
+    $fuchisa-Pink : #C556C3;
+
+
 
     // Button Hovers
     $Calypso: #27717D;
@@ -105,4 +108,18 @@
      'Company' : $light-purple,
      'Payments' :$anzac,
      'Industry' : $amethysy,
+  );
+
+  //
+  // Contextual Colors
+  //
+  $text: (
+    grey:(
+      'base' : grey,
+      'p' : #CCC8D2,
+    ),
+    pink:(
+    'base' : pink,
+    'h2'   : $fuchisa-Pink,
+    )
   );

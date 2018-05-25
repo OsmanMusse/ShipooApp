@@ -12,6 +12,15 @@
 
 }
 
+
+// Get the contextual color
+
+@function contextual ($context, $color: base){
+  @return map-get(map-get($text, $context), $color);
+}
+
+
+// PX to Em
 @function em($target, $context: $base__font-size) {
 	@return ($target / $context) * 1em;
 }

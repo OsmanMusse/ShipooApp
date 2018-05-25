@@ -3,6 +3,10 @@
   width: 88%;
   margin: 0 auto; }
 
+#prices-body #section-1 .para-sec {
+  color: #CCC8D2;
+  font-weight: 300; }
+
 .btn-cornflower {
   display: block;
   position: relative;
@@ -552,8 +556,8 @@
     #prices-body #main-content .nav-1 .pop-flex-container2 {
       text-transform: none; }
   #prices-body #main-content .nav-2 {
-    flex: 0 0 87%;
-    max-width: 87%; }
+    flex: 0 0 82%;
+    max-width: 82%; }
     @media (max-width: 900px) {
       #prices-body #main-content .nav-2 {
         display: none; } }
@@ -593,6 +597,45 @@
     margin: 110px  auto 30px auto;
     font-family: 'Roboto', sans-serif;
     font-weight: bold; }
+  #prices-body #main-content .btn-whitish {
+    margin-bottom: 70px; }
+  #prices-body #main-content .box {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px; }
+    #prices-body #main-content .box h1 {
+      font-family: inherit;
+      color: grey;
+      font-weight: 300;
+      font-size: 35px;
+      margin: 0 auto; }
+#prices-body #section-1 {
+  border: 2px solid red;
+  margin-top: 450px;
+  padding: 80px 0;
+  text-align: center; }
+  #prices-body #section-1 h1 {
+    font-family: inherit;
+    color: grey;
+    font-weight: 300;
+    font-size: 35px;
+    margin: 0 auto; }
+  #prices-body #section-1 .headline-sec {
+    font-size: 2.0625em;
+    font-weight: 400;
+    color: #C556C3; }
+  #prices-body #section-1 .row {
+    margin: 0 30px; }
+    #prices-body #section-1 .row .first-column {
+      text-align: left; }
+    #prices-body #section-1 .row .second-column {
+      text-align: right; }
 
 .box-wrapper {
   padding-right: 15px;
