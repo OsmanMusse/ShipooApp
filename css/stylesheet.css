@@ -621,12 +621,13 @@
   text-align: center; }
   #prices-body #section-1 h1 {
     font-family: inherit;
-    color: grey;
+    color: #C9C9D5;
     font-weight: 300;
     font-size: 35px;
     margin: 0 auto;
     display: inline-block; }
   #prices-body #section-1 .headline-sec {
+    text-align: center;
     font-size: 2.0625em;
     font-weight: 400;
     color: #C556C3; }
@@ -744,6 +745,32 @@
             #prices-body #section-1 .row .four-column li span {
               margin-left: 30px;
               max-width: 350px; } }
+#prices-body #card-section {
+  padding: 50px 0;
+  height: 700px;
+  border: 2px solid red; }
+  #prices-body #card-section h1 {
+    font-family: inherit;
+    color: #C9C9D5;
+    font-weight: 300;
+    font-size: 45px;
+    margin: 0 auto;
+    text-align: center; }
+  #prices-body #card-section .cards-box {
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: center;
+    border: 2px solid red;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 480px;
+    grid-column-gap: 20px; }
+    #prices-body #card-section .cards-box .card-item:nth-of-type(1) {
+      border: 2px solid blue; }
+    #prices-body #card-section .cards-box .card-item:nth-of-type(2) {
+      border: 2px solid blue; }
+    #prices-body #card-section .cards-box .card-item:nth-of-type(3) {
+      border: 2px solid blue; }
 
 .box-wrapper {
   padding-right: 15px;

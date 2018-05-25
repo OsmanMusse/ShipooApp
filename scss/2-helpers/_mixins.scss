@@ -175,6 +175,7 @@
   // Headlines
 
   @mixin headline-sec($color, $type){
+    text-align: center;
     font-size: em(33px);
     font-weight: 400;
     color: contextual($color,$type);

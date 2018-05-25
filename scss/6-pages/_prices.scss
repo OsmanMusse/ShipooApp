@@ -166,7 +166,7 @@
 
    h1{
     font-family: inherit;
-    color: grey;
+    color: contextual(grey, h1);
     font-weight: 300;
     font-size: 35px;
     margin: 0 auto;
@@ -357,6 +357,42 @@
   } // Closing Row
 
 
+}
+
+#card-section{
+  padding: 50px 0;
+  height: 700px;
+  border: 2px solid red;
+
+  h1{
+     font-family: inherit;
+     color: contextual(grey, h1);
+     font-weight: 300;
+     font-size: 45px;
+     margin: 0 auto;
+     text-align: center;
+  }
+
+  .cards-box{
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: center;
+    border: 2px solid red;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 480px;
+    grid-column-gap: 20px;
+
+   .card-item:nth-of-type(1){
+     border: 2px solid blue;
+   }
+   .card-item:nth-of-type(2){
+     border: 2px solid blue;
+   }
+   .card-item:nth-of-type(3){
+     border: 2px solid blue;
+   }
+  }
 }
 
 
