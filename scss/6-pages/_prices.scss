@@ -362,14 +362,13 @@
 #card-section{
   padding: 50px 0;
   height: 700px;
-  border: 2px solid red;
 
   h1{
      font-family: inherit;
      color: contextual(grey, h1);
      font-weight: 300;
      font-size: 45px;
-     margin: 0 auto;
+     margin: 0 auto em(15px) auto;
      text-align: center;
   }
 
@@ -378,25 +377,60 @@
     max-width: 1400px;
     margin: 0 auto;
     justify-content: center;
-    border: 2px solid red;
     grid-template-columns: repeat(3, 350px);
-    grid-template-rows: 480px;
+    grid-template-rows: 515px;
     grid-column-gap: 20px;
 
+    h1{
+      color: $white;
+      font-weight: 400;
+      margin-bottom: em(25px);
+    }
+
+
+    h2{
+      color: $white;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    p{
+      color: $white;
+      font-weight: 200;
+      text-align: center;
+      font-size: em(19px);
+    }
+
+    .btn-card{
+      display: block;
+      margin: em(20px) auto;
+      color: #48b571;
+      text-transform: uppercase;
+      font-size: em(18px);
+      padding: em(10px) em(18px);
+    }
+
+
+
    .card-item:nth-of-type(1){
-     border: 2px solid blue;
      background-image: $Green-gradient;
+     padding: 70px 0;
+
+     h2{
+       margin-top: em(35px);
+     }
    }
    .card-item:nth-of-type(2){
-     border: 2px solid blue;
      background-image: $Blue-gradient;
+      padding: 70px 0;
    }
    .card-item:nth-of-type(3){
-     border: 2px solid blue;
      background-image: $Purple-gradient;
+      padding: 70px 0;
    }
-  }
-}
+
+} // Closing Card Box
+} // Closing Card Section
 
 
 
