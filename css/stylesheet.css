@@ -1183,6 +1183,29 @@
       #main-footer .copyright-text {
         font-size: 15px; } }
 
+#prices-body #main-footer {
+  background-color: #FAFAFA;
+  padding-bottom: 200px; }
+  #prices-body #main-footer .row {
+    justify-content: center; }
+  #prices-body #main-footer img {
+    max-width: 100px;
+    max-height: 30px;
+    margin-right: 80px; }
+  #prices-body #main-footer h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    color: #9c9fa9; }
+  #prices-body #main-footer ul {
+    list-style: none;
+    padding: 0; }
+    #prices-body #main-footer ul li {
+      color: #b5b4b7;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 2; }
+
 #main-content {
   background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
   font-family: "Lato", sans-serif;
