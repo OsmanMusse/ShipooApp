@@ -773,7 +773,7 @@
         grid-row-gap: 20px; } }
     @media (max-width: 785px) {
       #prices-body #card-section .cards-box {
-        grid-template-columns: minmax(530px, 650px); } }
+        grid-template-columns: minmax(360px, 650px); } }
     #prices-body #card-section .cards-box h1 {
       color: #fff;
       font-weight: 400;
