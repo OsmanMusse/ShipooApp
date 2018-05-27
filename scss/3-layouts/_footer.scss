@@ -141,3 +141,41 @@
 
 
 } // Closing main footer
+
+#prices-body{
+
+
+  #main-footer{
+    background-color: $alabaster;
+    padding-bottom: 200px;
+
+    .row{
+      justify-content: center;
+    }
+
+    img{
+      max-width: 100px;
+      max-height: 30px;
+      margin-right: 80px;
+    }
+
+    h4{
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 18px;
+      color: contextual(grey,h4);
+    }
+
+
+    ul{
+      list-style: none;
+      padding: 0;
+      li{
+        color: contextual(grey,li);
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 2;
+      }
+    }
+  }
+}
