@@ -151,12 +151,22 @@
 
     .row{
       justify-content: center;
+
+      @media(max-width: $breakpoint-phone){
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
     }
 
     img{
       max-width: 100px;
       max-height: 30px;
       margin-right: 80px;
+      @media(max-width: $breakpoint-phone){
+        margin: 0 auto;
+        margin-bottom: em(50px);
+      }
     }
 
     h4{
@@ -164,6 +174,9 @@
       font-weight: 400;
       font-size: 18px;
       color: contextual(grey,h4);
+      @media(max-width: $breakpoint-phone){
+        font-weight: 500;
+      }
     }
 
 
@@ -175,7 +188,24 @@
         font-weight: 300;
         font-size: 18px;
         line-height: 2;
+
+        @media(max-width: $breakpoint-phone){
+          text-align: center;
+        }
       }
+    }
+
+    .col-md-3{
+      @media(max-width: $breakpoint-phone){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+    @media(max-width: $breakpoint-phone){
+      margin-bottom: em(30px);
+    }
     }
   }
 }
