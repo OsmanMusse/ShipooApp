@@ -1188,15 +1188,27 @@
   padding-bottom: 200px; }
   #prices-body #main-footer .row {
     justify-content: center; }
+    @media (max-width: 576px) {
+      #prices-body #main-footer .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; } }
   #prices-body #main-footer img {
     max-width: 100px;
     max-height: 30px;
     margin-right: 80px; }
+    @media (max-width: 576px) {
+      #prices-body #main-footer img {
+        margin: 0 auto;
+        margin-bottom: 3.125em; } }
   #prices-body #main-footer h4 {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 18px;
     color: #9c9fa9; }
+    @media (max-width: 576px) {
+      #prices-body #main-footer h4 {
+        font-weight: 500; } }
   #prices-body #main-footer ul {
     list-style: none;
     padding: 0; }
@@ -1205,6 +1217,18 @@
       font-weight: 300;
       font-size: 18px;
       line-height: 2; }
+      @media (max-width: 576px) {
+        #prices-body #main-footer ul li {
+          text-align: center; } }
+  @media (max-width: 576px) {
+    #prices-body #main-footer .col-md-3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  @media (max-width: 576px) {
+    #prices-body #main-footer .col-md-3 {
+      margin-bottom: 1.875em; } }
 
 #main-content {
   background-image: linear-gradient(to right top, #14b1c1, #00b1b3, #00b0a0, #00ae8a, #10ab70);
