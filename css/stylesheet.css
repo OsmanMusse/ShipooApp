@@ -774,6 +774,9 @@
     @media (max-width: 785px) {
       #prices-body #card-section .cards-box {
         grid-template-columns: minmax(360px, 650px); } }
+    @media (max-width: 350px) {
+      #prices-body #card-section .cards-box {
+        grid-template-columns: minmax(290px, 650px); } }
     #prices-body #card-section .cards-box h1 {
       color: #fff;
       font-weight: 400;
@@ -843,244 +846,141 @@
       max-width: 1210px; } }
 
 #forms-body {
-  background-color: #71A7A7;
-  padding: 70px; }
-  @media (max-width: 576px) {
-    #forms-body {
-      padding: 40px 10px 0px 10px; } }
-  #forms-body a {
-    text-decoration: none; }
-  @media (max-width: 440px) {
-    #forms-body .form-wrapper {
-      padding: 5px; } }
-  #forms-body .form-wrapper .form-container {
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 2px;
-    background-color: #fff;
-    position: relative; }
-    @media (max-width: 440px) {
-      #forms-body .form-wrapper .form-container {
-        padding: 0px 10px 0px 10px; } }
-    #forms-body .form-wrapper .form-container::before {
-      content: '';
-      width: 62px;
-      height: 200px;
-      position: absolute;
-      top: -177px;
-      left: 5px;
-      background-image: url(../images/bubble-group.png);
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: 48px;
-      transform: rotate(180deg); }
-    #forms-body .form-wrapper .form-container::after {
-      content: '';
-      width: 62px;
-      height: 200px;
-      position: absolute;
-      bottom: -177px;
-      right: 4px;
-      background-image: url(../images/bubble-group.png);
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: 48px; }
-    #forms-body .form-wrapper .form-container .row {
-      width: 100%;
-      margin: 0; }
-    #forms-body .form-wrapper .form-container .purple-banner {
-      background-image: linear-gradient(-180deg, #7959CE 31%, #663BBD 69%, #442DA1 100%);
-      color: #fff;
-      font-family: sans-serif, "Lucida Grande";
-      padding: 120px 55px;
-      min-height: 470px; }
-      #forms-body .form-wrapper .form-container .purple-banner .arrow-left {
-        max-width: 40px;
+  background-color: #F2F2F2; }
+  #forms-body section {
+    max-width: 1600px;
+    height: 1000px;
+    margin: 100px auto; }
+  #forms-body .row {
+    margin: 0; }
+  #forms-body .col-sm-6:nth-of-type(1) {
+    background-image: linear-gradient(-175deg, #70E2CC 38%, #5BCDBF 98%);
+    border-radius: 3px;
+    height: 996px; }
+    #forms-body .col-sm-6:nth-of-type(1) .beer {
+      margin: 15px; }
+    #forms-body .col-sm-6:nth-of-type(1) h1 {
+      font-family: Avenir-Light;
+      font-size: 28px;
+      max-width: 510px;
+      margin: 80px auto;
+      color: rgba(255, 255, 255, 0.86);
+      text-align: center; }
+  #forms-body .rocket {
+    display: block;
+    margin: 0 auto; }
+  #forms-body .col-sm-6:nth-of-type(2) {
+    background-image: linear-gradient(-180deg, #4B6079 21%, #243244 100%);
+    height: 996px;
+    padding-right: 41px; }
+    #forms-body .col-sm-6:nth-of-type(2) .button-connect {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1.4375em; }
+      #forms-body .col-sm-6:nth-of-type(2) .button-connect .btn-grey {
+        background: #5F6F86;
+        border-radius: 100px 0 0 100px;
+        padding: 0.5em 1.5625em;
+        font-family: Avenir-Medium;
+        font-size: 1.125em;
+        color: #D0D0D0; }
+      #forms-body .col-sm-6:nth-of-type(2) .button-connect .btn-green {
+        background-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
+        border-radius: 0 100px 100px 0;
+        padding: 0.5em 1.5625em;
+        font-family: Avenir-Medium;
+        font-size: 1.125em;
+        color: rgba(255, 255, 255, 0.86); }
+    #forms-body .col-sm-6:nth-of-type(2) .form-header {
+      display: flex;
+      max-width: 580px;
+      margin-top: 12.5em;
+      margin-left: auto;
+      margin-right: auto; }
+      #forms-body .col-sm-6:nth-of-type(2) .form-header h3 {
+        font-family: Avenir-Light;
+        color: #7F8791;
+        font-size: 2.0625em; }
+      #forms-body .col-sm-6:nth-of-type(2) .form-header .h3-active {
+        color: #fff;
+        position: relative; }
+        #forms-body .col-sm-6:nth-of-type(2) .form-header .h3-active::before {
+          content: "";
+          border-bottom: 0.075em solid #1dd2b2;
+          position: absolute;
+          bottom: -0.37em;
+          width: 100%; }
+    #forms-body .col-sm-6:nth-of-type(2) .btw {
+      margin: 0 1.375em; }
+    #forms-body .col-sm-6:nth-of-type(2) form {
+      font-family: Avenir-Light;
+      max-width: 570px;
+      margin: 63px auto 63px auto; }
+      #forms-body .col-sm-6:nth-of-type(2) form .form-container {
         position: relative;
-        top: -90px;
-        left: 11px;
-        cursor: pointer; }
-      #forms-body .form-wrapper .form-container .purple-banner:before {
-        content: '';
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: 12px;
-        border: 2px solid white;
-        background-color: #fff;
-        border-radius: 100%; }
-      @media (max-width: 750px) {
-        #forms-body .form-wrapper .form-container .purple-banner {
-          padding: 120px 45px; } }
-      @media (max-width: 696px) {
-        #forms-body .form-wrapper .form-container .purple-banner {
-          display: none; } }
-      @media (max-width: 1200px) {
-        #forms-body .form-wrapper .form-container .purple-banner {
-          flex: 0 0 100%;
-          max-width: 100%; } }
-      #forms-body .form-wrapper .form-container .purple-banner h1 {
-        max-width: 243px;
-        width: 100%;
-        text-align: left;
-        font-size: 33px;
-        font-weight: 100; }
-      #forms-body .form-wrapper .form-container .purple-banner p {
-        margin: 0;
-        max-width: 348px;
-        margin-bottom: 20px;
-        width: 100%;
-        font-size: 15px;
-        font-weight: 100;
-        text-align: left;
-        opacity: 0.8; }
-      @media (max-width: 720px) {
-        #forms-body .form-wrapper .form-container .purple-banner .btn-white {
-          padding: 0.550rem 2.75rem; } }
-      #forms-body .form-wrapper .form-container .purple-banner .btn-white:hover {
-        border-color: #ffffffdb;
-        color: #7247bbb5; }
-      @media (max-width: 720px) {
-        #forms-body .form-wrapper .form-container .purple-banner .btn-transparent {
-          padding: 0.550rem 2.75rem; } }
-      #forms-body .form-wrapper .form-container .purple-banner .btn-transparent:hover {
-        border-color: #ffffff8c;
-        color: #ffffffcc; }
-    #forms-body .form-wrapper .form-container .form-menu {
-      text-align: center;
-      padding: 60px 0; }
-      @media (max-width: 1200px) {
-        #forms-body .form-wrapper .form-container .form-menu {
-          flex: 0 0 100%;
-          max-width: 100%; } }
-      @media (max-width: 576px) {
-        #forms-body .form-wrapper .form-container .form-menu {
-          flex: 0 0 90%;
-          max-width: 90%;
-          margin: 0 auto; } }
-      #forms-body .form-wrapper .form-container .form-menu .hidden-xs-header {
-        font-size: 2.0rem; }
-        @media (max-width: 1100px) {
-          #forms-body .form-wrapper .form-container .form-menu .hidden-xs-header {
-            font-size: 1.7rem; } }
-        @media (max-width: 440px) {
-          #forms-body .form-wrapper .form-container .form-menu .hidden-xs-header {
-            display: none; } }
-      #forms-body .form-wrapper .form-container .form-menu .hidden-xl-header {
-        display: none; }
-        @media (max-width: 440px) {
-          #forms-body .form-wrapper .form-container .form-menu .hidden-xl-header {
-            display: block;
-            font-size: 27px; } }
-      #forms-body .form-wrapper .form-container .form-menu p {
-        font-size: 15px;
-        width: 100%;
-        max-width: 375px;
-        margin: 0 auto; }
-    #forms-body .form-wrapper .form-container form {
-      margin-top: 40px; }
-      #forms-body .form-wrapper .form-container form .I-agree {
-        color: #B5BBB5;
-        font-weight: 500; }
-      #forms-body .form-wrapper .form-container form .terms-rule {
-        color: #86CACA; }
-      #forms-body .form-wrapper .form-container form input::placeholder {
-        color: #B5BBB5; }
-      #forms-body .form-wrapper .form-container form input[type="text"] {
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        text-align: center;
-        width: 56%;
-        padding-bottom: 13px;
-        font-size: 15px;
-        margin-bottom: 20px;
-        background-image: url(../images/user.png);
-        background-repeat: no-repeat;
-        background-size: 14px;
-        background-position: left 5px; }
-        @media (max-width: 430px) {
-          #forms-body .form-wrapper .form-container form input[type="text"] {
-            width: 75%; } }
-      #forms-body .form-wrapper .form-container form input[type="email"] {
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        text-align: center;
-        width: 56%;
-        padding-bottom: 13px;
-        font-size: 15px;
-        margin-bottom: 20px;
-        background-image: url(../images/envelope.png);
-        background-repeat: no-repeat;
-        background-size: 14px;
-        background-position: left 7px; }
-        @media (max-width: 430px) {
-          #forms-body .form-wrapper .form-container form input[type="email"] {
-            width: 75%; } }
-      #forms-body .form-wrapper .form-container form input[type="password"] {
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        text-align: center;
-        width: 56%;
-        padding-bottom: 13px;
-        font-size: 15px;
-        margin-bottom: 20px;
-        background-image: url(../images/lock.png);
-        background-repeat: no-repeat;
-        background-size: 14px;
-        background-position: left 7px; }
-        @media (max-width: 430px) {
-          #forms-body .form-wrapper .form-container form input[type="password"] {
-            width: 75%; } }
-      #forms-body .form-wrapper .form-container form label {
-        display: table;
-        margin-left: 23%;
-        color: #B5BBB5;
-        font-weight: 500; }
-        @media (max-width: 430px) {
-          #forms-body .form-wrapper .form-container form label {
-            font-size: 15px;
-            margin-left: 11%; } }
-      #forms-body .form-wrapper .form-container form input[type="checkbox"] {
-        display: none; }
-        #forms-body .form-wrapper .form-container form input[type="checkbox"] + .agree-span::before {
-          content: "\f096";
-          font-family: "FontAwesome";
-          color: #979797;
-          padding-right: 20px; }
-        #forms-body .form-wrapper .form-container form input[type="checkbox"] + .agree-span:checked {
-          background-color: red; }
-      #forms-body .form-wrapper .form-container form .terms-span {
-        margin-left: 7px;
-        color: #86CACA; }
-        #forms-body .form-wrapper .form-container form .terms-span a {
-          text-decoration: none;
-          color: inherit; }
-    #forms-body .form-wrapper .form-container .btn-cornflower {
-      margin-top: 39px; }
-      #forms-body .form-wrapper .form-container .btn-cornflower:hover {
-        transform: translatey(2px); }
-      #forms-body .form-wrapper .form-container .btn-cornflower::before {
-        content: '';
-        width: 50px;
-        height: 50px;
-        background-image: url(../images/arrow-right.png);
-        position: absolute;
-        left: 148px;
-        bottom: -2px;
-        background-size: 7px;
-        background-repeat: no-repeat;
-        background-position: left center; }
-  #forms-body .form-wrapper .login-exist-link {
-    color: #000;
-    margin-right: 10px; }
-  #forms-body .form-wrapper .login-span-link {
-    color: darkorange;
-    font-weight: 500;
-    font-size: 15px; }
+        margin-bottom: 3.125em; }
+        #forms-body .col-sm-6:nth-of-type(2) form .form-container::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          border: 0.0625em solid #7F8791; }
+      #forms-body .col-sm-6:nth-of-type(2) form label {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1.1875em;
+        margin-bottom: 0.5em; }
+      #forms-body .col-sm-6:nth-of-type(2) form input {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.1875em;
+        padding-bottom: 0.75em; }
+        #forms-body .col-sm-6:nth-of-type(2) form input::placeholder {
+          color: #7F8791; }
+        #forms-body .col-sm-6:nth-of-type(2) form input::after {
+          width: 100%;
+          bottom: 0;
+          color: red; }
+      #forms-body .col-sm-6:nth-of-type(2) form .agree-container {
+        display: inline-block; }
+        #forms-body .col-sm-6:nth-of-type(2) form .agree-container img {
+          margin-right: 0.5em; }
+        #forms-body .col-sm-6:nth-of-type(2) form .agree-container p {
+          display: inline-block;
+          color: #7F8791;
+          font-size: 18px;
+          font-weight: 600; }
+        #forms-body .col-sm-6:nth-of-type(2) form .agree-container span {
+          position: relative;
+          color: #fff;
+          font-weight: 400; }
+          #forms-body .col-sm-6:nth-of-type(2) form .agree-container span::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            border: 1px solid #1dd2b2;
+            margin-bottom: -0.3125em; }
+      #forms-body .col-sm-6:nth-of-type(2) form .register-container .btn-green {
+        background-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
+        border-radius: 100px 100px;
+        padding: 0.5625em 3.5625em;
+        font-family: Avenir-Medium;
+        font-size: 1.125em;
+        color: rgba(255, 255, 255, 0.86);
+        margin-right: 1.5em; }
+      #forms-body .col-sm-6:nth-of-type(2) form .register-container span {
+        position: relative;
+        color: #7F8791;
+        font-size: 1.125em; }
+        #forms-body .col-sm-6:nth-of-type(2) form .register-container span::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          border: 1px solid #1dd2b2;
+          margin-bottom: -0.3125em; }
 
 #main-footer {
   background-color: #262A31;
