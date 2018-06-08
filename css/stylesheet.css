@@ -863,7 +863,7 @@
     @media (max-width: 576px) {
       #forms-body section {
         margin-top: 0;
-        padding: 0 20px; } }
+        padding: 0; } }
     #forms-body section .row {
       margin: 0; }
     #forms-body section .col-md-12, #forms-body section .col-lg-6:nth-of-type(1) {
@@ -893,6 +893,9 @@
         display: flex;
         justify-content: flex-end;
         margin-top: 1.4375em; }
+        @media (max-width: 576px) {
+          #forms-body section .col-md-12 .button-connect, #forms-body section .col-lg-6:nth-of-type(2) .button-connect {
+            margin-right: -20px; } }
         #forms-body section .col-md-12 .button-connect .btn-grey, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-grey {
           background: #5F6F86;
           border-radius: 100px 0 0 100px;
