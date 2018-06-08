@@ -851,136 +851,200 @@
     max-width: 1600px;
     height: 1000px;
     margin: 100px auto; }
-  #forms-body .row {
-    margin: 0; }
-  #forms-body .col-sm-6:nth-of-type(1) {
-    background-image: linear-gradient(-175deg, #70E2CC 38%, #5BCDBF 98%);
-    border-radius: 3px;
-    height: 996px; }
-    #forms-body .col-sm-6:nth-of-type(1) .beer {
-      margin: 15px; }
-    #forms-body .col-sm-6:nth-of-type(1) h1 {
-      font-family: Avenir-Light;
-      font-size: 28px;
-      max-width: 510px;
-      margin: 80px auto;
-      color: rgba(255, 255, 255, 0.86);
-      text-align: center; }
-  #forms-body .rocket {
-    display: block;
-    margin: 0 auto; }
-  #forms-body .col-sm-6:nth-of-type(2) {
-    background-image: linear-gradient(-180deg, #4B6079 21%, #243244 100%);
-    height: 996px;
-    padding-right: 41px; }
-    #forms-body .col-sm-6:nth-of-type(2) .button-connect {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 1.4375em; }
-      #forms-body .col-sm-6:nth-of-type(2) .button-connect .btn-grey {
-        background: #5F6F86;
-        border-radius: 100px 0 0 100px;
-        padding: 0.5em 1.5625em;
-        font-family: Avenir-Medium;
-        font-size: 1.125em;
-        color: #D0D0D0; }
-      #forms-body .col-sm-6:nth-of-type(2) .button-connect .btn-green {
-        background-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
-        border-radius: 0 100px 100px 0;
-        padding: 0.5em 1.5625em;
-        font-family: Avenir-Medium;
-        font-size: 1.125em;
-        color: rgba(255, 255, 255, 0.86); }
-    #forms-body .col-sm-6:nth-of-type(2) .form-header {
-      display: flex;
-      max-width: 580px;
-      margin-top: 12.5em;
-      margin-left: auto;
-      margin-right: auto; }
-      #forms-body .col-sm-6:nth-of-type(2) .form-header h3 {
+    @media (max-width: 1630px) {
+      #forms-body section {
+        max-width: 1320px; } }
+    @media (max-width: 1380px) {
+      #forms-body section {
+        max-width: 1200px; } }
+    @media (max-width: 992px) {
+      #forms-body section {
+        padding: 0 40px; } }
+    @media (max-width: 576px) {
+      #forms-body section {
+        margin-top: 0;
+        padding: 0 20px; } }
+    #forms-body section .row {
+      margin: 0; }
+    #forms-body section .col-md-12, #forms-body section .col-lg-6:nth-of-type(1) {
+      background-image: linear-gradient(-175deg, #70E2CC 38%, #5BCDBF 98%);
+      border-radius: 3px;
+      height: 996px; }
+      @media (max-width: 576px) {
+        #forms-body section .col-md-12.hide-sm, #forms-body section .col-lg-6:nth-of-type(1).hide-sm {
+          display: none; } }
+      #forms-body section .col-md-12 .beer, #forms-body section .col-lg-6:nth-of-type(1) .beer {
+        margin: 15px; }
+      #forms-body section .col-md-12 h1, #forms-body section .col-lg-6:nth-of-type(1) h1 {
         font-family: Avenir-Light;
-        color: #7F8791;
-        font-size: 2.0625em; }
-      #forms-body .col-sm-6:nth-of-type(2) .form-header .h3-active {
-        color: #fff;
-        position: relative; }
-        #forms-body .col-sm-6:nth-of-type(2) .form-header .h3-active::before {
-          content: "";
-          border-bottom: 0.075em solid #1dd2b2;
-          position: absolute;
-          bottom: -0.37em;
-          width: 100%; }
-    #forms-body .col-sm-6:nth-of-type(2) .btw {
-      margin: 0 1.375em; }
-    #forms-body .col-sm-6:nth-of-type(2) form {
-      font-family: Avenir-Light;
-      max-width: 570px;
-      margin: 63px auto 63px auto; }
-      #forms-body .col-sm-6:nth-of-type(2) form .form-container {
-        position: relative;
-        margin-bottom: 3.125em; }
-        #forms-body .col-sm-6:nth-of-type(2) form .form-container::before {
-          content: '';
-          position: absolute;
-          width: 100%;
-          bottom: 0;
-          border: 0.0625em solid #7F8791; }
-      #forms-body .col-sm-6:nth-of-type(2) form label {
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 1.1875em;
-        margin-bottom: 0.5em; }
-      #forms-body .col-sm-6:nth-of-type(2) form input {
-        display: block;
-        border: none;
-        background-color: transparent;
-        font-size: 1.1875em;
-        padding-bottom: 0.75em; }
-        #forms-body .col-sm-6:nth-of-type(2) form input::placeholder {
-          color: #7F8791; }
-        #forms-body .col-sm-6:nth-of-type(2) form input::after {
-          width: 100%;
-          bottom: 0;
-          color: red; }
-      #forms-body .col-sm-6:nth-of-type(2) form .agree-container {
-        display: inline-block; }
-        #forms-body .col-sm-6:nth-of-type(2) form .agree-container img {
-          margin-right: 0.5em; }
-        #forms-body .col-sm-6:nth-of-type(2) form .agree-container p {
-          display: inline-block;
+        font-size: 28px;
+        max-width: 510px;
+        margin: 80px auto;
+        color: rgba(255, 255, 255, 0.86);
+        text-align: center; }
+    #forms-body section .rocket {
+      display: block;
+      margin: 0 auto; }
+    #forms-body section .col-md-12, #forms-body section .col-lg-6:nth-of-type(2) {
+      background-image: linear-gradient(-180deg, #4B6079 21%, #243244 100%);
+      height: 996px;
+      padding-right: 41px; }
+      #forms-body section .col-md-12 .button-connect, #forms-body section .col-lg-6:nth-of-type(2) .button-connect {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.4375em; }
+        #forms-body section .col-md-12 .button-connect .btn-grey, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-grey {
+          background: #5F6F86;
+          border-radius: 100px 0 0 100px;
+          padding: 0.5em 1.5625em;
+          font-family: Avenir-Medium;
+          font-size: 1.125em;
+          color: #D0D0D0; }
+          @media (max-width: 576px) {
+            #forms-body section .col-md-12 .button-connect .btn-grey, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-grey {
+              font-size: 1.0625em; } }
+        #forms-body section .col-md-12 .button-connect .btn-green, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green {
+          background-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
+          border-radius: 0 100px 100px 0;
+          padding: 0.5em 1.5625em;
+          font-family: Avenir-Medium;
+          font-size: 1.125em;
+          color: rgba(255, 255, 255, 0.86); }
+          @media (max-width: 576px) {
+            #forms-body section .col-md-12 .button-connect .btn-green, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green {
+              font-size: 1.0625em; } }
+      #forms-body section .col-md-12 .form-header, #forms-body section .col-lg-6:nth-of-type(2) .form-header {
+        display: flex;
+        max-width: 580px;
+        margin-top: 12.5em;
+        margin-left: auto;
+        margin-right: auto; }
+        @media (max-width: 1380px) {
+          #forms-body section .col-md-12 .form-header, #forms-body section .col-lg-6:nth-of-type(2) .form-header {
+            justify-content: center; } }
+        #forms-body section .col-md-12 .form-header h3, #forms-body section .col-lg-6:nth-of-type(2) .form-header h3 {
+          font-family: Avenir-Light;
           color: #7F8791;
-          font-size: 18px;
-          font-weight: 600; }
-        #forms-body .col-sm-6:nth-of-type(2) form .agree-container span {
-          position: relative;
+          font-size: 2.0625em; }
+          @media (max-width: 576px) {
+            #forms-body section .col-md-12 .form-header h3, #forms-body section .col-lg-6:nth-of-type(2) .form-header h3 {
+              font-size: 1.75em;
+              margin-bottom: 0;
+              align-self: flex-end; } }
+        #forms-body section .col-md-12 .form-header .h3-active, #forms-body section .col-lg-6:nth-of-type(2) .form-header .h3-active {
           color: #fff;
-          font-weight: 400; }
-          #forms-body .col-sm-6:nth-of-type(2) form .agree-container span::before {
+          position: relative; }
+          #forms-body section .col-md-12 .form-header .h3-active::before, #forms-body section .col-lg-6:nth-of-type(2) .form-header .h3-active::before {
+            content: "";
+            border-bottom: 0.075em solid #1dd2b2;
+            position: absolute;
+            bottom: -0.37em;
+            width: 100%; }
+        #forms-body section .col-md-12 .form-header .btw, #forms-body section .col-lg-6:nth-of-type(2) .form-header .btw {
+          margin: 0 1.375em; }
+          @media (max-width: 576px) {
+            #forms-body section .col-md-12 .form-header .btw, #forms-body section .col-lg-6:nth-of-type(2) .form-header .btw {
+              font-size: 1.625em; } }
+      #forms-body section .col-md-12 form, #forms-body section .col-lg-6:nth-of-type(2) form {
+        font-family: Avenir-Light;
+        max-width: 570px;
+        margin: 63px auto 63px auto; }
+        #forms-body section .col-md-12 form .form-container, #forms-body section .col-lg-6:nth-of-type(2) form .form-container {
+          position: relative;
+          margin-bottom: 3.125em; }
+          @media (max-width: 1380px) {
+            #forms-body section .col-md-12 form .form-container, #forms-body section .col-lg-6:nth-of-type(2) form .form-container {
+              width: 85%;
+              margin: 0px auto 20px auto; } }
+          #forms-body section .col-md-12 form .form-container::before, #forms-body section .col-lg-6:nth-of-type(2) form .form-container::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            border: 0.0625em solid #7F8791; }
+        #forms-body section .col-md-12 form label, #forms-body section .col-lg-6:nth-of-type(2) form label {
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 1.1875em;
+          margin-bottom: 0.5em; }
+          @media (max-width: 576px) {
+            #forms-body section .col-md-12 form label, #forms-body section .col-lg-6:nth-of-type(2) form label {
+              font-size: 1.0625em; } }
+        #forms-body section .col-md-12 form input, #forms-body section .col-lg-6:nth-of-type(2) form input {
+          display: block;
+          border: none;
+          background-color: transparent;
+          font-size: 1.1875em;
+          padding-bottom: 0.75em; }
+          @media (max-width: 576px) {
+            #forms-body section .col-md-12 form input, #forms-body section .col-lg-6:nth-of-type(2) form input {
+              font-size: 1.125em; } }
+          #forms-body section .col-md-12 form input::placeholder, #forms-body section .col-lg-6:nth-of-type(2) form input::placeholder {
+            color: #7F8791; }
+          #forms-body section .col-md-12 form input::after, #forms-body section .col-lg-6:nth-of-type(2) form input::after {
+            width: 100%;
+            bottom: 0;
+            color: red; }
+        #forms-body section .col-md-12 form .agree-container, #forms-body section .col-lg-6:nth-of-type(2) form .agree-container {
+          position: relative; }
+          #forms-body section .col-md-12 form .agree-container::before, #forms-body section .col-lg-6:nth-of-type(2) form .agree-container::before {
+            content: '';
+            position: absolute;
+            background-image: url("../images/checkbox.png");
+            background-repeat: no-repeat;
+            width: 35px;
+            height: 30px; }
+          #forms-body section .col-md-12 form .agree-container label, #forms-body section .col-lg-6:nth-of-type(2) form .agree-container label {
+            display: inline-block;
+            color: #7F8791;
+            padding-left: 40px;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: none; }
+          @media (max-width: 1380px) {
+            #forms-body section .col-md-12 form .agree-container, #forms-body section .col-lg-6:nth-of-type(2) form .agree-container {
+              display: block;
+              width: 85%;
+              margin: 2.5em auto 1.875em auto; } }
+          #forms-body section .col-md-12 form .agree-container span, #forms-body section .col-lg-6:nth-of-type(2) form .agree-container span {
+            position: relative;
+            color: #fff;
+            font-weight: 400; }
+            #forms-body section .col-md-12 form .agree-container span::before, #forms-body section .col-lg-6:nth-of-type(2) form .agree-container span::before {
+              content: '';
+              position: absolute;
+              width: 100%;
+              bottom: 0;
+              border: 1px solid #1dd2b2;
+              margin-bottom: -0.3125em; }
+          #forms-body section .col-md-12 form .agree-container a, #forms-body section .col-lg-6:nth-of-type(2) form .agree-container a {
+            text-decoration: none; }
+        @media (max-width: 1380px) {
+          #forms-body section .col-md-12 form .register-container, #forms-body section .col-lg-6:nth-of-type(2) form .register-container {
+            width: 85%;
+            margin: 0 auto; } }
+        #forms-body section .col-md-12 form .register-container .btn-green, #forms-body section .col-lg-6:nth-of-type(2) form .register-container .btn-green {
+          background-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
+          border-radius: 100px 100px;
+          padding: 0.5625em 3.5625em;
+          font-family: Avenir-Medium;
+          font-size: 1.125em;
+          color: rgba(255, 255, 255, 0.86);
+          margin-right: 1.5em; }
+          @media (max-width: 576px) {
+            #forms-body section .col-md-12 form .register-container .btn-green, #forms-body section .col-lg-6:nth-of-type(2) form .register-container .btn-green {
+              padding: 0.5em 3.125em; } }
+        #forms-body section .col-md-12 form .register-container span, #forms-body section .col-lg-6:nth-of-type(2) form .register-container span {
+          position: relative;
+          color: #7F8791;
+          font-size: 1.125em; }
+          #forms-body section .col-md-12 form .register-container span::before, #forms-body section .col-lg-6:nth-of-type(2) form .register-container span::before {
             content: '';
             position: absolute;
             width: 100%;
             bottom: 0;
             border: 1px solid #1dd2b2;
             margin-bottom: -0.3125em; }
-      #forms-body .col-sm-6:nth-of-type(2) form .register-container .btn-green {
-        background-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
-        border-radius: 100px 100px;
-        padding: 0.5625em 3.5625em;
-        font-family: Avenir-Medium;
-        font-size: 1.125em;
-        color: rgba(255, 255, 255, 0.86);
-        margin-right: 1.5em; }
-      #forms-body .col-sm-6:nth-of-type(2) form .register-container span {
-        position: relative;
-        color: #7F8791;
-        font-size: 1.125em; }
-        #forms-body .col-sm-6:nth-of-type(2) form .register-container span::before {
-          content: '';
-          position: absolute;
-          width: 100%;
-          bottom: 0;
-          border: 1px solid #1dd2b2;
-          margin-bottom: -0.3125em; }
 
 #main-footer {
   background-color: #262A31;
