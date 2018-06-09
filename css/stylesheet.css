@@ -902,7 +902,12 @@
         background-color: #D2D2D2; }
         #forms-body section .col-md-12 .cancel-icon img, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon img {
           display: block;
-          margin: 8px auto; }
+          margin: 9px auto; }
+          @media (max-width: 576px) {
+            #forms-body section .col-md-12 .cancel-icon img, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon img {
+              width: 27px;
+              height: 27px;
+              margin: 11px auto; } }
         #forms-body section .col-md-12 .cancel-icon:hover, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon:hover {
           background-color: #d2d2d291; }
       #forms-body section .col-md-12 .button-connect, #forms-body section .col-lg-6:nth-of-type(2) .button-connect {
@@ -922,6 +927,9 @@
           @media (max-width: 576px) {
             #forms-body section .col-md-12 .button-connect .btn-grey, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-grey {
               font-size: 1.0625em; } }
+          @media (max-width: 340px) {
+            #forms-body section .col-md-12 .button-connect .btn-grey, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-grey {
+              display: none; } }
         #forms-body section .col-md-12 .button-connect .btn-green, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green {
           background-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
           border-radius: 0 100px 100px 0;
@@ -932,6 +940,9 @@
           @media (max-width: 576px) {
             #forms-body section .col-md-12 .button-connect .btn-green, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green {
               font-size: 1.0625em; } }
+          @media (max-width: 340px) {
+            #forms-body section .col-md-12 .button-connect .btn-green, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green {
+              border-radius: 25px; } }
       #forms-body section .col-md-12 .form-header, #forms-body section .col-lg-6:nth-of-type(2) .form-header {
         display: flex;
         max-width: 580px;
@@ -950,6 +961,9 @@
               font-size: 1.75em;
               margin-bottom: 0;
               align-self: flex-end; } }
+          @media (max-width: 340px) {
+            #forms-body section .col-md-12 .form-header h3, #forms-body section .col-lg-6:nth-of-type(2) .form-header h3 {
+              font-size: 1.25em; } }
         #forms-body section .col-md-12 .form-header .h3-active, #forms-body section .col-lg-6:nth-of-type(2) .form-header .h3-active {
           color: #fff;
           position: relative; }
@@ -964,6 +978,9 @@
           @media (max-width: 576px) {
             #forms-body section .col-md-12 .form-header .btw, #forms-body section .col-lg-6:nth-of-type(2) .form-header .btw {
               font-size: 1.625em; } }
+          @media (max-width: 340px) {
+            #forms-body section .col-md-12 .form-header .btw, #forms-body section .col-lg-6:nth-of-type(2) .form-header .btw {
+              font-size: 1.375em; } }
       #forms-body section .col-md-12 form, #forms-body section .col-lg-6:nth-of-type(2) form {
         font-family: Avenir-Light;
         max-width: 570px;

@@ -83,7 +83,13 @@
 
     img{
       display: block;
-    margin: 8px auto;
+    margin: 9px auto;
+
+    @media(max-width: $breakpoint-phone){
+      width: 27px;
+      height: 27px;
+      margin: 11px auto;
+    }
 
     }
 
@@ -110,8 +116,14 @@
         font-size: em(18px);
         color: #D0D0D0;
 
+
+
         @media(max-width: 576px){
             font-size: em(17px);
+        }
+
+        @media(max-width: 340px){
+          display: none;
         }
 
       }
@@ -126,6 +138,10 @@
 
         @media(max-width: 576px){
             font-size: em(17px);
+        }
+
+        @media(max-width: 340px){
+          border-radius: 25px;
         }
 
       }
@@ -156,6 +172,10 @@
               margin-bottom: 0;
               align-self: flex-end;
           }
+
+          @media(max-width: 340px){
+            font-size: em(20px);
+          }
         }
 
         .h3-active {
@@ -177,6 +197,10 @@
 
           @media(max-width: 576px){
               font-size: em(26px);
+          }
+
+          @media(max-width: 340px){
+            font-size: em(22px);
           }
 
         }
