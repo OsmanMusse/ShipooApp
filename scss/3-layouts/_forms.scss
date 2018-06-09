@@ -67,6 +67,32 @@
     height: 996px;
     padding-right: 41px;
 
+    &.second-column{
+        padding-left: 41px;
+    }
+
+    .cancel-icon{
+    content: '';
+    position: absolute;
+    top: 17px;
+    border: 2px solid transparent;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: #D2D2D2;
+
+    img{
+      display: block;
+    margin: 8px auto;
+
+    }
+
+    &:hover{
+      background-color: #d2d2d291;
+    }
+
+    }
+
     .button-connect{
       display: flex;
       justify-content: flex-end;
@@ -218,6 +244,7 @@
 
           .agree-container{
             position: relative;
+            margin-bottom: 35px;
 
 
             &::before{

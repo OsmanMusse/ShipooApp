@@ -889,6 +889,22 @@
       background-image: linear-gradient(-180deg, #4B6079 21%, #243244 100%);
       height: 996px;
       padding-right: 41px; }
+      #forms-body section .col-md-12.second-column, #forms-body section .col-lg-6:nth-of-type(2).second-column {
+        padding-left: 41px; }
+      #forms-body section .col-md-12 .cancel-icon, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon {
+        content: '';
+        position: absolute;
+        top: 17px;
+        border: 2px solid transparent;
+        width: 53px;
+        height: 53px;
+        border-radius: 50%;
+        background-color: #D2D2D2; }
+        #forms-body section .col-md-12 .cancel-icon img, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon img {
+          display: block;
+          margin: 8px auto; }
+        #forms-body section .col-md-12 .cancel-icon:hover, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon:hover {
+          background-color: #d2d2d291; }
       #forms-body section .col-md-12 .button-connect, #forms-body section .col-lg-6:nth-of-type(2) .button-connect {
         display: flex;
         justify-content: flex-end;
@@ -989,7 +1005,8 @@
             bottom: 0;
             color: red; }
         #forms-body section .col-md-12 form .agree-container, #forms-body section .col-lg-6:nth-of-type(2) form .agree-container {
-          position: relative; }
+          position: relative;
+          margin-bottom: 35px; }
           #forms-body section .col-md-12 form .agree-container::before, #forms-body section .col-lg-6:nth-of-type(2) form .agree-container::before {
             content: '';
             position: absolute;
