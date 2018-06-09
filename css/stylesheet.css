@@ -963,6 +963,9 @@
         @media (max-width: 1380px) {
           #forms-body section .col-md-12 .form-header, #forms-body section .col-lg-6:nth-of-type(2) .form-header {
             justify-content: center; } }
+        @media (max-width: 576px) {
+          #forms-body section .col-md-12 .form-header, #forms-body section .col-lg-6:nth-of-type(2) .form-header {
+            margin-top: 5em; } }
         #forms-body section .col-md-12 .form-header h3, #forms-body section .col-lg-6:nth-of-type(2) .form-header h3 {
           font-family: Avenir-Light;
           color: #7F8791;
@@ -1081,19 +1084,20 @@
           margin-right: 1.5em; }
           @media (max-width: 576px) {
             #forms-body section .col-md-12 form .register-container .btn-green, #forms-body section .col-lg-6:nth-of-type(2) form .register-container .btn-green {
-              padding: 0.5em 3.125em; } }
+              padding: 0.5em 3.125em;
+              margin-bottom: 1.25em; } }
           @media (max-width: 360px) {
             #forms-body section .col-md-12 form .register-container .btn-green, #forms-body section .col-lg-6:nth-of-type(2) form .register-container .btn-green {
               padding: 0.4375em 2.5em;
               margin-bottom: 1.25em; } }
-        #forms-body section .col-md-12 form .register-container span, #forms-body section .col-lg-6:nth-of-type(2) form .register-container span {
+        #forms-body section .col-md-12 form .register-container p, #forms-body section .col-lg-6:nth-of-type(2) form .register-container p {
           position: relative;
           color: #7F8791;
           font-size: 1.125em; }
-          #forms-body section .col-md-12 form .register-container span::before, #forms-body section .col-lg-6:nth-of-type(2) form .register-container span::before {
+          #forms-body section .col-md-12 form .register-container p::before, #forms-body section .col-lg-6:nth-of-type(2) form .register-container p::before {
             content: '';
             position: absolute;
-            width: 100%;
+            width: 75%;
             bottom: 0;
             border: 1px solid #1dd2b2;
             margin-bottom: -0.3125em; }

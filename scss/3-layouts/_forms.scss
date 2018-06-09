@@ -177,6 +177,10 @@
           justify-content: center;
         }
 
+        @media(max-width: $breakpoint-phone){
+          margin-top: em(80px);
+        }
+
         h3{
           font-family: Avenir-Light;
           color: #7F8791;
@@ -353,6 +357,7 @@
 
             @media(max-width: $breakpoint-phone){
               padding: em(8px) em(50px);
+              margin-bottom: em(20px);
             }
 
             @media(max-width: $breakpoint-xs-phone){
@@ -361,7 +366,7 @@
             }
 
             }
-            span{
+            p{
               position: relative;
               color: contextual(grey, input);
               font-size: em(18px);
@@ -369,7 +374,7 @@
               &::before{
                 content: '';
                 position: absolute;
-                width: 100%;
+                width: 75%;
                 bottom: 0;
                 border: 1px solid #1dd2b2;
                 margin-bottom: em(-5px);
