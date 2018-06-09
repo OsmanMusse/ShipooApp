@@ -900,7 +900,7 @@
         height: 53px;
         border-radius: 50%;
         background-color: #D2D2D2; }
-        @media (max-width: 340px) {
+        @media (max-width: 360px) {
           #forms-body section .col-md-12 .cancel-icon, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon {
             top: 25px;
             width: 45px;
@@ -913,7 +913,7 @@
               width: 27px;
               height: 27px;
               margin: 11px auto; } }
-          @media (max-width: 340px) {
+          @media (max-width: 360px) {
             #forms-body section .col-md-12 .cancel-icon img, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon img {
               width: 24px;
               height: 24px;
@@ -937,7 +937,7 @@
           @media (max-width: 576px) {
             #forms-body section .col-md-12 .button-connect .btn-grey, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-grey {
               font-size: 1.0625em; } }
-          @media (max-width: 340px) {
+          @media (max-width: 360px) {
             #forms-body section .col-md-12 .button-connect .btn-grey, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-grey {
               display: none; } }
         #forms-body section .col-md-12 .button-connect .btn-green, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green {
@@ -950,7 +950,7 @@
           @media (max-width: 576px) {
             #forms-body section .col-md-12 .button-connect .btn-green, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green {
               font-size: 1.0625em; } }
-          @media (max-width: 340px) {
+          @media (max-width: 360px) {
             #forms-body section .col-md-12 .button-connect .btn-green, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green {
               border-radius: 6.875em;
               padding: 0.5em 1.6875em; } }
@@ -972,7 +972,7 @@
               font-size: 1.75em;
               margin-bottom: 0;
               align-self: flex-end; } }
-          @media (max-width: 340px) {
+          @media (max-width: 360px) {
             #forms-body section .col-md-12 .form-header h3, #forms-body section .col-lg-6:nth-of-type(2) .form-header h3 {
               font-size: 1.25em; } }
         #forms-body section .col-md-12 .form-header .h3-active, #forms-body section .col-lg-6:nth-of-type(2) .form-header .h3-active {
@@ -989,7 +989,7 @@
           @media (max-width: 576px) {
             #forms-body section .col-md-12 .form-header .btw, #forms-body section .col-lg-6:nth-of-type(2) .form-header .btw {
               font-size: 1.625em; } }
-          @media (max-width: 340px) {
+          @media (max-width: 360px) {
             #forms-body section .col-md-12 .form-header .btw, #forms-body section .col-lg-6:nth-of-type(2) .form-header .btw {
               font-size: 1.375em; } }
       #forms-body section .col-md-12 form, #forms-body section .col-lg-6:nth-of-type(2) form {
@@ -1082,7 +1082,7 @@
           @media (max-width: 576px) {
             #forms-body section .col-md-12 form .register-container .btn-green, #forms-body section .col-lg-6:nth-of-type(2) form .register-container .btn-green {
               padding: 0.5em 3.125em; } }
-          @media (max-width: 340px) {
+          @media (max-width: 360px) {
             #forms-body section .col-md-12 form .register-container .btn-green, #forms-body section .col-lg-6:nth-of-type(2) form .register-container .btn-green {
               padding: 0.4375em 2.5em;
               margin-bottom: 1.25em; } }
