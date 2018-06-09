@@ -900,6 +900,11 @@
         height: 53px;
         border-radius: 50%;
         background-color: #D2D2D2; }
+        @media (max-width: 340px) {
+          #forms-body section .col-md-12 .cancel-icon, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon {
+            top: 25px;
+            width: 45px;
+            height: 45px; } }
         #forms-body section .col-md-12 .cancel-icon img, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon img {
           display: block;
           margin: 9px auto; }
@@ -908,6 +913,11 @@
               width: 27px;
               height: 27px;
               margin: 11px auto; } }
+          @media (max-width: 340px) {
+            #forms-body section .col-md-12 .cancel-icon img, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon img {
+              width: 24px;
+              height: 24px;
+              margin: 9px auto; } }
         #forms-body section .col-md-12 .cancel-icon:hover, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon:hover {
           background-color: #d2d2d291; }
       #forms-body section .col-md-12 .button-connect, #forms-body section .col-lg-6:nth-of-type(2) .button-connect {
@@ -942,7 +952,8 @@
               font-size: 1.0625em; } }
           @media (max-width: 340px) {
             #forms-body section .col-md-12 .button-connect .btn-green, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green {
-              border-radius: 25px; } }
+              border-radius: 6.875em;
+              padding: 0.5em 1.6875em; } }
       #forms-body section .col-md-12 .form-header, #forms-body section .col-lg-6:nth-of-type(2) .form-header {
         display: flex;
         max-width: 580px;
@@ -1071,6 +1082,10 @@
           @media (max-width: 576px) {
             #forms-body section .col-md-12 form .register-container .btn-green, #forms-body section .col-lg-6:nth-of-type(2) form .register-container .btn-green {
               padding: 0.5em 3.125em; } }
+          @media (max-width: 340px) {
+            #forms-body section .col-md-12 form .register-container .btn-green, #forms-body section .col-lg-6:nth-of-type(2) form .register-container .btn-green {
+              padding: 0.4375em 2.5em;
+              margin-bottom: 1.25em; } }
         #forms-body section .col-md-12 form .register-container span, #forms-body section .col-lg-6:nth-of-type(2) form .register-container span {
           position: relative;
           color: #7F8791;
