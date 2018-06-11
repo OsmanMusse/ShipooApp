@@ -367,6 +367,7 @@
 
             }
             p{
+              display: inline-block;
               position: relative;
               color: contextual(grey, input);
               font-size: em(18px);
@@ -374,7 +375,7 @@
               &::before{
                 content: '';
                 position: absolute;
-                width: 75%;
+                width: 100%;
                 bottom: 0;
                 border: 1px solid #1dd2b2;
                 margin-bottom: em(-5px);
