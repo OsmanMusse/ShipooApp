@@ -1093,13 +1093,14 @@
               padding: 0.4375em 2.5em;
               margin-bottom: 1.25em; } }
         #forms-body section .col-md-12 form .register-container p, #forms-body section .col-lg-6:nth-of-type(2) form .register-container p {
+          display: inline-block;
           position: relative;
           color: #7F8791;
           font-size: 1.125em; }
           #forms-body section .col-md-12 form .register-container p::before, #forms-body section .col-lg-6:nth-of-type(2) form .register-container p::before {
             content: '';
             position: absolute;
-            width: 75%;
+            width: 100%;
             bottom: 0;
             border: 1px solid #1dd2b2;
             margin-bottom: -0.3125em; }
