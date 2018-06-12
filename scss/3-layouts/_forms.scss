@@ -87,16 +87,18 @@
       height: 45px;
     }
 
-    img{
+    svg{
       display: block;
       margin: 9px auto;
       width: 30px;
       height: 30px;
 
+    
+
     @media(max-width: $breakpoint-phone){
       width: 27px;
       height: 27px;
-      margin: 11px auto;
+      margin: 10px auto;
     }
 
     @media(max-width: $breakpoint-xs-phone){
@@ -105,7 +107,11 @@
       margin: 9px auto;
     }
 
+
+
     }
+
+
 
     &:hover{
       background-color: #d2d2d291;
