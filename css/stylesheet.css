@@ -896,8 +896,8 @@
         position: absolute;
         top: 17px;
         border: 2px solid transparent;
-        width: 53px;
-        height: 53px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         background-color: #D2D2D2; }
         @media (max-width: 360px) {
@@ -905,16 +905,18 @@
             top: 25px;
             width: 45px;
             height: 45px; } }
-        #forms-body section .col-md-12 .cancel-icon img, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon img {
+        #forms-body section .col-md-12 .cancel-icon svg, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon svg {
           display: block;
-          margin: 9px auto; }
+          margin: 9px auto;
+          width: 30px;
+          height: 30px; }
           @media (max-width: 576px) {
-            #forms-body section .col-md-12 .cancel-icon img, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon img {
+            #forms-body section .col-md-12 .cancel-icon svg, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon svg {
               width: 27px;
               height: 27px;
-              margin: 11px auto; } }
+              margin: 10px auto; } }
           @media (max-width: 360px) {
-            #forms-body section .col-md-12 .cancel-icon img, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon img {
+            #forms-body section .col-md-12 .cancel-icon svg, #forms-body section .col-lg-6:nth-of-type(2) .cancel-icon svg {
               width: 24px;
               height: 24px;
               margin: 9px auto; } }
