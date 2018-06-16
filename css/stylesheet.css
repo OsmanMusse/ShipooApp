@@ -961,7 +961,10 @@
           padding: 0.5em 1.5625em;
           font-family: Avenir-Medium;
           font-size: 1.125em;
-          color: rgba(255, 255, 255, 0.86); }
+          color: rgba(255, 255, 255, 0.86);
+          border: 1px solid transparent;
+          border-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
+          border-image-slice: 1; }
           @media (max-width: 576px) {
             #forms-body section .col-md-12 .button-connect .btn-green-right, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green-right {
               font-size: 1.0625em; } }
@@ -975,7 +978,10 @@
           padding: 0.5em 1.5625em;
           font-family: Avenir-Medium;
           font-size: 1.125em;
-          color: rgba(255, 255, 255, 0.86); }
+          color: rgba(255, 255, 255, 0.86);
+          border: 1px solid transparent;
+          border-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
+          border-image-slice: 1; }
           @media (max-width: 576px) {
             #forms-body section .col-md-12 .button-connect .btn-green-left, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green-left {
               font-size: 1.0625em; } }
@@ -1112,7 +1118,10 @@
           font-family: Avenir-Medium;
           font-size: 1.125em;
           color: rgba(255, 255, 255, 0.86);
-          margin-right: 1.5em; }
+          margin-right: 1.5em;
+          border: 2px solid transparent;
+          border-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
+          border-image-slice: 1; }
           @media (max-width: 576px) {
             #forms-body section .col-md-12 form .register-container .btn-green, #forms-body section .col-lg-6:nth-of-type(2) form .register-container .btn-green {
               padding: 0.5em 3.125em;
