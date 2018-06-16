@@ -176,6 +176,9 @@
         font-family: Avenir-Medium;
         font-size: em(18px);
         color: rgba(255,255,255,0.86);
+        border: 1px solid transparent;
+        border-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
+        border-image-slice: 1;
 
         @media(max-width: $breakpoint-phone){
             font-size: em(17px);
@@ -196,6 +199,9 @@
         font-family: Avenir-Medium;
         font-size: em(18px);
         color: rgba(255,255,255,0.86);
+        border: 1px solid transparent;
+        border-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
+        border-image-slice: 1;
 
         @media(max-width: $breakpoint-phone){
             font-size: em(17px);
@@ -205,9 +211,12 @@
           border-radius: em(110px);
           padding: em(8px) em(27px);
         }
-      }
+      } // Closing btn-grey-left
 
-    }
+    } // Closing Button Connect
+
+
+
 
 
 
@@ -403,6 +412,9 @@
               font-size: em(18px);
               color: rgba(255,255,255,0.86);
               margin-right: em(24px);
+              border: 2px solid transparent;
+              border-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
+              border-image-slice: 1;
 
             @media(max-width: $breakpoint-phone){
               padding: em(8px) em(50px);
