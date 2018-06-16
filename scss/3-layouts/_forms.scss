@@ -93,7 +93,7 @@
       width: 30px;
       height: 30px;
 
-    
+
 
     @media(max-width: $breakpoint-phone){
       width: 27px;
@@ -128,7 +128,7 @@
         margin-right: -20px;
       }
 
-      .btn-grey{
+      .btn-grey-left{
         background: #5F6F86;
         border-radius: 100px 0 0 100px;
         padding: em(8px) em(25px);
@@ -148,7 +148,28 @@
 
       }
 
-      .btn-green{
+
+      .btn-grey-right{
+        background: #5F6F86;
+        border-radius: 0 100px 100px 0;
+        padding: em(8px) em(25px);
+        font-family: Avenir-Medium;
+        font-size: em(18px);
+        color: #D0D0D0;
+
+
+
+        @media(max-width: 576px){
+            font-size: em(17px);
+        }
+
+        @media(max-width: $breakpoint-xs-phone){
+          display: none;
+        }
+
+      }
+
+      .btn-green-right{
         background-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
         border-radius: 0 100px 100px 0;
         padding: em(8px) em(25px);
@@ -165,8 +186,16 @@
           padding: em(8px) em(27px);
         }
 
+      }
 
 
+      .btn-green-left{
+        background-image: linear-gradient(-169deg, #94E9E1 1%, #5BCEBF 52%);
+        border-radius: 100px 0 0 100px;
+        padding: em(8px) em(25px);
+        font-family: Avenir-Medium;
+        font-size: em(18px);
+        color: rgba(255,255,255,0.86);
       }
 
     }
@@ -243,7 +272,7 @@
 
           .form-container{
             position: relative;
-            margin-bottom: em(50px);
+            margin-bottom: em(60px);
 
             @media(max-width: 1380px){
               width: 85%;
