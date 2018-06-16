@@ -196,6 +196,15 @@
         font-family: Avenir-Medium;
         font-size: em(18px);
         color: rgba(255,255,255,0.86);
+
+        @media(max-width: $breakpoint-phone){
+            font-size: em(17px);
+        }
+
+        @media(max-width: $breakpoint-xs-phone){
+          border-radius: em(110px);
+          padding: em(8px) em(27px);
+        }
       }
 
     }

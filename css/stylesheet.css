@@ -976,6 +976,13 @@
           font-family: Avenir-Medium;
           font-size: 1.125em;
           color: rgba(255, 255, 255, 0.86); }
+          @media (max-width: 576px) {
+            #forms-body section .col-md-12 .button-connect .btn-green-left, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green-left {
+              font-size: 1.0625em; } }
+          @media (max-width: 360px) {
+            #forms-body section .col-md-12 .button-connect .btn-green-left, #forms-body section .col-lg-6:nth-of-type(2) .button-connect .btn-green-left {
+              border-radius: 6.875em;
+              padding: 0.5em 1.6875em; } }
       #forms-body section .col-md-12 .form-header, #forms-body section .col-lg-6:nth-of-type(2) .form-header {
         display: flex;
         max-width: 580px;
