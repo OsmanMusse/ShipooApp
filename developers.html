@@ -259,16 +259,30 @@
    </footer>
 
 
-  <script>
-  var ua = navigator.userAgent;
+  <script type="text/javascript">
+            window.onload = function() {
 
-  if (ua.indexOf("FBAN") != -1 || ua.indexOf("FBAV") != -1) {
-    if (!window.location.href.match('redirect_fb')) {
-      window.parent.location.assign("https://google.com");
-    }
-  }
+                var desktopFallback = "https://youtube.com/watch?v=4KnNVK-udTU",
+                mobileFallback = "https://youtube.com/watch?v=4KnNVK-udTU",
+                app = "vnd.youtube://4KnNVK-udTU";
 
-</script>
+                if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+                    window.location = app;
+                    window.setTimeout(function() {
+                        window.location = mobileFallback;
+                    }, 25);
+                } else {
+                    window.location = desktopFallback;
+                }
+
+                function killPopup() {
+                    window.removeEventListener('pagehide', killPopup);
+                }
+
+                window.addEventListener('pagehide', killPopup);
+
+            };
+        </script>
 
 
 
