@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/hightlighted_item"
+    android:fitsSystemWindows="false">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:stateListAnimator="@null"
+        android:nestedScrollingEnabled="false"
+        android:background="@android:color/transparent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scrimVisibleHeightTrigger="150dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:descendantFocusability="blocksDescendants">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="37dp"
+                    app:cardBackgroundColor="@android:color/black"
+                    app:cardCornerRadius="18dp"
+                    android:stateListAnimator="@null"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="18dp"
+                    android:translationY="-20dp"
+                    android:elevation="300dp">
+
+                    <ImageView
+                        android:id="@+id/gallery_icon"
+                        android:layout_width="15.5dp"
+                        android:layout_height="15.5dp"
+                        android:src="@drawable/gallery_icon"
+                        android:layout_marginLeft="14dp"
+                        android:layout_gravity="center_vertical"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12.5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/post_slider_current_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1/"
+                            android:fontFamily="@font/avenir_medium"
+                            android:textColor="@color/gray_light"
+                            android:textSize="15sp"/>
+                        <TextView
+                            android:id="@+id/post_slider_img_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9"
+                            android:fontFamily="@font/avenir_medium"
+                            android:textColor="@color/gray_light"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/post_slider_recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:nestedScrollingEnabled="false"
+                    android:fitsSystemWindows="false"/>
+
+
+            </RelativeLayout>
+
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/app_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                app:layout_collapseMode="pin"
+                android:nestedScrollingEnabled="false"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="50dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="15dp"
+                    android:paddingTop="0dp"
+                    android:paddingLeft="0dp">
+
+                    <ImageButton
+                        android:id="@+id/back_icon"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="8dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/baseline_arrow_back_36"
+                        app:tint="@color/white"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <ImageView
+                            android:id="@+id/post_edit_pen"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/pen_icon" />
+
+                        <ImageView
+                            android:id="@+id/post_love_icon"
+                            android:layout_width="33dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="33dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/love_icon"
+                            android:visibility="gone"
+                            app:tint="@android:color/white" />
+
+                        <ImageView
+                            android:id="@+id/share_btn"
+                            android:layout_width="29dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="33dp"
+                            android:src="@drawable/share_icon_2" />
+
+                        <ImageView
+                            android:id="@+id/post_rubbish_bin"
+                            android:layout_width="35dp"
+                            android:layout_height="37dp"
+                            android:layout_marginLeft="33dp"
+                            android:src="@drawable/bin_icon" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/post_screen_loader"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:indeterminateTint="@color/gray_light" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/post_main_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:descendantFocusability="blocksDescendants">
+
+            <RelativeLayout
+                android:id="@+id/ad_info_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingVertical="25dp">
+
+                <TextView
+                    android:id="@+id/ad_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mine_shaft"
+                    android:fontFamily="@font/avenir_book"
+                    android:text="Guri Fiilo ah oo ku taal Wadajir"
+                    android:textSize="24sp"
+                    android:paddingHorizontal="20dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/post_detail_price_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ad_title"
+                    android:layout_marginTop="20dp"
+                    android:paddingHorizontal="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        android:textColor="@color/gray_title"
+                        android:fontFamily="@font/avenir_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+
+                        android:layout_marginTop="-7dp"/>
+
+                    <TextView
+                        android:id="@+id/ad_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24,000"
+                        android:textColor="@color/mine_shaft"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/avenir_medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/post_detail_price_container"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="-3dp"
+                    android:paddingHorizontal="20dp">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:src="@drawable/current_location_icon"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/ad_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_medium"
+                        android:text="Garowe"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="8dp"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.20dp"
+                android:background="@color/gray_underline"
+                android:layout_gravity="bottom"
+                android:paddingHorizontal="20dp"
+                android:layout_below="@id/ad_info_container"/>
+
+            <RelativeLayout
+                android:id="@+id/member_since_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_below="@id/ad_info_container"
+                android:layout_marginTop="17dp"
+
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/smile_icon"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="23dp">
+
+                        <TextView
+                        android:id="@+id/post_profileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mohammed (2 ads)"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/avenir_medium"
+                        android:textSize="17.5sp"/>
+
+                        <TextView
+                            android:id="@+id/post_member_since"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Member since 2020"
+                            android:textColor="#AFAFAF"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/avenir_medium"
+                            android:textSize="15.5sp"
+                            android:layout_marginTop="3dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="17.5dp"
+                    android:layout_height="17.5dp"
+                    android:src="@drawable/small_arrow_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.20dp"
+                android:background="@color/gray_underline"
+                android:layout_gravity="bottom"
+                android:paddingHorizontal="20dp"
+                android:layout_below="@id/member_since_container"/>
+
+            <RelativeLayout
+                android:id="@+id/post_ad_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/member_since_container"
+                android:layout_marginTop="17dp"
+                android:background="@android:color/white"
+                android:paddingRight="25dp"
+                android:paddingLeft="20dp"
+                android:paddingVertical="20dp">
+
+                <TextView
+                    android:id="@+id/ad_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3b3b3b"
+                    android:fontFamily="@font/avenir_medium"
+                    android:textSize="17sp"
+                    android:text="Lovely Family home for sale, 3 Bedrooms, Lovely Garden. Great transport link to Victoria, London Bridge, The City and North London.  Offers Considered, located in Thornton Heath, Croydon in Surrey. New Westfields shopping precinct is due to be build in area.ondon. Offers Considered, located in Thornton Heath, Croydon in Surrey. New Westfields shopping precinct is due to be build in area."/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.20dp"
+                android:background="@color/gray_underline"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:paddingHorizontal="20dp"
+                android:layout_below="@id/post_ad_description"/>
+
+            <RelativeLayout
+                android:id="@+id/post_sharing_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="19dp"
+                android:paddingVertical="15dp"
+                android:background="@android:color/white"
+                android:layout_below="@id/post_ad_description"
+                android:layout_marginTop="17dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share This Listing"
+                    android:fontFamily="@font/avenir_medium"
+                    android:textSize="17sp"
+                    android:textColor="@color/mine_shaft"
+                    android:layout_centerVertical="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true">
+
+
+                    <ImageView
+                        android:id="@+id/whatsapp_icon_share"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/whatsapp_icon"
+                        android:layout_marginLeft="18dp"/>
+
+                    <ImageView
+                        android:id="@+id/clipboard_share_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/share_icon"
+                        android:layout_marginLeft="18dp"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.20dp"
+                android:background="@color/gray_underline"
+                android:layout_gravity="bottom"
+                android:paddingHorizontal="20dp"
+                android:layout_below="@id/post_sharing_container"/>
+
+            <RelativeLayout
+                android:id="@+id/post_ad_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="19dp"
+                android:paddingVertical="0dp"
+                android:layout_below="@id/post_sharing_container"
+                android:background="@android:color/white"
+                android:layout_marginTop="17dp">
+
+
+            <RelativeLayout
+                android:id="@+id/first_property_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/firstProperty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Bedrooms"
+                    android:textColor="@color/gray_light"
+                    android:fontFamily="@font/avenir_medium"
+                    android:textSize="17sp"
+                    android:paddingVertical="25dp"/>
+                <TextView
+                    android:id="@+id/bedrooms_property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textColor="@color/mine_shaft"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:paddingVertical="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="6dp"/>
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1.20dp"
+                    android:background="@color/gray_underline"
+                    android:layout_gravity="bottom"
+                    android:paddingHorizontal="20dp"
+                    android:layout_below="@id/firstProperty"/>
+
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/second_property_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/first_property_container">
+
+                    <TextView
+                        android:id="@+id/secondProperty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Property Type"
+                        android:fontFamily="@font/avenir_medium"
+                        android:textColor="@color/gray_light"
+                        android:textSize="17sp"
+                        android:paddingVertical="25dp"/>
+                    <TextView
+                        android:id="@+id/property_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fiilo"
+                        android:textColor="@color/mine_shaft"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/avenir_medium"
+                        android:paddingVertical="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="6dp"/>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1.20dp"
+                        android:background="@color/gray_underline"
+                        android:layout_gravity="bottom"
+                        android:paddingHorizontal="20dp"
+                        android:layout_below="@id/secondProperty"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/second_property_container">
+
+                    <TextView
+                        android:id="@+id/third_property_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seller Type"
+                        android:textColor="@color/gray_light"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/avenir_medium"
+                        android:paddingVertical="25dp"/>
+                    <TextView
+                        android:id="@+id/seller_property"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Private"
+                        android:textColor="@color/mine_shaft"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/avenir_medium"
+                        android:paddingVertical="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="6dp"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.20dp"
+                android:background="@color/gray_underline"
+                android:layout_gravity="bottom"
+                android:paddingHorizontal="20dp"
+                android:layout_below="@id/post_ad_information"/>
+
+            <RelativeLayout
+                android:id="@+id/post_time_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingBottom="16dp"
+                android:background="@android:color/white"
+                android:layout_below="@id/post_ad_information"
+                android:layout_marginTop="17dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/time_icon"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="47dp">
+
+                    <TextView
+                        android:id="@+id/ad_time_uploaded"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 day ago"
+                        android:textColor="@color/gray_light"
+                        android:fontFamily="@font/avenir_medium"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/ad_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID: 1373266642"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/gray_light"
+                        android:fontFamily="@font/avenir_medium"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Report"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:stateListAnimator="@null"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.20dp"
+                android:background="@color/gray_underline"
+                android:layout_gravity="bottom"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="95dp"
+                android:layout_below="@id/post_time_container"/>
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/telephone_parent_container"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@android:color/white"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1.20dp"
+            android:background="@color/gray_underline"
+            android:layout_gravity="bottom"
+            android:paddingHorizontal="20dp"/>
+
+        <Button
+            android:id="@+id/telephone_contact_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="6dp"
+            android:fontFamily="@font/avenir_medium"
+            android:backgroundTint="@color/colorPrimary"
+            android:paddingVertical="17dp"
+            android:layout_centerInParent="true">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
